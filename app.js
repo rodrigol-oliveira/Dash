@@ -47,7 +47,6 @@ app.get('/', function(req, res) {
 
 function getComboA(selectObject) {
 	var value = selectObject.value;  
-	console.log(value);
 
 	connection.query('select distinct country from svod where country = ?',[value], 
 	(err,rows) => {
@@ -58,9 +57,9 @@ function getComboA(selectObject) {
 	(err,rows) => {
 		if(err) throw err;
 		var analise= rows;
-		res.render('pages/index',{analise:analise,paises:paises});
+		res.render('pages/index',{quarters:quarters,paises:paises});
 	  });
-
+	  console.log(value);
   };
 
 
