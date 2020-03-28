@@ -1,0 +1,44 @@
+body{	padding-top: 60px;	font-family: 'Ubuntu', sans-serif;}
+
+h1, h2, h3, h4, h5, h6{	text-align: center;} 
+
+
+table{text-align: justify; font-size: 12px;}
+
+
+.content {padding-top: 50px; padding-bottom: 30px;}
+.footer {margin-bottom: 0;	padding: 20px;	background: gray; 	text-align: center;	color: white; }
+.espaco{padding-top: 50px;}
+.nav-itens{font-size: 16px;}
+.grafico{min-width: 100%; height: 400px; margin: 0 auto;}
+.grafico2{min-width: 100%; height: 400px; margin: 0 auto;}
+.grafico3{min-width: 100%; height: 400px; margin: 0 auto;}
+.tabela-resultado{padding-left: 20px; padding-right: 20px}
+
+#logo{width: auto; height: 150px; padding-top: 20px; padding-bottom: 20px;}
+#icone{width: auto; height: 200px;}
+#icone-resultado{width: auto; height: 80px;}
+#esqueci{color: blue;}
+#grafico{position: relative; height: 100%;}
+#grafico2{position: relative; height: 100%;}
+#grafico3{position: relative; height: 100%;}
+
+
+
+
+/*
+select[multiple], select[size] {
+    height:120px;
+    width: 200px;
+}
+*/
+
+.largura{ width: 200px; }
+
+/*#F1C40F amarelo*/
+
+/*
+font-family: 'Roboto Slab', serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Reem Kufi', sans-serif;
+*/

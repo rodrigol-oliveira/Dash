@@ -1,0 +1,36 @@
+<h3>Filter country</h3>
+			<select class="form-control" id="country"  name="country" onchange="getComboA(this)">
+                <option value="" selected>Choose your Country</option>
+				<% if(paises){%>
+					<% for(i = 0; i < paises.length; i ++) { %>					
+						<option value=' <%- paises[i].country %> '><%- paises[i].country %></option>
+					<%}%>
+				<%}%>
+			</select>
+
+<div class="col-xs-12 col-md-4 espaco">
+    <h4>SUBS TOTAL</h4>
+    <div class="table-responsive tabela-resultado ">						
+        <table  class="table table-striped" id="tbResultado">
+            <thead>
+                <tr>
+                    <th>Quarter_Year</th>
+                    <th>Total</th>										
+                </tr>
+            </thead>		
+            <tbody>
+                <% if(quarters){%>
+                    <% for(i = 0; i < quarters.length; i ++) { %>
+                    <tr>
+                        <td><%- quarters[i].Quarter_Year %></td>
+                        <td><%- quarters[i].TotalQ %></td>
+                    </tr>
+                    <%}%>
+                <%}%>			
+        </table>
+    </div>					
+
+    <div class="grafico content img-responsive" id="grafico">
+        
+    </div>
+</div>
