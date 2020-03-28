@@ -53,6 +53,7 @@ function getComboA(selectObject) {
 		if(err) throw err;
 		paises = rows;
 	});
+
 	connection.query('select Quarter_Year, sum(Export_data) as TotalQ from svod group by Quarter_Year where country = ? ',[value], 
 	(err,rows) => {
 		if(err) throw err;
@@ -64,8 +65,8 @@ function getComboA(selectObject) {
 
 
 // about page 
-app.get('/about', function(req, res) {
-	res.render('pages/about');
+app.get('/plataforms', function(req, res) {
+	res.render('pages/plataforms');
 });
 
 app.listen(3000);
