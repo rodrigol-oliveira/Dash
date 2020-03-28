@@ -1,0 +1,60 @@
+<div class="grafico content img-responsive" id="grafico">
+    <script type="text/javascript">
+        $(function () {
+            $('#grafico').highcharts({
+                chart: {
+                    type: 'bar'
+                },
+                title: {
+                    text: ''
+                },
+                <% if(quarters==false){ %>
+                    subtitle: {
+                        text: 'Aguardando dados'
+                    },
+                <%}else{%>
+                    subtitle: {
+                        text: ''
+                    },
+                <%}%>
+                    xAxis: {
+                        categories: [
+                        <%if(quarters){%>
+                            <% for(i = quarters.length-1; i >= 0 ; i--) {  %>
+                                [ "<%-quarters[i].Quarter_Year %>"],
+                            <%}%>
+                        <%}%>
+                        ]
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Valores em USD'
+                        },
+                        minorGridLineWidth: 0,
+                        gridLineWidth: 0,
+                        alternateGridColor: null,															
+                        },
+                                                        
+                                                        
+series: [{
+name: 'SUM PER QUARTER',
+data: [
+
+<% for(i = quarters.length-1; i >= 0 ; i--) {  %>
+    [<%-quarters[i].TotalQ %>],
+    <%}%>
+
+    ]
+} ],
+    navigation: {
+        menuItemStyle: {
+            fontSize: '10px'
+        }
+    }
+
+});
+        });
+
+    </script>
+</div>
+</div>

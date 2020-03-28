@@ -4,19 +4,23 @@
         <table  class="table table-striped" id="tbResultado">
             <thead>
                 <tr>
-                        <th>Network</th>
-                        <th>Quarter 01</th>
-                        <th>Quarter 02</th>
-                        <th>Quarter 03</th>
+                    <th>Network</th>
+                    <% for(i = 0; i < quarters.length; i ++) { %>
+                        <th><%- quarters[i].Quarter_Year %></th>
+                    <%}%>									
                 </tr>
             </thead>		
             <tbody>
+                <% if(listnetwork){%>
+                    <% for(i = 0; i < listnetwork.length; i ++) { %>
                     <tr>
-                        <td>Network</td>
-                        <td>123</td>
-                        <td>123 2</td>
-                        <td>432 3</td>
+                        <td><%- listnetwork[i].network %></td>
+                        <td><%- listnetwork[i].q1 %></td>
+                        <td><%- listnetwork[i].q2 %></td>
+                        <td><%- listnetwork[i].q3 %></td>
                     </tr>
+                    <%}%>
+                <%}%>			
         </table>
     </div>																
 </div>

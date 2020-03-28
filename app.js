@@ -30,10 +30,17 @@ app.get('/', function(req, res) {
 		if(err) throw err;
 		paises = rows;
 	});
+	var listnetwork ='';
+	connection.query('select network ,sum(case when quarter_year = '+'"q12019"'+ 'then export_data else 0 end) as q1,sum(case when quarter_year = ' + '"q22019"' + 'then export_data else 0 end) as q2,sum(case when quarter_year = '+'"q32019"' +'then export_data else 0 end) as q3 from svod where kpi_client = "SVOD and streaming service subscribers"group by network order by q1 desc;',
+	(err,rows) => {
+		if(err) throw err;
+		listnetwork = rows;
+	});
+	
 	connection.query('select Quarter_Year, sum(Export_data) as TotalQ from svod group by Quarter_Year;', (err,rows) => {
 		if(err) throw err;
 		var quarters= rows;
-		res.render('pages/index',{quarters:quarters,paises:paises});
+		res.render('pages/index',{quarters:quarters,paises:paises,listnetwork:listnetwork});
 	  });
 	  //select * from jardim where idUsuario = ?', [idUsuario]
 });
