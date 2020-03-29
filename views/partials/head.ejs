@@ -8,10 +8,10 @@
 	<script type="text/javascript" src="/highcharts/exporting.js"></script>
 
 	<script>
-		function getComboA(country) {
-	var value = country.value;  
-	console.log(value);
-  }
+		function getCountryRedirect() {
+			country = document.getElementById("country").value;
+			window.location.href = this.origin + "?country=" + country.trim();
+  		}		
 
 	</script>
 
