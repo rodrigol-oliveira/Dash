@@ -4,17 +4,17 @@ var app = express();
 var mysql = require('mysql');
 var bodyParser = require('body-parser');
 
-// var connection = mysql.createConnection({
-//     host    : 'localhost',
-//     user    : 'root',
-//     password  : '1234',
-//     database  : 'teste'
-//   });
+var connection = mysql.createConnection({
+	host: 'localhost',
+	user: 'root',
+	password: '1234',
+	database: 'teste'
+});
 
-// connection.connect(function(err) {
-// 	if (err) throw err;
-// 	console.log("Connected!");
-// });
+connection.connect(function (err) {
+	if (err) throw err;
+	console.log("Connected!");
+});
 app.use(express.static('public'));
 app.use(express.static(__dirname + '/public'));
 
