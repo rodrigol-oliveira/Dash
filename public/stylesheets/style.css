@@ -4,8 +4,26 @@ h1, h2, h3, h4, h5, h6{	text-align: center;}
 
 
 table{text-align: justify; font-size: 12px;}
+.img-rounded{
+    padding: 1rem;
 
-
+}
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.navbar-brand{
+margin-top: 15px;
+margin-left: 15px;
+}
+.navbar-right{
+    padding-top: 15px;
+    padding-right: 20px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+  }
 .content {padding-top: 50px; padding-bottom: 30px;}
 .footer {margin-bottom: 0;	padding: 20px;	background: gray; 	text-align: center;	color: white; }
 .espaco{padding-top: 50px;}
@@ -15,13 +33,15 @@ table{text-align: justify; font-size: 12px;}
 .grafico3{min-width: 100%; height: 400px; margin: 0 auto;}
 .tabela-resultado{padding-left: 20px; padding-right: 20px}
 
-#logo{width: auto; height: 150px; padding-top: 20px; padding-bottom: 20px;}
+#logo{width: auto; height: 100px; padding-top: 20px; padding-bottom: 20px;}
 #icone{width: auto; height: 200px;}
 #icone-resultado{width: auto; height: 80px;}
 #esqueci{color: blue;}
 #grafico{position: relative; height: 100%;}
 #grafico2{position: relative; height: 100%;}
 #grafico3{position: relative; height: 100%;}
+
+
 
 
 

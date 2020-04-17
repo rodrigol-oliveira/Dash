@@ -1,0 +1,39 @@
+<select class="form-control navbar-default " id="country"  name="country" onchange="">
+  <option value="" selected>Choose your Country</option>
+<% if(paises){%>
+<% for(i = 0; i < paises.length; i ++) { %>					
+<option value=' <%- paises[i].country %> '><%- paises[i].country %></option>
+<%}%>
+<%}%>
+</select>
+
+<div class="col-xs-12 col-md-3 espaco">
+
+</div>
+<div class="col-xs-14 col-md-7 espaco">
+  <h4>SUBS PER PLATFORMS</h4>
+  <div class="table-responsive tabela-resultado ">						
+      <table  class="table table-striped" id="tbResultado">
+          <thead>
+              <tr>
+                  <th>PERIOD</th>
+                  <th>SUM OF PAY TV</th>	
+                  <th>SUM OF SVOD</th>	
+                  <th>SUM OF NETFLIX</th>	
+                  <th>SUM OF BANDA LARGA</th>	
+              </tr>
+          </thead>		
+          <tbody>
+                  <% for(i = 0; i < platforms.length; i ++) { %>
+                  <tr>
+                      <td><%- platforms[i].Period %></td>
+                      <td><%- platforms[i].Sum_of_SUBS_PAY_TV.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                      <td><%- platforms[i].Sum_of_SUBS_SVOD.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                      <td><%- platforms[i].Sum_of_SUBS_NETFLIX.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                      <td><%- platforms[i].Sum_of_SUBS_BANDA_LARGA.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                  </tr>
+                  <%}%>	
+              
+              
+      </table>
+  </div>																

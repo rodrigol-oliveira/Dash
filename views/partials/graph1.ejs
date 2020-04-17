@@ -1,10 +1,14 @@
 <div class="grafico content img-responsive" id="grafico">
     <script type="text/javascript">
         $(function () {
+
             $('#grafico').highcharts({
+                
                 chart: {
                     type: 'bar'
                 },
+                
+
                 title: {
                     text: ''
                 },
@@ -20,7 +24,7 @@
                     xAxis: {
                         categories: [
                         <%if(quarters){%>
-                            <% for(i = quarters.length-1; i >= 0 ; i--) {  %>
+                            <% for(i = 0 ; i < quarters.length  ; i++) {  %>
                                 [ "<%-quarters[i].Quarter_Year %>"],
                             <%}%>
                         <%}%>
@@ -28,33 +32,75 @@
                     },
                     yAxis: {
                         title: {
-                            text: 'Valores em USD'
+                            text: 'subscribes'
                         },
                         minorGridLineWidth: 0,
                         gridLineWidth: 0,
                         alternateGridColor: null,															
-                        },
+                    },
+                    plotOptions: {
+                            series: {
+                                dataLabels: {
+                                   
+                                    enabled: true,
+                                    
+                                },
+                                }
+                    },                                          
                                                         
-                                                        
-series: [{
-name: 'SUM PER QUARTER',
-data: [
+                        series: [{
+                        name: 'SUM PER QUARTER',
+                        data: [
 
-<% for(i = quarters.length-1; i >= 0 ; i--) {  %>
-    [<%-quarters[i].TotalQ %>],
-    <%}%>
+                        <% for(i = 0; i < quarters.length; i ++) { %>
 
-    ]
-} ],
-    navigation: {
-        menuItemStyle: {
-            fontSize: '10px'
-        }
-    }
+                            [<%-quarters[i].TotalQ %>],
+                            <%}%>
 
-});
-        });
+                            ]
+                        } ],
+                            navigation: {
+                                menuItemStyle: {
+                                    fontSize: '10px'
+                                }
+                            }
+
+                    });
+                });
 
     </script>
 </div>
+
+
+    <h4>SHARE SUBS PER GROUP</h4>
+
+        <table  class="table table-striped" id="tbResultado">
+
+
+
+            <thead>
+                <tr>
+                    <th>GROUP</th>
+                    
+                 
+                        <th><%- quarters[0].Quarter_Year %></th>
+                        <th><%- quarters[1].Quarter_Year %></th>
+                        <th><%- quarters[2].Quarter_Year %></th>
+                        <th><%- quarters[3].Quarter_Year %></th>
+                </tr>
+            </thead>		
+            <tbody>
+                <% if(group){%>
+                    <% for(i = 0; i < group.length; i ++) { %>
+                    <tr>
+                        <td><%- group[i].Group   %></td>
+                        <td><%- (group[i].q1/quarters[0].TotalQ).toFixed(2)*100 %>%</td>
+                        <td><%- (group[i].q2/quarters[1].TotalQ).toFixed(2)*100 %>%</td>
+                        <td><%- (group[i].q3/quarters[2].TotalQ).toFixed(2)*100 %>%</td>
+                        <td><%- (group[i].q4/quarters[3].TotalQ).toFixed(2)*100 %>%</td>
+                    </tr>
+                    <%}%>
+                <%}%>			
+        </table>
 </div>
+   

@@ -1,30 +1,54 @@
-<h3>Filter country</h3>
-			<select class="form-control" id="country"  name="country" onchange="getCountryRedirect()">
-                <option value="" selected>Choose your Country</option>
+           
+            <!-- <h1>JSON</h1>
+            <pre id="json"></pre>
+
+            <h1>CSV</h1>
+            <pre id="csv"></pre> -->
+
+            <select class="form-control navbar-default espaco" id="country"  name="country" onchange="filtro()">
+               <option value="" >Choose your Country</option>
 				<% if(paises){%>
-					<% for(i = 0; i < paises.length; i ++) { %>					
-						<option value=' <%- paises[i].country %> '><%- paises[i].country %></option>
-					<%}%>
+                    <% for(i = 0; i < paises.length; i ++) { %>	
+                        <% if(paises[i].country == pais ){%>
+						    <option value=' <%- paises[i].country %> ' selected ><%- paises[i].country %></option>                           
+					    <%}else{%>                        				
+						    <option value=' <%- paises[i].country %> '><%- paises[i].country %></option>
+					    <%}%>
 				<%}%>
-			</select>
+				<%}%>
+            </select>
+            </br>
+            <select class="form-control navbar-default espaco" id="genrer"  name="genrer" onchange="filtro2()">
+                <option value="" >Choose Genrer</option>
+                <% if(genrer){%>
+                    <% for(i = 0; i < genrer.length; i ++) { %>	
+                        <% if(genrer[i].genre == genero ){%>
+                            <option value=' <%- genrer[i].genre %> ' selected><%- genrer[i].genre %></option>                    
+                        <%}else{%>                        				
+                            <option value=' <%- genrer[i].genre %> '><%- genrer[i].genre %></option>
+                        <%}%>
+                <%}%>
+                <%}%>
+            </select>
+                
+            
+           
 
 <div class="col-xs-12 col-md-4 espaco">
-    <h4>SUBS TOTAL</h4>
-        <table  class="table table-striped" id="tbResultado">
+    <h4>SUBSCRIBES TOTAL</h4>
+        <table  class="table table-striped" id="tbResultado1">
             <thead>
                 <tr>
-                    <th>Quarter_Year</th>
-                    <th>Total</th>										
+                    <th>YEAR QUARTER</th>
+                    <th>TOTAL</th>										
                 </tr>
             </thead>		
             <tbody>
-                <% if(quarters){%>
                     <% for(i = 0; i < quarters.length; i ++) { %>
                     <tr>
                         <td><%- quarters[i].Quarter_Year %></td>
-                        <td><%- quarters[i].TotalQ %></td>
+                        <td><%- quarters[i].TotalQ.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
                     </tr>
-                    <%}%>
                 <%}%>			
         </table>
     					

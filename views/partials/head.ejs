@@ -3,16 +3,59 @@
 <title>Dashboard - Distribuição | DataInsight</title>
 	<script type="text/javascript" src="/bootstrap/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
-	<script type="text/javascript" src="/bootstrap/js/script.js"></script>
 	<script type="text/javascript" src="/highcharts/highcharts.js"></script>
 	<script type="text/javascript" src="/highcharts/exporting.js"></script>
 
 	<script>
-		function getCountryRedirect() {
-			country = document.getElementById("country").value;
-			window.location.href = this.origin + "?country=" + country.trim();
-  		}		
 
+		function filtro(){
+			
+			country = document.getElementById("country").value;
+			filtro1 = country.length > 0 ? "&country="  + country.trim() : "";
+			window.location.href = this.origin +  "?filter=true"+filtro1;			
+		}
+		function filtro2(){
+			
+			country = document.getElementById("country").value;
+			filtro1 = country.length > 0 ? "&country="  + country.trim() : "";
+			genrer = document.getElementById("genrer").value;
+			filtro2 = genrer.length > 0 ? "&genrer="  + genrer.trim() : ""; 
+			filtro = filtro1+filtro2;
+			window.location.href = this.origin +  "?filter=true"+filtro;			
+		}
+
+		function exportTableToExcel(tbResultado2, filename = ''){
+			var downloadLink;
+			var dataType = 'application/vnd.ms-excel';
+			var tableSelect = document.getElementById(tbResultado2);
+			var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+			
+			// Specify file name
+			filename = filename?filename+'.xls':'excel_data.xls';
+			
+			// Create download link element
+			downloadLink = document.createElement("a");
+			
+			document.body.appendChild(downloadLink);
+			
+			if(navigator.msSaveOrOpenBlob){
+				var blob = new Blob(['\ufeff', tableHTML], {
+					type: dataType
+				});
+				navigator.msSaveOrOpenBlob( blob, filename);
+			}else{
+				// Create a link to the file
+				downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+			
+				// Setting the file name
+				downloadLink.download = filename;
+				
+				//triggering the function
+				downloadLink.click();
+			}
+		}		
+		
+		
 	</script>
 
 	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
