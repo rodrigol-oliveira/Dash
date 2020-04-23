@@ -4,8 +4,9 @@
             <thead>
                 <tr>
                     <th>Network</th>
-                    <% for(i = 0; i < quarters.length; i ++) { %>
-                        <th><%- quarters[i].Quarter_Year %></th>
+                    <% for(i = 1; i < Object.getOwnPropertyNames(listnetwork[0]).length; i ++) { %>
+                        <th> <%- Object.getOwnPropertyNames(listnetwork[0])[i] %> </th>
+
                     <%}%>									
                 </tr>
             </thead>		
@@ -14,10 +15,11 @@
                     <% for(i = 0; i < listnetwork.length; i ++) { %>
                     <tr>
                         <td><%- listnetwork[i].network %></td>
-                        <td><%- listnetwork[i].q1.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
-                        <td><%- listnetwork[i].q2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
-                        <td><%- listnetwork[i].q3.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
-                        <td><%- listnetwork[i].q4.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                        <% for(j = 1; j < Object.getOwnPropertyNames(listnetwork[i]).length; j ++) { %>
+
+                        <td><%- listnetwork[i][Object.getOwnPropertyNames(listnetwork[i])[j]].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                        <%}%>
+
                     </tr>
                     <%}%>
                 <%}%>			

@@ -25,14 +25,16 @@
                         categories: [
                         <%if(quarters){%>
                             <% for(i = 0 ; i < quarters.length  ; i++) {  %>
-                                [ "<%-quarters[i].Quarter_Year %>"],
+                            <% console.log("-----") %>
+                                
+                                [ "<%- quarters[i].Quarter_Year %>"],
                             <%}%>
                         <%}%>
                         ]
                     },
                     yAxis: {
                         title: {
-                            text: 'subscribes'
+                            text: ''
                         },
                         minorGridLineWidth: 0,
                         gridLineWidth: 0,
@@ -49,12 +51,15 @@
                     },                                          
                                                         
                         series: [{
-                        name: 'SUM PER QUARTER',
+                        name: 'Subscribes',
                         data: [
-
                         <% for(i = 0; i < quarters.length; i ++) { %>
 
-                            [<%-quarters[i].TotalQ %>],
+                            <% console.log(i) %>
+
+                            [
+                                <%-quarters[i].TotalQ %>
+                            ],
                             <%}%>
 
                             ]
@@ -81,23 +86,30 @@
             <thead>
                 <tr>
                     <th>GROUP</th>
-                    
-                 
-                        <th><%- quarters[0].Quarter_Year %></th>
-                        <th><%- quarters[1].Quarter_Year %></th>
-                        <th><%- quarters[2].Quarter_Year %></th>
-                        <th><%- quarters[3].Quarter_Year %></th>
+                    <% for(i = 0; i < quarters.length; i ++) { %>
+                            <% console.log(i) %>
+
+                        <th><%- quarters[i].Quarter_Year %></th>
+                    <%}%>
+
                 </tr>
             </thead>		
             <tbody>
-                <% if(group){%>
+                <% if(group){ %>
                     <% for(i = 0; i < group.length; i ++) { %>
                     <tr>
-                        <td><%- group[i].Group   %></td>
-                        <td><%- (group[i].q1/quarters[0].TotalQ).toFixed(2)*100 %>%</td>
-                        <td><%- (group[i].q2/quarters[1].TotalQ).toFixed(2)*100 %>%</td>
-                        <td><%- (group[i].q3/quarters[2].TotalQ).toFixed(2)*100 %>%</td>
-                        <td><%- (group[i].q4/quarters[3].TotalQ).toFixed(2)*100 %>%</td>
+                        <td><%- group[i].Group   %> </td>
+                        
+                    
+
+                        <% for(j = 1; j < Object.getOwnPropertyNames(group[i]).length; j ++) { %>
+                            
+                            <% if(quarters.length!=3){ %>
+
+                        <td><%- parseFloat(group[i][Object.getOwnPropertyNames(group[i])[j]] / quarters[j-1].TotalQ).toFixed(2)*100 %>%</td>     
+                        <%}%>
+                        <%}%>
+
                     </tr>
                     <%}%>
                 <%}%>			

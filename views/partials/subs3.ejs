@@ -5,32 +5,28 @@
             <thead>
                 <tr>
                     <th>YEAR QUARTER</th>
-
-                    <% if(genrer){%>
-                        <% for(i = 0; i < genrer.length; i ++) { %>	
-                            <%if(genrer[i].genre == 'Movies and Fictions' ){ %>
+                        <% for(i = 1; i < Object.getOwnPropertyNames(Genre[0]).length; i ++) { %>	
+                            <%if(Object.getOwnPropertyNames(Genre[0])[i] == 'MoviesFictions' ){ %>
                                 <th> M&S </th>
                                                   
-                            <%}else{%>                        				
-                                <th> <%- Genre.getOwnPropertyNames(Genre) %> </th>
+                            <%}else if (Object.getOwnPropertyNames(Genre[0])[i] == 'Generalist'){%>
+                                <th> GE </th>
+
+                                <%} else {%>                        				
+                                <th> <%- Object.getOwnPropertyNames(Genre[0])[i] %> </th>
+                                
                             <%}%>
-                        <%}%>	
-                    <%}%>										
+                        <%}%>							
                 </tr>
             </thead>		
             <tbody>
-                    <% for(i = 0; i < quarters.length; i ++) { %>
+                <% for(i = 0; i < Genre.length; i ++) { %>
                     <tr>
                         <td><%- Genre[i].quarter_year %></td>
-                        <td><%- Genre[i].MoviesFictions.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
-                        <td><%- Genre[i].kids.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
-                        <td><%- Genre[i].sport.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
-                        <td><%- Genre[i].Music.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
-                        <td><%- Genre[i].Generalist.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
-                        <td><%- Genre[i].Documentary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                        <% for(j = 1; j < Object.getOwnPropertyNames(Genre[i]).length; j ++) { %>
+                            <td><%- Genre[i][Object.getOwnPropertyNames(Genre[i])[j]].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                        <%}%>
                     </tr>
-                    <%}%>	
-                
-                
+                <%}%>
         </table>
     </div>																

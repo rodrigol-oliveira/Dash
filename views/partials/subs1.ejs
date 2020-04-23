@@ -35,7 +35,7 @@
            
 
 <div class="col-xs-12 col-md-4 espaco">
-    <h4>SUBSCRIBES TOTAL</h4>
+    <h4>SUBS TOTAL</h4>
         <table  class="table table-striped" id="tbResultado1">
             <thead>
                 <tr>
@@ -44,12 +44,15 @@
                 </tr>
             </thead>		
             <tbody>
+                
                     <% for(i = 0; i < quarters.length; i ++) { %>
                     <tr>
+                       
+
                         <td><%- quarters[i].Quarter_Year %></td>
-                        <td><%- quarters[i].TotalQ.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                        <td><%- quarters[i]["TotalQ"].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
                     </tr>
-                <%}%>			
+                    <%}%>			
         </table>
     					
 
