@@ -39,11 +39,11 @@ app.get('/', function (req, res) {
 	let queryGenrer = 'select distinct genre from svod where kpi_client = "SVOD and streaming service subscribers" and export_data >0';
 	let queryNet = 'select network ,sum(case when quarter_year = ' + '"2019 Q1"' + 'then export_data else 0 end) as "2019 Q1",sum(case when quarter_year = ' + '"2019 Q2"' 
 	+ 'then export_data else 0 end) as "2019 Q2",sum(case when quarter_year = ' + '"2019 Q3"' + 'then export_data else 0 end) as "2019 Q3",sum(case when quarter_year = ' + '"2019 Q4"' 
-	+ 'then export_data else 0 end) as "2019 Q4" from svod where kpi_client = "SVOD and streaming service subscribers" group by network order by "2019 Q4" desc';
+	+ 'then export_data else 0 end) as "2019 Q4" from svod where kpi_client = "SVOD and streaming service subscribers" group by network order by `2019 Q4` desc';
 
 	let queryGrp = 'select svod.Group ,sum(case when quarter_year = ' + '"2019 Q1"' + 'then export_data else 0 end) as "2019 Q1",sum(case when quarter_year = ' + '"2019 Q2"' 
 	+ 'then export_data else 0 end) as "2019 Q2",sum(case when quarter_year = ' + '"2019 Q3"' + 'then export_data else 0 end) as "2019 Q3",sum(case when quarter_year = ' + '"2019 Q4"' 
-	+ 'then export_data else 0 end) as "2019 Q4" from svod where kpi_client = "SVOD and streaming service subscribers" and svod.group in ("Netflix Group", "America Movil Group", "Amazon Group", "WarnerMedia", "Globo Group", "Google Group","Disney Networks") group by svod.Group order by "2019 Q4" desc ';
+	+ 'then export_data else 0 end) as "2019 Q4" from svod where kpi_client = "SVOD and streaming service subscribers" and svod.group in ("Netflix Group", "America Movil Group", "Amazon Group", "WarnerMedia", "Globo Group", "Google Group","Disney Networks") group by svod.Group order by `2019 Q4` desc ';
 
 	let queryQuarters = 'select Quarter_Year, sum(Export_data) as TotalQ from svod where kpi_client = "SVOD and streaming service subscribers" group by Quarter_Year';
 	
