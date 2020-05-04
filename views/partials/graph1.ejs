@@ -25,7 +25,6 @@
                         categories: [
                         <%if(quarters){%>
                             <% for(i = 0 ; i < quarters.length  ; i++) {  %>
-                            <% console.log("-----") %>
                                 
                                 [ "<%- quarters[i].Quarter_Year %>"],
                             <%}%>
@@ -55,7 +54,6 @@
                         data: [
                         <% for(i = 0; i < quarters.length; i ++) { %>
 
-                            <% console.log(i) %>
 
                             [
                                 <%-quarters[i].TotalQ %>
@@ -87,7 +85,6 @@
                 <tr>
                     <th>GROUP</th>
                     <% for(i = 0; i < quarters.length; i ++) { %>
-                            <% console.log(i) %>
 
                         <th><%- quarters[i].Quarter_Year %></th>
                     <%}%>
@@ -106,7 +103,7 @@
                             
                             <% if(quarters.length!=3){ %>
 
-                        <td><%- parseFloat(group[i][Object.getOwnPropertyNames(group[i])[j]] / quarters[j-1].TotalQ).toFixed(2)*100 %>%</td>     
+                        <td><%- parseFloat(group[i][Object.getOwnPropertyNames(group[i])[j]] / quarters[j-1].TotalQ*100).toFixed(0) %>%</td>     
                         <%}%>
                         <%}%>
 
