@@ -10,9 +10,13 @@
 				<% if(paises){%>
                     <% for(i = 0; i < paises.length; i ++) { %>	
                         <% if(paises[i].country == pais ){%>
+                        <%if(paises[i].country == 'CuraÃ§ao'){%>                        				
+                                <option value=' <%- paises[i].country %> '> Cura&ccedil;ao </option>
+                        <%}else{%>                        				
+
 						    <option value=' <%- paises[i].country %> ' selected ><%- paises[i].country %></option>                           
-					    <%}else if(paises[i].country == 'CuraÃ§ao'){%>                        				
-						    <option value=' <%- paises[i].country %> '>Cura&ccedil;ao </option>
+					    <%}}else if(paises[i].country == 'CuraÃ§ao'){%>                        				
+						    <option value=' <%- paises[i].country %> '> Cura&ccedil;ao </option>
                         <%}else{%>                        				
 						    <option value=' <%- paises[i].country %> '><%- paises[i].country %></option>
 					    <%}%>
