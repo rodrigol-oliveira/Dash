@@ -9,6 +9,7 @@
                 title: {
                     text: 'SHARE OF GENRE'
                 },
+
                 <% if(quarters==false){ %>
                     subtitle: {
                         text: 'Aguardando dados'
@@ -18,13 +19,21 @@
                         text: ''
                     },
                 <%}%>
+
+//     xAxis: {
+//         categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+//     },
+
                     xAxis: {
                         categories: [
+
                         <%if(quarters){%>
                             <% for(i = 0 ; i < quarters.length  ; i++) {  %>
-                                 "<%-quarters[i].Quarter_Year %>",
+                                 "<%- quarters[i].Quarter_Year %>",
+
                             <%}%>
                         <%}%>
+
                         ],
                         stacked: true
                     },
@@ -53,24 +62,31 @@
                                     formatter: function () {
                                       //return Highcharts.numberFormat(this.y,2);
                                       return Math.round(100 * this.y / this.total) + ' %';
-                                  }
+                                    }
                                   
 
                                 },
-                                }
+                            }
                     },            
                                                         
                     series: [
-
-                        <%if(Genre){%>
+                    // {
+                    //                 name:  ' Kids ',
+                    //                 data: 
+                    //                 [ 
+                    //                 <% for(i = 0; i < quarters.length; i ++) { %> 
+                    //                     <%- Genre[i].kids %>/<%- quarters[i].TotalQ %>*100,
+                    //                 <%}%>
+                    //                 ]
+                    //             },
                         
-                                
-                                {
+                               
+                    {
                                     name:  ' Kids ',
                                     data: 
                                     [ 
-                                    <% for(i = 0; i < quarters.length; i ++) { %> 
-                                        <%- Genre[i].kids %>/<%- quarters[i].TotalQ %>*100,
+                                    <% for(i = 0; i < Genre.length; i ++) { %> 
+                                        <%- (Genre[i].Kids/quarters[i].TotalQ)*100 %>,
                                     <%}%>
                                     ]
                                 },
@@ -78,8 +94,8 @@
                                     name:  ' GE ',
                                     data: 
                                     [ 
-                                    <% for(i = 0; i < quarters.length; i ++) { %> 
-                                        <%- Genre[i].Generalist %>/<%- quarters[i].TotalQ %>*100,
+                                    <% for(i = 0; i < Genre.length; i ++) { %> 
+                                        <%- (Genre[i].Generalist/quarters[i].TotalQ)*100 %>,
                                     <%}%>
                                     ]
                                 },
@@ -87,7 +103,7 @@
                                     name:  ' M & S ',
                                     data:
                                     [ 
-                                    <% for(i = 0; i < quarters.length; i ++) { %> 
+                                    <% for(i = 0; i < Genre.length; i ++) { %> 
                                         <%- (Genre[i].MoviesFictions/quarters[i].TotalQ)*100 %>,
                                     <%}%>	                                        
                                     ]
@@ -96,8 +112,8 @@
                                     name:  ' Sports ',
                                     data: 
                                     [ 
-                                    <% for(i = 0; i < quarters.length; i ++) { %> 
-                                        <%- Genre[i].sport %>/<%- quarters[i].TotalQ %>*100,
+                                    <% for(i = 0; i < Genre.length; i ++) { %> 
+                                        <%- (Genre[i].Sports/quarters[i].TotalQ)*100 %>,
                                     <%}%>
                                     ]
                                 },
@@ -106,8 +122,8 @@
                                     name:  ' Music ',
                                     data: 
                                     [ 
-                                    <% for(i = 0; i < quarters.length; i ++) { %> 
-                                        <%- Genre[i].Music %>/<%- quarters[i].TotalQ %>*100,
+                                    <% for(i = 0; i < Genre.length; i ++) { %> 
+                                        <%- (Genre[i].Music/quarters[i].TotalQ)*100 %>,
                                     <%}%>
                                     ]
                                 },
@@ -115,39 +131,48 @@
                                     name:  ' Documentary ',
                                     data: 
                                     [ 
-                                    <% for(i = 0; i < quarters.length; i ++) { %> 
-                                        <%- Genre[i].Documentary %>/<%- quarters[i].TotalQ %>*100,
+                                    <% for(i = 0; i < Genre.length; i ++) { %> 
+                                        <%- (Genre[i].Documentary/quarters[i].TotalQ)*100 %>,
                                     <%}%>
                                     ]
-                                },
-                               
-                        <%}%>
-                    ],
-
-    //                 series: [{
-    //     name: 'John',
-    //     data: [5000, 3000, 4000, 7000, 2000]
-    // }, {
-    //     name: 'Jane',
-    //     data: [2000, 2000, 3000, 2000, 1000]
-    // }, {
-    //     name: 'Joe',
-    //     data: [3000, 4000, 4000, 2000, 5000]
-    // }]
-
-
-
-                     navigation: {
-                            menuItemStyle: {
-                                fontSize: '10px'
-                            }
-                        }
-                    
-
-
+                                }                   
+            ]
+                    //  navigation: {
+                    //         menuItemStyle: {
+                    //             fontSize: '10px'
+                    //         }
+                    //     }
             });
         });
- 
+
+
+
+//     yAxis: {
+//         min: 0,
+//         title: {
+//             text: 'Total fruit consumption'
+//         }
+//     },
+//     legend: {
+//         reversed: true
+//     },
+//     plotOptions: {
+//         series: {
+//             stacking: 'normal'
+//         }
+//     },
+//     series: [{
+//         name: 'John',
+//         data: [5, 3, 4, 7, 2]
+//     }, {
+//         name: 'Jane',
+//         data: [2, 2, 3, 2, 1]
+//     }, {
+//         name: 'Joe',
+//         data: [3, 4, 4, 2, 5]
+//     }]
+// });
+// });
 
     </script>
 </div>

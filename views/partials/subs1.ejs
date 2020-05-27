@@ -29,9 +29,20 @@
                 <% if(genrer){%>
                     <% for(i = 0; i < genrer.length; i ++) { %>	
                         <% if(genrer[i].genre == genero ){%>
-                            <option value=' <%- genrer[i].genre %> ' selected><%- genrer[i].genre %></option>                    
-                        <%}else{%>                        				
+                            <%if(genrer[i].genre == "Movies and Fictions" ){%>
+                              <option value=' <%- genrer[i].genre %> ' selected > M&S </option>
+                            <%}else if (genrer[i].genre == "Generalist"){ %>
+                                <option value=' <%- genrer[i].genre %> ' selected > GE </option>
+                            <%}else{%>
+                                <option value=' <%- genrer[i].genre %> ' selected > <%- genrer[i].genre %> </option>                    
+                            <%}%>
+                        <%}else{ if(genrer[i].genre == "Movies and Fictions" ){%>
+                            <option value=' <%- genrer[i].genre %> '> M&S </option>
+                        <%}else if (genrer[i].genre == "Generalist"){ %>
+                            <option value=' <%- genrer[i].genre %> '> GE </option>
+                        <%}else{%>
                             <option value=' <%- genrer[i].genre %> '><%- genrer[i].genre %></option>
+                        <%}%>
                         <%}%>
                 <%}%>
                 <%}%>

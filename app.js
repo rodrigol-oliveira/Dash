@@ -47,7 +47,7 @@ app.get('/', function (req, res) {
 
 	let queryQuarters = 'select Quarter_Year, sum(Export_data) as TotalQ from svod where kpi_client = "SVOD and streaming service subscribers" group by Quarter_Year';
 	
-	let queryGenre = 'select quarter_year ,sum(case when genre = "Movies and Fictions" then export_data else 0 end) as `M&S`, sum(case when genre = "Kids" then export_data else 0 end) as "Kids",' +
+	let queryGenre = 'select quarter_year ,sum(case when genre = "Movies and Fictions" then export_data else 0 end) as `MoviesFictions`, sum(case when genre = "Kids" then export_data else 0 end) as "Kids",' +
 	'sum(case when genre = "Sport" then export_data else 0 end) as "Sports", sum(case when genre = "Music" then export_data else 0 end) as "Music", sum(case when genre = "Generalist" then export_data else 0 end) as "Generalist", ' +
 	' sum(case when genre = "Documentary" then export_data else 0 end) as "Documentary" from svod where kpi_client = "SVOD and streaming service subscribers" group by quarter_year order by quarter_year'
 
@@ -110,6 +110,7 @@ app.get('/', function (req, res) {
 		if (err) throw err;
 		Genre = rows;
 	});
+3
 
 	let quarters;
 	connection.query(queryQuarters, (err, rows) => {
