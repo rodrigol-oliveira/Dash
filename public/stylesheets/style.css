@@ -8,6 +8,9 @@ table{text-align: justify; font-size: 12px;}
     padding: 1rem;
 
 }
+.notes{
+    font-size: 10px
+}
 .container{
     margin-left: 10%;
     margin-right: 10%;
