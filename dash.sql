@@ -219,18 +219,10 @@ insert into svod values (188,'Brazil','Sport','Fanatiz Group','SVOD and streamin
 insert into svod values (189,'Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q3','Football','Latin America',760);
 insert into svod values (190,'Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q2','Football','Latin America',1395);
 insert into svod values (191,'Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q1','Football','Latin America',930);
-"insert into svod values (192,'Brazil','Documentary','Fish TV','SVOD and streaming service subscribers','Fish TV','2019 Q4','Fishing and Hunting
-
-','Latin America',6640);"
-"insert into svod values (193,'Brazil','Documentary','Fish TV','SVOD and streaming service subscribers','Fish TV','2019 Q3','Fishing and Hunting
-
-','Latin America',5200);"
-"insert into svod values (194,'Brazil','Documentary','Fish TV','SVOD and streaming service subscribers','Fish TV','2019 Q2','Fishing and Hunting
-
-','Latin America',8190);"
-"insert into svod values (195,'Brazil','Documentary','Fish TV','SVOD and streaming service subscribers','Fish TV','2019 Q1','Fishing and Hunting
-
-','Latin America',4900);"
+insert into svod values (192,'Brazil','Documentary','Fish TV','SVOD and streaming service subscribers','Fish TV','2019 Q4','Fishing and Hunting','Latin America',6640);
+insert into svod values (193,'Brazil','Documentary','Fish TV','SVOD and streaming service subscribers','Fish TV','2019 Q3','Fishing and Hunting','Latin America',5200);
+insert into svod values (194,'Brazil','Documentary','Fish TV','SVOD and streaming service subscribers','Fish TV','2019 Q2','Fishing and Hunting','Latin America',8190);
+insert into svod values (195,'Brazil','Documentary','Fish TV','SVOD and streaming service subscribers','Fish TV','2019 Q1','Fishing and Hunting','Latin America',4900);
 insert into svod values (196,'Brazil','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q3','Generalist','Latin America',85600);
 insert into svod values (197,'Brazil','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q2','Generalist','Latin America',128580);
 insert into svod values (198,'Brazil','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q1','Generalist','Latin America',112500);
@@ -948,12 +940,12 @@ insert into svod values (909,'Venezuela','Movies and Fictions','Privately owned'
 insert into svod values (910,'Venezuela','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q2','Telenovelas','Latin America',390);
 
 insert into platforms 
-values(1,'2015-12','Brazil',	19121783,	3077190,	2352350,	25553304);
+values(1,'2015 Q4','Brazil',	19121783,	4084780,	3359940,	26801000);
 insert into platforms 
-values(2,'2016-12','Brazil',	18821275,	4298420,	3301750,	26860779);
+values(2,'2016 Q4','Brazil',	18821275,	6076800,	5083230,	26826000);
 insert into platforms 
-values(3,'2017-12','Brazil',	18124655,	6421297,	4776850,	28907867);
+values(3,'2017 Q4','Brazil',	18124655,	8820617,	7185510,	26211000);
 insert into platforms 
-values(4,'2018-12','Brazil',	17514476,	9250015,	6941000,	31233004);
+values(4,'2018 Q4','Brazil',	17514476,	11935625,	9604830,	26211000);
 insert into platforms 
-values(5,'2019-12','Brazil',	15786280,	10608420,	7756000,	32500601);
+values(5,'2019 Q4','Brazil',	15786280,	15911615,	11562060,	26211000);
