@@ -940,12 +940,12 @@ insert into svod values (909,'Venezuela','Movies and Fictions','Privately owned'
 insert into svod values (910,'Venezuela','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q2','Telenovelas','Latin America',390);
 
 insert into platforms 
-values(1,'2015 Q4','Brazil',	19121783,	4084780,	3359940,	26801000);
+values(1,'2015 Q4','Brazil',	19121783,	4084780,	3359940,	23217687);
 insert into platforms 
-values(2,'2016 Q4','Brazil',	18821275,	6076800,	5083230,	26826000);
+values(2,'2016 Q4','Brazil',	18821275,	6076800,	5083230,	24101335);
 insert into platforms 
-values(3,'2017 Q4','Brazil',	18124655,	8820617,	7185510,	26211000);
+values(3,'2017 Q4','Brazil',	18124655,	8820617,	7185510,	25970887);
 insert into platforms 
-values(4,'2018 Q4','Brazil',	17514476,	11935625,	9604830,	26211000);
+values(4,'2018 Q4','Brazil',	17514476,	11935625,	9604830,	28275360);
 insert into platforms 
-values(5,'2019 Q4','Brazil',	15786280,	15911615,	11562060,	26211000);
+values(5,'2019 Q4','Brazil',	15786280,	15911615,	11562060,	32214398);

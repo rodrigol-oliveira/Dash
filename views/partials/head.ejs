@@ -7,21 +7,24 @@
 	<script type="text/javascript" src="/highcharts/exporting.js"></script>
 
 	<script>
+		
+		function filtro(){			
+			country = document.getElementById("country").value;
+			filtro1 = country.length > 0 ? "&country="  + country.trim() : "";
+				
+			window.location.href = this.origin +  "?filter=true" + filtro1;	
+			
+			
 
-		function filtro(){
-			
-			country = document.getElementById("country").value;
-			filtro1 = country.length > 0 ? "&country="  + country.trim() : "";
-			window.location.href = this.origin +  "?filter=true"+filtro1;			
 		}
-		function filtro2(){
-			
+
+		function filtro2(){			
 			country = document.getElementById("country").value;
-			filtro1 = country.length > 0 ? "&country="  + country.trim() : "";
+			filtro1 = country.length > 0 ? "&country=" + country.trim() : "";
 			genrer = document.getElementById("genrer").value;
-			filtro2 = genrer.length > 0 ? "&genrer="  + genrer.trim() : ""; 
-			filtro = filtro1+filtro2;
-			window.location.href = this.origin +  "?filter=true"+filtro;			
+			filtro2 = genrer.length > 0 ? "&genrer=" + genrer.trim() : ""; 
+			filtro = filtro1+filtro2;            
+			window.location.href = this.origin +  "?filter=true"+filtro;
 		}
 
 		function exportTableToExcel(tbResultado2, filename = ''){
