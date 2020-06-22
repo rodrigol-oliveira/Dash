@@ -1,8 +1,8 @@
 <select class="form-control navbar-default " id="country"  name="country" onchange="">
-  <option value="" selected>Choose your Country</option>
+  <option value="" >Choose your Country</option>
 <% if(paises){%>
 <% for(i = 0; i < paises.length; i ++) { %>					
-<option value=' <%- paises[i].country %> '><%- paises[i].country %></option>
+<option value=' <%- paises[i].country %> ' selected><%- paises[i].country %></option>
 <%}%>
 <%}%>
 </select>
