@@ -162,24 +162,5 @@ app.post('/import', function (req, res) {
 	  });
 });
 
-app.listen(3000);
-console.log('3000 is the magic port');
-
-// let paises = [
-// 	{ country: "Brasil" },
-// 	{ country: "Canada" },
-// 	{ country: "USA" }
-// ];
-
-// let quarters = [
-// 	{ Quarter_Year: "q32018", TotalQ: 84974784 },
-// 	{ Quarter_Year: "q32019", TotalQ: 84974784 },
-// 	{ Quarter_Year: "q32020", TotalQ: 84974784 }
-// ];
-
-// let listnetwork = [
-// 	{ network: "netflix", q1: 2828282, q2: 559859895, q3: 859598598 },
-// 	{ network: "claro", q1: 2828282, q2: 559859895, q3: 859598598 },
-// 	{ network: "hbo", q1: 2828282, q2: 559859895, q3: 859598598 },
-// 	{ network: "fox", q1: 2828282, q2: 559859895, q3: 859598598 }
-// ];
+app.listen(5001);
+console.log('5001 is the magic port');
