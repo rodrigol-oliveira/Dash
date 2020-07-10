@@ -7,9 +7,8 @@
             <thead>
                 <tr>
                     <th>Network</th>
-                    <% for(i = 1; i < Object.getOwnPropertyNames(listnetwork[0]).length; i ++) { %>
+                    <% for(i = 2; i < Object.getOwnPropertyNames(listnetwork[0]).length; i ++) { %>
                         <th> <%- Object.getOwnPropertyNames(listnetwork[0])[i] %> </th>
-
                     <%}%>									
                 </tr>
             </thead>		
@@ -18,7 +17,7 @@
                     <% for(i = 0; i < listnetwork.length; i ++) { %>
                     <tr>
                         <td><%- listnetwork[i].network %></td>
-                        <% for(j = 1; j < Object.getOwnPropertyNames(listnetwork[i]).length; j ++) { %>
+                        <% for(j = 2; j < Object.getOwnPropertyNames(listnetwork[i]).length; j ++) { %>
 
                         <td><%- listnetwork[i][Object.getOwnPropertyNames(listnetwork[i])[j]].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
                         <%}%>

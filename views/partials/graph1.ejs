@@ -98,7 +98,6 @@
                         <% for(j = 1; j < Object.getOwnPropertyNames(group[i]).length; j ++) { %>                            
                             <% if(quarters.length!=3){ %>
                             
-                       
                             <td><%- parseFloat(group[i][Object.getOwnPropertyNames(group[i])[j]] / quarters[j-1].TotalQ*100).toFixed(0) %>%</td>     
                         <%}%>
                         <%}%>

@@ -10,12 +10,8 @@
 		
 		function filtro(){			
 			country = document.getElementById("country").value;
-			filtro1 = country.length > 0 ? "&country="  + country.trim() : "";
-				
+			filtro1 = country.length > 0 ? "&country="  + country.trim() : "";	
 			window.location.href = this.origin +  "?filter=true" + filtro1;	
-			
-			
-
 		}
 
 		function filtro2(){			
