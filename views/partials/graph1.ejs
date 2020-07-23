@@ -10,7 +10,7 @@
                 
 
                 title: {
-                    text: ''
+                    text: 'SUBSCRIBERS'
                 },
                 <% if(quarters==false){ %>
                     subtitle: {
@@ -50,7 +50,7 @@
                     },                                          
                                                         
                         series: [{
-                        name: 'Subscribers',
+                        "showInLegend": false,
                         data: [
                         <% for(i = 0; i < quarters.length; i ++) { %>
 
@@ -108,7 +108,7 @@
         </table>
         
         <%if(pais == 'Brazil'){%>  
-            <%console.log(pais);%>
+            
             <div id="minhaDiv" class="notes" > Notes: For WarnerMedia Group, please consider Esporte Interativo Plus, HBO Go, Cartoon Network Ja 
                 / Globo Group: Combate Play, Globoplay, Philos TV, Premiere FC, Sexy Hot Play, Telecine Play 
                 / America Movil Group: Clarovideo 

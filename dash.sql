@@ -2,7 +2,7 @@ drop table svod;
 drop table platforms;
 
 CREATE TABLE `teste`.`svod` (
-  `id` BIGINT NOT NULL AUTO_INCREMENT,
+  `id` BIGINT NOT NULL,
   `Country` VARCHAR(50) NOT NULL,
   `Genre` VARCHAR(50) NOT NULL,
   `Group` VARCHAR(50) NOT NULL,
@@ -28,2345 +28,1181 @@ CREATE TABLE `teste`.`platforms` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Anguilla','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',1830);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Antigua and Barbuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',3420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','Latin America',17600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q1','Infant','Latin America',1680);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','Latin America',1170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',63830);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',11100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q1','Motors','Latin America',2700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q1','Football','Latin America',1050);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Disney Networks','SVOD and streaming service subscribers','Gol Fox Sports','2019 Q1','Football','Latin America',165000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',22730);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q1','Independent','Latin America',750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',2797140);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q1','Early Childhood','Latin America',13620);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q1','Generalist','Latin America',9665);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','Latin America',2090);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Alejandro Romay realtives','SVOD and streaming service subscribers','Teatrix','2019 Q1','Live Theater','Latin America',3560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','Latin America',1370);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q1','Fighting','Latin America',890);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','Latin America',7060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Aruba','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',10430);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bahamas','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bahamas','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',42630);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Barbados','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Barbados','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',32010);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Belize','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',8750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bermuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',8330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Sport','Club Bolivar','SVOD and streaming service subscribers','Bolivar TV','2019 Q1','Football Club TV','Latin America',2600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',720);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',230);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',206420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q1','Football','Latin America',10000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','Latin America',35210);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Documentary','Privately owned','SVOD and streaming service subscribers','Arte 1 Play','2019 Q1','Arts & Culture','Latin America',900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Grupo Bandeirantes','SVOD and streaming service subscribers','Band Sports Online','2019 Q1','Generalist','Latin America',4400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','WarnerMedia','SVOD and streaming service subscribers','Cartoon Network Ja','2019 Q1','Middle Childhood','Latin America',73040);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Music','Privately owned','SVOD and streaming service subscribers','Clap Me','2019 Q1','Live','Latin America',1200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',461900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Combate Play','2019 Q1','Fighting','Latin America',11480);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',251700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Discovery Networks','SVOD and streaming service subscribers','Discovery Kids On','2019 Q1','Early Childhood','Latin America',17260);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','ESPN Inc','SVOD and streaming service subscribers','ESPN Play Brasil','2019 Q1','Generalist','Latin America',31500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','WarnerMedia','SVOD and streaming service subscribers','Esporte Interativo Plus','2019 Q1','Football','Latin America',544400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q1','Motors','Latin America',4580);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q1','Football','Latin America',930);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q1','Generalist','Latin America',112500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Globo Group','SVOD and streaming service subscribers','Globoplay','2019 Q1','General','Latin America',257500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',200000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Privately owned','SVOD and streaming service subscribers','HiDive','2019 Q1','Anime','Latin America',4700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Indie Cines','2019 Q1','Independent','Latin America',500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Looke','2019 Q1','General','Latin America',221330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q1','Independent','Latin America',31800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',10144980);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Netmovies','2019 Q1','General','Latin America',26670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Privately owned','SVOD and streaming service subscribers','NFL Game Pass','2019 Q1','American Football','Latin America',15590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Oldflix','2019 Q1','Classic','Latin America',9330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Documentary','Globo Group','SVOD and streaming service subscribers','Philos TV','2019 Q1','Arts & Culture','Latin America',18460);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q1','Early Childhood','Latin America',37800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q1','Football','Latin America',570);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Premiere FC','2019 Q1','Football','Latin America',184030);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','Latin America',130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Sexy Hot Play','2019 Q1','Adult','Latin America',16220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Government owned','SVOD and streaming service subscribers','Spcine Play','2019 Q1','Independent','Latin America',1400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Telecine Play','2019 Q1','Generalist','Latin America',49670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Igreja Universal do Reino de Deus','SVOD and streaming service subscribers','Univer Video','2019 Q1','Generalist','Latin America',70000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Algar Group','SVOD and streaming service subscribers','Vidmais','2019 Q1','General','Latin America',72000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','Latin America',4590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','Latin America',155400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('British Virgin Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',3090);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Cayman Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',8120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','Latin America',12670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q1','Infant','Latin America',3600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','Latin America',1150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',78130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',15040);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','Turner Broadcasting System','SVOD and streaming service subscribers','Estadio CDF','2019 Q1','Football','Latin America',33700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q1','Football','Latin America',1490);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',9630);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',1179620);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q1','Early Childhood','Latin America',6670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q1','Generalist','Latin America',975);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','Latin America',250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','Latin America',910);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q1','Fighting','Latin America',1820);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','Latin America',11300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Generalist','Privately owned','SVOD and streaming service subscribers','Zapping TV','2019 Q1','Latin American','Latin America',2890);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','Latin America',21120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','Latin America',1300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Boonet','2019 Q1','Independent','Latin America',270);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',394900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',14660);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',45150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q1','Independent','Latin America',2570);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',2316770);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q1','Early Childhood','Latin America',11325);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Valorem','SVOD and streaming service subscribers','Play (Caracol)','2019 Q1','General','Latin America',137000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q1','Generalist','Latin America',1700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','Latin America',2090);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','Latin America',1020);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Sport','RCN / DirecTV Group','SVOD and streaming service subscribers','Win Sports Online','2019 Q1','Football','Latin America',111670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q1','Fighting','Latin America',990);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','Latin America',12715);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Privately owned','SVOD and streaming service subscribers','Zapping TV','2019 Q1','Latin American','Latin America',400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','Latin America',5700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',20820);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',2300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',730);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',300720);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Curaçao','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',16960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',5690);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',7330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',810);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',260);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',288820);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','Latin America',1280);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',33400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',3690);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2019 Q1','Football','Latin America',16670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',1180);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',661470);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q1','Football','Latin America',180);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','Latin America',250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','Latin America',500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',7300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',810);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',260);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',197510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Grenada','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',11310);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','Latin America',3520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','Latin America',1230);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',7060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',780);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',269590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guyana','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',24220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Haiti','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',9580);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',1180);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',40);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',91750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Jamaica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Jamaica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',107710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q1','British','Latin America',9500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Televisa Group','SVOD and streaming service subscribers','Afizzionados TV','2019 Q1','Football','Latin America',3300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','Latin America',464710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q1','Infant','Latin America',1200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','Latin America',148240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Privately owned','SVOD and streaming service subscribers','Chivas TV','2019 Q1','Football Club TV','Latin America',7200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Cinema UNO','2019 Q1','Independent','Latin America',6800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',2132030);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',86980);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q1','Motors','Latin America',3760);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Comunidad Filmin','SVOD and streaming service subscribers','Filmin','2019 Q1','Independent','Latin America',53330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox Premium App','2019 Q1','Generalist','Latin America',106300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q1','Generalist','Latin America',140900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','GCFlix','2019 Q1','Independent','Latin America',800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',32190);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q1','Independent','Latin America',23520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q1','Independent','Latin America',17800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',6535060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q1','Early Childhood','Latin America',36480);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q1','Generalist','Latin America',3160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','Latin America',1800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','Latin America',2650);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q1','Fighting','Latin America',2180);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','Latin America',28250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Montserrat','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',2660);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','Latin America',340);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',910);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',30);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',62790);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','Latin America',1350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',11570);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',1280);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',410);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',176820);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',5420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',190);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',118550);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q1','Generalist','Latin America',430);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q1','Football','Latin America',35560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','Latin America',6340);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Generalist','Grupo Plural TV','SVOD and streaming service subscribers','America tvGO','2019 Q1','General','Latin America',121670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','Latin America',3320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',37300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',6940);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',4400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',854690);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q1','Early Childhood','Latin America',3180);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','Latin America',250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','Latin America',1410);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q1','Fighting','Latin America',1580);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','Latin America',9890);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','Latin America',14080);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',1140);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',230050);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Saint Kitts and Nevis','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',5130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Saint Lucia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',11380);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Sint-Maarten','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',1240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('St Vincent and the Grenad.','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',7090);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Surinam','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',20810);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Trinidad and Tobago','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',450);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Trinidad and Tobago','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',120920);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Turks and Caicos Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',2050);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','Latin America',29500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','Latin America',3260);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','Latin America',1040);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',334740);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q1','Football','Latin America',1080);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','Latin America',2830);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Sport','Major League Baseball','SVOD and streaming service subscribers','MLB.TV','2019 Q1','Baseball','Latin America',76400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','Latin America',275640);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Anguilla','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',1820);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Antigua and Barbuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',3450);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q2','British','Latin America',5700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','Latin America',22250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q2','Infant','Latin America',1960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','Latin America',1150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',71300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',11410);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q2','Motors','Latin America',5010);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q2','Football','Latin America',1320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Disney Networks','SVOD and streaming service subscribers','Gol Fox Sports','2019 Q2','Football','Latin America',130000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',74240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q2','Independent','Latin America',750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',2854690);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q2','Early Childhood','Latin America',14330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q2','Generalist','Latin America',11275);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','Latin America',2030);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Alejandro Romay realtives','SVOD and streaming service subscribers','Teatrix','2019 Q2','Live Theater','Latin America',8460);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','Latin America',1290);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q2','Fighting','Latin America',860);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','Latin America',9790);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Aruba','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',10510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bahamas','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bahamas','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',42770);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Barbados','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',770);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Barbados','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',32150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Belize','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',9000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bermuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',8320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','Latin America',2220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Sport','Club Bolivar','SVOD and streaming service subscribers','Bolivar TV','2019 Q2','Football Club TV','Latin America',2420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',1040);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',218780);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q2','Telenovelas','Latin America',130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q2','Football','Latin America',15330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','Latin America',44490);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Documentary','Privately owned','SVOD and streaming service subscribers','Arte 1 Play','2019 Q2','Arts & Culture','Latin America',950);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Grupo Bandeirantes','SVOD and streaming service subscribers','Band Sports Online','2019 Q2','Generalist','Latin America',4800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','WarnerMedia','SVOD and streaming service subscribers','Cartoon Network Ja','2019 Q2','Middle Childhood','Latin America',97620);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Music','Privately owned','SVOD and streaming service subscribers','Clap Me','2019 Q2','Live','Latin America',900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',738100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Combate Play','2019 Q2','Fighting','Latin America',13430);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',249850);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Perform Group','SVOD and streaming service subscribers','Dazn','2019 Q2','Generalist','Latin America',68000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Discovery Networks','SVOD and streaming service subscribers','Discovery Kids On','2019 Q2','Early Childhood','Latin America',17160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','ESPN Inc','SVOD and streaming service subscribers','ESPN Play Brasil','2019 Q2','Generalist','Latin America',82330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','WarnerMedia','SVOD and streaming service subscribers','Esporte Interativo Plus','2019 Q2','Football','Latin America',637040);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q2','Motors','Latin America',8200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q2','Football','Latin America',1395);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q2','Generalist','Latin America',128580);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Globo Group','SVOD and streaming service subscribers','Globoplay','2019 Q2','General','Latin America',239800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',968180);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Privately owned','SVOD and streaming service subscribers','HiDive','2019 Q2','Anime','Latin America',3775);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Indie Cines','2019 Q2','Independent','Latin America',580);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Looke','2019 Q2','General','Latin America',220000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q2','Independent','Latin America',35340);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',10287720);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Netmovies','2019 Q2','General','Latin America',33330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Privately owned','SVOD and streaming service subscribers','NFL Game Pass','2019 Q2','American Football','Latin America',2850);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Oldflix','2019 Q2','Classic','Latin America',11460);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2019 Q2','Generalist','Latin America',500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Documentary','Globo Group','SVOD and streaming service subscribers','Philos TV','2019 Q2','Arts & Culture','Latin America',19720);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q2','Early Childhood','Latin America',24000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q2','Football','Latin America',575);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Premiere FC','2019 Q2','Football','Latin America',200280);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','Latin America',135);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Sexy Hot Play','2019 Q2','Adult','Latin America',31000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Government owned','SVOD and streaming service subscribers','Spcine Play','2019 Q2','Independent','Latin America',1450);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Telecine Play','2019 Q2','Generalist','Latin America',118540);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Igreja Universal do Reino de Deus','SVOD and streaming service subscribers','Univer Video','2019 Q2','Generalist','Latin America',136000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Algar Group','SVOD and streaming service subscribers','Vidmais','2019 Q2','General','Latin America',75000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','Latin America',4130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','Latin America',172250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('British Virgin Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',3110);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Cayman Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',8160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','Latin America',15570);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q2','Infant','Latin America',4200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','Latin America',1090);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',99930);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',15520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','Turner Broadcasting System','SVOD and streaming service subscribers','Estadio CDF','2019 Q2','Football','Latin America',40000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q2','Football','Latin America',1080);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',48060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',1224710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q2','Early Childhood','Latin America',7020);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q2','Generalist','Latin America',860);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','Latin America',255);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','Latin America',870);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q2','Fighting','Latin America',1030);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','Latin America',13770);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','Latin America',25950);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','Latin America',1070);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Boonet','2019 Q2','Independent','Latin America',320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',478100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',14460);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',193950);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q2','Independent','Latin America',2700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',2332040);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q2','Early Childhood','Latin America',11920);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Valorem','SVOD and streaming service subscribers','Play (Caracol)','2019 Q2','General','Latin America',102200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q2','Generalist','Latin America',1260);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','Latin America',2030);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','Latin America',970);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Sport','RCN / DirecTV Group','SVOD and streaming service subscribers','Win Sports Online','2019 Q2','Football','Latin America',155000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q2','Fighting','Latin America',1090);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','Latin America',15910);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Privately owned','SVOD and streaming service subscribers','Zapping TV','2019 Q2','Latin American','Latin America',400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','Latin America',6670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',26630);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',2270);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',3330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',304020);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Curaçao','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',19110);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',5720);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',9380);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',1170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',291420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','Latin America',1770);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',42710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',3640);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2019 Q2','Football','Latin America',49400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',5340);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',672130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q2','Football','Latin America',270);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','Latin America',230);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','Latin America',490);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',9330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',1170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',203430);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Grenada','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',11350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','Latin America',4450);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','Latin America',930);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',9030);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',770);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',1130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',276170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guyana','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',24310);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Haiti','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',9800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',1510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',190);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',97230);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Jamaica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Jamaica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',109590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q2','British','Latin America',11170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Televisa Group','SVOD and streaming service subscribers','Afizzionados TV','2019 Q2','Football','Latin America',3900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','Latin America',496830);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q2','Infant','Latin America',2100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','Latin America',112350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Privately owned','SVOD and streaming service subscribers','Chivas TV','2019 Q2','Football Club TV','Latin America',6900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Cinema UNO','2019 Q2','Independent','Latin America',6500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',2581040);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',83060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q2','Motors','Latin America',6830);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Comunidad Filmin','SVOD and streaming service subscribers','Filmin','2019 Q2','Independent','Latin America',52500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox Premium App','2019 Q2','Generalist','Latin America',88930);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q2','Generalist','Latin America',128000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','GCFlix','2019 Q2','Independent','Latin America',900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',117750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q2','Independent','Latin America',28650);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q2','Independent','Latin America',18100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',6642940);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q2','Early Childhood','Latin America',38400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q2','Telenovelas','Latin America',800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q2','Generalist','Latin America',2610);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','Latin America',1750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q2','Generalist','Latin America',190);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','Latin America',2650);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q2','Fighting','Latin America',3330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','Latin America',35180);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Montserrat','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',2690);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','Latin America',270);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',1160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',62930);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','Latin America',870);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',14800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',1260);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',1850);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',180440);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','Latin America',3710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',6930);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',870);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',123720);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q2','Generalist','Latin America',410);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q2','Football','Latin America',38720);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','Latin America',7420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Generalist','Grupo Plural TV','SVOD and streaming service subscribers','America tvGO','2019 Q2','General','Latin America',152000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','Latin America',1450);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',47700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',6850);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',9000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',791540);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q2','Early Childhood','Latin America',3350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q2','Telenovelas','Latin America',790);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','Latin America',230);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','Latin America',1330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q2','Fighting','Latin America',2250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','Latin America',12850);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','Latin America',18540);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',5160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',232560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Saint Kitts and Nevis','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',5100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Saint Lucia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',11360);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Sint-Maarten','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',1240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('St Vincent and the Grenad.','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',7130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Surinam','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',20880);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Trinidad and Tobago','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',2020);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Trinidad and Tobago','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',121300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Turks and Caicos Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',2060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','Latin America',37720);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','Latin America',3220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','Latin America',4710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',343970);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q2','Football','Latin America',1570);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q2','Generalist','Latin America',100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','Latin America',3980);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Sport','Major League Baseball','SVOD and streaming service subscribers','MLB.TV','2019 Q2','Baseball','Latin America',156800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','Latin America',270310);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q2','Telenovelas','Latin America',390);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Anguilla','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',1880);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Antigua and Barbuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',3610);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q3','British','Latin America',4250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',152130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q3','Infant','Latin America',1750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','Latin America',1000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',59150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',10110);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q3','Motors','Latin America',3240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q3','Football','Latin America',440);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2019 Q3','Generalist','Latin America',1010);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',32400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q3','Independent','Latin America',1300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',3005920);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q3','Early Childhood','Latin America',15050);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q3','Generalist','Latin America',12300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','Latin America',2000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','Latin America',3600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Alejandro Romay realtives','SVOD and streaming service subscribers','Teatrix','2019 Q3','Live Theater','Latin America',7860);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','Latin America',840);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q3','Fighting','Latin America',930);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','Latin America',14350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Aruba','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',10970);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bahamas','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',210);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bahamas','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',44270);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Barbados','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Barbados','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',33720);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Belize','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',9570);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bermuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',8580);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',9440);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Sport','Club Bolivar','SVOD and streaming service subscribers','Bolivar TV','2019 Q3','Football Club TV','Latin America',2700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',470);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',290);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',237700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q3','Telenovelas','Latin America',140);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q3','Football','Latin America',12000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',760670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Documentary','Privately owned','SVOD and streaming service subscribers','Arte 1 Play','2019 Q3','Arts & Culture','Latin America',980);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Grupo Bandeirantes','SVOD and streaming service subscribers','Band Sports Online','2019 Q3','Generalist','Latin America',6600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','WarnerMedia','SVOD and streaming service subscribers','Cartoon Network Ja','2019 Q3','Middle Childhood','Latin America',71620);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',660000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Combate Play','2019 Q3','Fighting','Latin America',12425);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',137480);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Perform Group','SVOD and streaming service subscribers','Dazn','2019 Q3','Generalist','Latin America',51440);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Discovery Networks','SVOD and streaming service subscribers','Discovery Kids On','2019 Q3','Early Childhood','Latin America',15960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','ESPN Inc','SVOD and streaming service subscribers','ESPN Play Brasil','2019 Q3','Generalist','Latin America',67670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','WarnerMedia','SVOD and streaming service subscribers','Esporte Interativo Plus','2019 Q3','Football','Latin America',302400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q3','Motors','Latin America',5380);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q3','Football','Latin America',760);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q3','Generalist','Latin America',85600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Privately owned','SVOD and streaming service subscribers','Funkids','2019 Q3','Early Childhood','Latin America',22000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Globo Group','SVOD and streaming service subscribers','Globoplay','2019 Q3','General','Latin America',269560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',243750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Privately owned','SVOD and streaming service subscribers','HiDive','2019 Q3','Anime','Latin America',3275);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Indie Cines','2019 Q3','Independent','Latin America',630);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Kocowa','2019 Q3','Asian Productions','Latin America',9310);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Looke','2019 Q3','General','Latin America',204630);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q3','Independent','Latin America',18830);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',10947780);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Netmovies','2019 Q3','General','Latin America',22730);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Privately owned','SVOD and streaming service subscribers','NFL Game Pass','2019 Q3','American Football','Latin America',2950);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Oldflix','2019 Q3','Classic','Latin America',10500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2019 Q3','Generalist','Latin America',11790);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Documentary','Globo Group','SVOD and streaming service subscribers','Philos TV','2019 Q3','Arts & Culture','Latin America',10240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q3','Early Childhood','Latin America',21905);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q3','Football','Latin America',825);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Premiere FC','2019 Q3','Football','Latin America',237640);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','Latin America',120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Sexy Hot Play','2019 Q3','Adult','Latin America',31000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Government owned','SVOD and streaming service subscribers','Spcine Play','2019 Q3','Independent','Latin America',1500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','Latin America',2400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Telecine Play','2019 Q3','Generalist','Latin America',83330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Igreja Universal do Reino de Deus','SVOD and streaming service subscribers','Univer Video','2019 Q3','Generalist','Latin America',115560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Algar Group','SVOD and streaming service subscribers','Vidmais','2019 Q3','General','Latin America',71000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','Latin America',2960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','Latin America',181790);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('British Virgin Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',3240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Cayman Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',8510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',76070);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q3','Infant','Latin America',3750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','Latin America',1140);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',100710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',14150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','Turner Broadcasting System','SVOD and streaming service subscribers','Estadio CDF','2019 Q3','Football','Latin America',28150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q3','Football','Latin America',700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',10200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',1274470);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q3','Early Childhood','Latin America',7370);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q3','Early Childhood','Latin America',2500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q3','Generalist','Latin America',390);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','Latin America',240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','Latin America',720);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','Latin America',600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q3','Fighting','Latin America',1350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','Latin America',16585);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',84520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','Latin America',1300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Boonet','2019 Q3','Independent','Latin America',370);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',541450);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',10920);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2019 Q3','Generalist','Latin America',440);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',66250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q3','Independent','Latin America',2900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',2435220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q3','Early Childhood','Latin America',12520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Valorem','SVOD and streaming service subscribers','Play (Caracol)','2019 Q3','General','Latin America',136400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q3','Generalist','Latin America',2160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','Latin America',2000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','Latin America',600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','Latin America',660);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Sport','RCN / DirecTV Group','SVOD and streaming service subscribers','Win Sports Online','2019 Q3','Football','Latin America',110000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q3','Fighting','Latin America',1730);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','Latin America',19140);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Privately owned','SVOD and streaming service subscribers','Zapping TV','2019 Q3','Latin American','Latin America',510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',14520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',22860);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',1500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',920);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',313530);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Curaçao','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',19930);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',5950);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',14520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',8050);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',530);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',305590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','Latin America',1200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',36670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',2400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2019 Q3','Football','Latin America',40150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',1520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',710890);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q3','Football','Latin America',260);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','Latin America',240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','Latin America',330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',8010);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',530);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',213670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Grenada','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',11800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',10890);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','Latin America',1110);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',7760);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',310);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',292520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guyana','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',25260);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Haiti','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',10140);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',1290);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',80);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',50);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',102710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Jamaica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',210);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Jamaica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',110190);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q3','British','Latin America',2000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Televisa Group','SVOD and streaming service subscribers','Afizzionados TV','2019 Q3','Football','Latin America',3700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',464530);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q3','Infant','Latin America',1875);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','Latin America',142480);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Privately owned','SVOD and streaming service subscribers','Chivas TV','2019 Q3','Football Club TV','Latin America',6500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Cinema UNO','2019 Q3','Independent','Latin America',6100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',2075710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',73800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q3','Motors','Latin America',4540);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Comunidad Filmin','SVOD and streaming service subscribers','Filmin','2019 Q3','Independent','Latin America',36670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox Premium App','2019 Q3','Generalist','Latin America',95770);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q3','Generalist','Latin America',156300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','GCFlix','2019 Q3','Independent','Latin America',830);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',34360);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q3','Independent','Latin America',10660);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q3','Independent','Latin America',16300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',6914880);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q3','Early Childhood','Latin America',40320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2019 Q3','Generalist','Latin America',20760);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q3','Early Childhood','Latin America',4200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q3','Telenovelas','Latin America',860);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q3','Generalist','Latin America',3140);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','Latin America',1730);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','Latin America',4800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','Latin America',1530);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q3','Fighting','Latin America',2055);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','Latin America',43060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Zee Entertainment Enterprises','SVOD and streaming service subscribers','Zee Mundo Play','2019 Q3','Indian Productions','Latin America',3220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Montserrat','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',2820);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','Latin America',320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',1000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',70);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',40);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',64790);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','Latin America',960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',12710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',830);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',196580);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',10890);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',5950);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',390);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',134600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q3','Generalist','Latin America',390);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q3','Football','Latin America',36150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q3','British','Latin America',1000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',38030);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Generalist','Grupo Plural TV','SVOD and streaming service subscribers','America tvGO','2019 Q3','General','Latin America',151330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','Latin America',1170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',59760);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',6470);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',5000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',812660);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q3','Early Childhood','Latin America',3520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q3','Early Childhood','Latin America',1500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q3','Telenovelas','Latin America',850);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','Latin America',240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','Latin America',240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','Latin America',970);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q3','Fighting','Latin America',2500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','Latin America',15950);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Zee Entertainment Enterprises','SVOD and streaming service subscribers','Zee Mundo Play','2019 Q3','Indian Productions','Latin America',3680);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',25400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',1420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',242170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Saint Kitts and Nevis','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',5250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Saint Lucia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',11740);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Sint-Maarten','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',1290);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('St Vincent and the Grenad.','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',7430);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Surinam','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',21690);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Trinidad and Tobago','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Trinidad and Tobago','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',126210);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Turks and Caicos Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',2140);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','Latin America',10160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','Latin America',32390);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','Latin America',2120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','Latin America',1300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Sport','Privately owned','SVOD and streaming service subscribers','Nacional TV','2019 Q3','Football Club TV','Latin America',1500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',359370);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q3','Football','Latin America',1350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','Latin America',600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','Latin America',5100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Sport','Major League Baseball','SVOD and streaming service subscribers','MLB.TV','2019 Q3','Baseball','Latin America',193850);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','Latin America',274340);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q3','Telenovelas','Latin America',390);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Anguilla','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',1930);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Antigua and Barbuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',3740);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q4','British','Latin America',3775);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',216160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q4','Infant','Latin America',1820);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','Latin America',1800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',75935);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',10510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Privately owned','SVOD and streaming service subscribers','Estudiantes de la Plata','2019 Q4','Football Club TV','Latin America',700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q4','Motors','Latin America',4000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q4','Football','Latin America',550);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2019 Q4','Generalist','Latin America',975);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',30080);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q4','Independent','Latin America',1400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',3142760);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q4','Early Childhood','Latin America',15450);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q4','Generalist','Latin America',9320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','Latin America',1060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Alejandro Romay realtives','SVOD and streaming service subscribers','Teatrix','2019 Q4','Live Theater','Latin America',5850);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','Latin America',740);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q4','Fighting','Latin America',840);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','Latin America',21200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Aruba','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',11370);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bahamas','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bahamas','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',45510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Barbados','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Barbados','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',35120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Belize','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',10100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bermuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',8800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',12320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Sport','Club Bolivar','SVOD and streaming service subscribers','Bolivar TV','2019 Q4','Football Club TV','Latin America',3000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',255890);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q4','Telenovelas','Latin America',160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q4','Football','Latin America',9670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',1080780);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Documentary','Privately owned','SVOD and streaming service subscribers','Arte 1 Play','2019 Q4','Arts & Culture','Latin America',1050);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Grupo Bandeirantes','SVOD and streaming service subscribers','Band Sports Online','2019 Q4','Generalist','Latin America',6520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','WarnerMedia','SVOD and streaming service subscribers','Cartoon Network Ja','2019 Q4','Middle Childhood','Latin America',91875);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',652380);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Combate Play','2019 Q4','Fighting','Latin America',13670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',142700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Perform Group','SVOD and streaming service subscribers','Dazn','2019 Q4','Generalist','Latin America',53330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Discovery Networks','SVOD and streaming service subscribers','Discovery Kids On','2019 Q4','Early Childhood','Latin America',19950);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','ESPN Inc','SVOD and streaming service subscribers','ESPN Play Brasil','2019 Q4','Generalist','Latin America',50000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','WarnerMedia','SVOD and streaming service subscribers','Esporte Interativo Plus','2019 Q4','Football','Latin America',395240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q4','Motors','Latin America',6640);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q4','Football','Latin America',680);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Privately owned','SVOD and streaming service subscribers','Funkids','2019 Q4','Early Childhood','Latin America',19500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Globo Group','SVOD and streaming service subscribers','Globoplay','2019 Q4','General','Latin America',284600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',226190);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Privately owned','SVOD and streaming service subscribers','HiDive','2019 Q4','Anime','Latin America',3170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Indie Cines','2019 Q4','Independent','Latin America',590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Kocowa','2019 Q4','Asian Productions','Latin America',11120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Looke','2019 Q4','General','Latin America',262500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q4','Independent','Latin America',19130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',11562060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Netmovies','2019 Q4','General','Latin America',20560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Privately owned','SVOD and streaming service subscribers','NFL Game Pass','2019 Q4','American Football','Latin America',7500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Oldflix','2019 Q4','Classic','Latin America',9800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2019 Q4','Generalist','Latin America',16310);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Documentary','Globo Group','SVOD and streaming service subscribers','Philos TV','2019 Q4','Arts & Culture','Latin America',8330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q4','Early Childhood','Latin America',18570);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q4','Football','Latin America',1010);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Premiere FC','2019 Q4','Football','Latin America',250000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Sexy Hot Play','2019 Q4','Adult','Latin America',20000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Government owned','SVOD and streaming service subscribers','Spcine Play','2019 Q4','Independent','Latin America',1400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','Latin America',3170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Telecine Play','2019 Q4','Generalist','Latin America',143810);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Igreja Universal do Reino de Deus','SVOD and streaming service subscribers','Univer Video','2019 Q4','Generalist','Latin America',121100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Algar Group','SVOD and streaming service subscribers','Vidmais','2019 Q4','General','Latin America',65000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','Latin America',2590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','Latin America',175130);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('British Virgin Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',3350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Cayman Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',8820);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',108080);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q4','Infant','Latin America',3900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','Latin America',1340);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',115885);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',14555);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','Turner Broadcasting System','SVOD and streaming service subscribers','Estadio CDF','2019 Q4','Football','Latin America',22220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q4','Football','Latin America',1510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',9900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',1317250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q4','Early Childhood','Latin America',7570);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q4','Early Childhood','Latin America',2350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q4','Generalist','Latin America',470);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','Latin America',530);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','Latin America',590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q4','Fighting','Latin America',1210);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','Latin America',17940);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',120090);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','Latin America',1480);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Boonet','2019 Q4','Independent','Latin America',400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',496400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',11120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2019 Q4','Generalist','Latin America',350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',23600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q4','Independent','Latin America',3300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',2525550);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q4','Early Childhood','Latin America',12850);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Valorem','SVOD and streaming service subscribers','Play (Caracol)','2019 Q4','General','Latin America',118000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q4','Generalist','Latin America',3770);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','Latin America',590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','Latin America',630);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Sport','RCN / DirecTV Group','SVOD and streaming service subscribers','Win Sports Online','2019 Q4','Football','Latin America',153330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q4','Fighting','Latin America',1550);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','Latin America',20220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Privately owned','SVOD and streaming service subscribers','Zapping TV','2019 Q4','Latin American','Latin America',510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',18960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',21960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',1620);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',760);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',321160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Curaçao','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',20660);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',6140);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',18960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',7490);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',570);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',270);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',318210);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','Latin America',1560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',33810);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',2360);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2019 Q4','Football','Latin America',46210);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',1270);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',746420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q4','Football','Latin America',325);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','Latin America',310);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',7740);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',570);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',270);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',222860);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Grenada','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',12170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',14220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','Latin America',1110);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',6970);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',550);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',260);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',307560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guyana','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',26070);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Haiti','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',10410);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',1430);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',90);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',40);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',144420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Jamaica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Jamaica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',109960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q4','British','Latin America',1760);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Televisa Group','SVOD and streaming service subscribers','Afizzionados TV','2019 Q4','Football','Latin America',4000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',600440);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q4','Infant','Latin America',1950);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','Latin America',162310);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Privately owned','SVOD and streaming service subscribers','Chivas TV','2019 Q4','Football Club TV','Latin America',6100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Cinema UNO','2019 Q4','Independent','Latin America',5500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',1842520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',73980);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q4','Motors','Latin America',5600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Comunidad Filmin','SVOD and streaming service subscribers','Filmin','2019 Q4','Independent','Latin America',35880);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','GCFlix','2019 Q4','Independent','Latin America',750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',31150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q4','Independent','Latin America',11330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q4','Independent','Latin America',15500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',7149080);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q4','Early Childhood','Latin America',41400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2019 Q4','Generalist','Latin America',18425);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q4','Early Childhood','Latin America',3900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q4','Telenovelas','Latin America',960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q4','Generalist','Latin America',5830);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','Latin America',2220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','Latin America',1200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q4','Fighting','Latin America',1850);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','Latin America',58700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Zee Entertainment Enterprises','SVOD and streaming service subscribers','Zee Mundo Play','2019 Q4','Indian Productions','Latin America',3640);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Montserrat','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',2920);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','Latin America',320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',1220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',30);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',66250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','Latin America',960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',12200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',870);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',212160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',14220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',5930);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',140720);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q4','Generalist','Latin America',380);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q4','Football','Latin America',38975);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q4','British','Latin America',850);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',54040);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Generalist','Grupo Plural TV','SVOD and streaming service subscribers','America tvGO','2019 Q4','General','Latin America',145000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','Latin America',4950);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',56670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',6870);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',8800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',828700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q4','Early Childhood','Latin America',3615);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q4','Early Childhood','Latin America',1350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q4','Telenovelas','Latin America',950);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','Latin America',350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','Latin America',1000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q4','Fighting','Latin America',2250);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','Latin America',16960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Zee Entertainment Enterprises','SVOD and streaming service subscribers','Zee Mundo Play','2019 Q4','Indian Productions','Latin America',4160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',33180);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',1180);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',250460);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Saint Kitts and Nevis','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',5380);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Saint Lucia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',12040);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Sint-Maarten','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',1330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('St Vincent and the Grenad.','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',7860);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Surinam','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',22380);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Trinidad and Tobago','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',460);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Trinidad and Tobago','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',130420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Turks and Caicos Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',2220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','Latin America',13270);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','Latin America',31020);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','Latin America',2240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','Latin America',1080);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Sport','Privately owned','SVOD and streaming service subscribers','Nacional TV','2019 Q4','Football Club TV','Latin America',1200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',372880);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q4','Football','Latin America',1920);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','Latin America',425);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','Latin America',5545);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Sport','Major League Baseball','SVOD and streaming service subscribers','MLB.TV','2019 Q4','Baseball','Latin America',48700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','Latin America',276470);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q4','Telenovelas','Latin America',470);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Anguilla','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',1930);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Antigua and Barbuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',4030);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2020 Q1','British','Latin America',3775);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',343940);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Generalist','Apple Inc.','SVOD and streaming service subscribers','Apple TV+','2020 Q1','North American','Latin America',14810);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Generalist','Atresmedia','SVOD and streaming service subscribers','Atresplayer Premium','2020 Q1','General','Latin America',4460);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2020 Q1','Infant','Latin America',1915);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','Latin America',1890);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',66700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',11900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Privately owned','SVOD and streaming service subscribers','Estudiantes de la Plata','2020 Q1','Football Club TV','Latin America',1200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2020 Q1','Motors','Latin America',2400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2020 Q1','Football','Latin America',740);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2020 Q1','Generalist','Latin America',650);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',40060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2020 Q1','Independent','Latin America',1500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',3367460);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2020 Q1','Early Childhood','Latin America',17760);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2020 Q1','Generalist','Latin America',12690);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','Latin America',4150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Alejandro Romay realtives','SVOD and streaming service subscribers','Teatrix','2020 Q1','Live Theater','Latin America',8520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','Latin America',850);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2020 Q1','Fighting','Latin America',675);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Argentina','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','Latin America',24120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Aruba','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',12270);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bahamas','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bahamas','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',49180);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Barbados','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Barbados','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',37580);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Belize','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',10910);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bermuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',9450);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',23150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Sport','Club Bolivar','SVOD and streaming service subscribers','Bolivar TV','2020 Q1','Football Club TV','Latin America',2200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',570);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',286660);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2020 Q1','Telenovelas','Latin America',160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Bolivia','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2020 Q1','Football','Latin America',13000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',1444560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Apple Inc.','SVOD and streaming service subscribers','Apple TV+','2020 Q1','North American','Latin America',64400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Documentary','Privately owned','SVOD and streaming service subscribers','Arte 1 Play','2020 Q1','Arts & Culture','Latin America',1150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2020 Q1','Infant','Latin America',4820);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Grupo Bandeirantes','SVOD and streaming service subscribers','Band Sports Online','2020 Q1','Generalist','Latin America',6860);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','WarnerMedia','SVOD and streaming service subscribers','Cartoon Network Ja','2020 Q1','Middle Childhood','Latin America',114000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',685715);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Combate Play','2020 Q1','Fighting','Latin America',7400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',145090);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Perform Group','SVOD and streaming service subscribers','Dazn','2020 Q1','Generalist','Latin America',45750);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Discovery Networks','SVOD and streaming service subscribers','Discovery Kids On','2020 Q1','Early Childhood','Latin America',21000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','ESPN Inc','SVOD and streaming service subscribers','ESPN Play Brasil','2020 Q1','Generalist','Latin America',50800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','WarnerMedia','SVOD and streaming service subscribers','Esporte Interativo Plus','2020 Q1','Football','Latin America',268500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2020 Q1','Motors','Latin America',4370);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2020 Q1','Football','Latin America',830);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Privately owned','SVOD and streaming service subscribers','Funkids','2020 Q1','Early Childhood','Latin America',18000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Globo Group','SVOD and streaming service subscribers','Globoplay','2020 Q1','General','Latin America',350670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',241670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Privately owned','SVOD and streaming service subscribers','HiDive','2020 Q1','Anime','Latin America',2160);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Indie Cines','2020 Q1','Independent','Latin America',590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Kocowa','2020 Q1','Asian Productions','Latin America',17880);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Looke','2020 Q1','General','Latin America',263000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2020 Q1','Independent','Latin America',23690);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',12988980);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Netmovies','2020 Q1','General','Latin America',25560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Privately owned','SVOD and streaming service subscribers','NFL Game Pass','2020 Q1','American Football','Latin America',500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2020 Q1','Early Childhood','Latin America',28000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Oldflix','2020 Q1','Classic','Latin America',11500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2020 Q1','Generalist','Latin America',21945);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Documentary','Globo Group','SVOD and streaming service subscribers','Philos TV','2020 Q1','Arts & Culture','Latin America',10670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2020 Q1','Early Childhood','Latin America',39050);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2020 Q1','Football','Latin America',715);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Premiere FC','2020 Q1','Football','Latin America',207000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Sexy Hot Play','2020 Q1','Adult','Latin America',25110);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Government owned','SVOD and streaming service subscribers','Spcine Play','2020 Q1','Independent','Latin America',1600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','Latin America',12460);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Telecine Play','2020 Q1','Generalist','Latin America',226000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Igreja Universal do Reino de Deus','SVOD and streaming service subscribers','Univer Video','2020 Q1','Generalist','Latin America',123300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Algar Group','SVOD and streaming service subscribers','Vidmais','2020 Q1','General','Latin America',58000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','Latin America',3110);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Brazil','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','Latin America',187600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('British Virgin Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',1710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Cayman Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',9510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2020 Q1','British','Latin America',1310);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',171970);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Generalist','Apple Inc.','SVOD and streaming service subscribers','Apple TV+','2020 Q1','North American','Latin America',16100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Generalist','Atresmedia','SVOD and streaming service subscribers','Atresplayer Premium','2020 Q1','General','Latin America',3960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2020 Q1','Infant','Latin America',4100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','Latin America',2150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',80910);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',16340);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','Turner Broadcasting System','SVOD and streaming service subscribers','Estadio CDF','2020 Q1','Football','Latin America',35500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2020 Q1','Motors','Latin America',1430);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2020 Q1','Football','Latin America',1630);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',26545);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',1422340);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2020 Q1','Early Childhood','Latin America',8960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2020 Q1','Early Childhood','Latin America',2600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2020 Q1','Generalist','Latin America',490);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','Latin America',2080);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','Latin America',590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2020 Q1','Fighting','Latin America',1560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Chile','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','Latin America',17940);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2020 Q1','British','Latin America',1560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',229300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Apple Inc.','SVOD and streaming service subscribers','Apple TV+','2020 Q1','North American','Latin America',17400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Atresmedia','SVOD and streaming service subscribers','Atresplayer Premium','2020 Q1','General','Latin America',4170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2020 Q1','Infant','Latin America',1500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','Latin America',1530);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Boonet','2020 Q1','Independent','Latin America',420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',358150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',12370);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2020 Q1','Motors','Latin America',500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2020 Q1','Generalist','Latin America',280);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',27015);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2020 Q1','Independent','Latin America',4630);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2020 Q1','Independent','Latin America',1560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',2754090);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2020 Q1','Early Childhood','Latin America',15360);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Valorem','SVOD and streaming service subscribers','Play (Caracol)','2020 Q1','General','Latin America',102300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2020 Q1','Generalist','Latin America',4920);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','Latin America',2310);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','Latin America',760);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Sport','RCN / DirecTV Group','SVOD and streaming service subscribers','Win Sports Online','2020 Q1','Football','Latin America',83300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2020 Q1','Fighting','Latin America',970);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','Latin America',21780);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Colombia','Generalist','Privately owned','SVOD and streaming service subscribers','Zapping TV','2020 Q1','Latin American','Latin America',510);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',33950);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',22590);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',1200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',650);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Costa Rica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',353260);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Curaçao','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',22290);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',3870);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',29320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',7710);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',530);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',290);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Dominican Republic','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',343030);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','Latin America',1650);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',34780);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',2330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2020 Q1','Football','Latin America',23650);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',1260);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',796580);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2020 Q1','Football','Latin America',295);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Ecuador','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','Latin America',380);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',7960);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',530);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',290);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('El Salvador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',237330);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Grenada','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',9070);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',21610);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','Latin America',1300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',7170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',540);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',290);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guatemala','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',329670);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Guyana','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',28120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Haiti','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',11720);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',1470);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',70);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',40);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Honduras','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',117610);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Jamaica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Jamaica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',125280);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2020 Q1','British','Latin America',2475);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Televisa Group','SVOD and streaming service subscribers','Afizzionados TV','2020 Q1','Football','Latin America',3200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',802530);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Generalist','Apple Inc.','SVOD and streaming service subscribers','Apple TV+','2020 Q1','North American','Latin America',38650);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Generalist','Atresmedia','SVOD and streaming service subscribers','Atresplayer Premium','2020 Q1','General','Latin America',7690);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2020 Q1','Infant','Latin America',2050);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','Latin America',213300);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Privately owned','SVOD and streaming service subscribers','Chivas TV','2020 Q1','Football Club TV','Latin America',9290);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Cinema UNO','2020 Q1','Independent','Latin America',5200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',2112360);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',79500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2020 Q1','Motors','Latin America',3500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Comunidad Filmin','SVOD and streaming service subscribers','Filmin','2020 Q1','Independent','Latin America',48700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','GCFlix','2020 Q1','Independent','Latin America',900);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',60920);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2020 Q1','Independent','Latin America',10560);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2020 Q1','Independent','Latin America',16800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',7698540);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2020 Q1','Early Childhood','Latin America',48400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2020 Q1','Generalist','Latin America',33800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2020 Q1','Early Childhood','Latin America',3600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2020 Q1','Telenovelas','Latin America',690);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2020 Q1','Generalist','Latin America',4925);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','Latin America',12120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','Latin America',1540);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2020 Q1','Fighting','Latin America',2830);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','Latin America',67000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Mexico','Movies and Fictions','Zee Entertainment Enterprises','SVOD and streaming service subscribers','Zee Mundo Play','2020 Q1','Indian Productions','Latin America',3500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Montserrat','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',3140);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','Latin America',320);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',1260);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',80);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',40);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Nicaragua','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',79980);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','Latin America',1180);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',12550);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',650);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',350);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Panama','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',213060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',26240);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',6100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',220);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',200);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',153930);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2020 Q1','Generalist','Latin America',390);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Paraguay','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2020 Q1','Football','Latin America',46155);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2020 Q1','British','Latin America',830);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',85990);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Generalist','Grupo Plural TV','SVOD and streaming service subscribers','America tvGO','2020 Q1','General','Latin America',159170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Generalist','Apple Inc.','SVOD and streaming service subscribers','Apple TV+','2020 Q1','North American','Latin America',7730);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Generalist','Atresmedia','SVOD and streaming service subscribers','Atresplayer Premium','2020 Q1','General','Latin America',3230);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','Latin America',2120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',91060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',8170);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',17520);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',926600);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2020 Q1','Early Childhood','Latin America',4400);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2020 Q1','Early Childhood','Latin America',1500);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2020 Q1','Telenovelas','Latin America',680);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','Latin America',1385);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','Latin America',1100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2020 Q1','Fighting','Latin America',1730);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','Latin America',18430);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Peru','Movies and Fictions','Zee Entertainment Enterprises','SVOD and streaming service subscribers','Zee Mundo Play','2020 Q1','Indian Productions','Latin America',4000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',57100);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','Walt Disney Company Limited','SVOD and streaming service subscribers','Disney+','2020 Q1','Generalist','Latin America',100040);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',530);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Puerto Rico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',267420);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Saint Kitts and Nevis','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',5800);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Saint Lucia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',12990);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Sint-Maarten','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',1440);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('St Vincent and the Grenad.','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',8280);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Surinam','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',24120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Trinidad and Tobago','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',540);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Trinidad and Tobago','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',141090);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Turks and Caicos Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',2390);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','Latin America',23150);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','Latin America',31910);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','Latin America',2060);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','Latin America',1120);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Sport','Privately owned','SVOD and streaming service subscribers','Nacional TV','2020 Q1','Football Club TV','Latin America',1000);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',398580);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2020 Q1','Football','Latin America',1390);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','Latin America',1660);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Uruguay','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','Latin America',7050);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Sport','Major League Baseball','SVOD and streaming service subscribers','MLB.TV','2020 Q1','Baseball','Latin America',22090);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','Latin America',297700);
-insert into svod (  `Country` ,`Genre` ,`Group` ,`Kpi_client`,`Network`,`Quarter_Year`,`SubGenre`,`Zone`,`Export_data`) 
-values ('Venezuela','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2020 Q1','Telenovelas','Latin America',340);
-
+insert into svod values (1,'Anguilla','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',1930);
+insert into svod values (2,'Anguilla','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',1880);
+insert into svod values (3,'Anguilla','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',1820);
+insert into svod values (4,'Anguilla','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',1830);
+insert into svod values (5,'Anguilla','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',1930);
+insert into svod values (6,'Antigua and Barbuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',3740);
+insert into svod values (7,'Antigua and Barbuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',3610);
+insert into svod values (8,'Antigua and Barbuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',3450);
+insert into svod values (9,'Antigua and Barbuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',3420);
+insert into svod values (10,'Antigua and Barbuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',4030);
+insert into svod values (11,'Argentina','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',3142760);
+insert into svod values (12,'Argentina','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',3005920);
+insert into svod values (13,'Argentina','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',2854690);
+insert into svod values (14,'Argentina','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',2797140);
+insert into svod values (15,'Argentina','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',3367460);
+insert into svod values (16,'Argentina','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',216160);
+insert into svod values (17,'Argentina','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',152130);
+insert into svod values (18,'Argentina','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','World',22250);
+insert into svod values (19,'Argentina','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','World',17600);
+insert into svod values (20,'Argentina','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',343940);
+insert into svod values (21,'Argentina','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',75935);
+insert into svod values (22,'Argentina','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',59150);
+insert into svod values (23,'Argentina','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',71300);
+insert into svod values (24,'Argentina','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',63830);
+insert into svod values (25,'Argentina','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',66700);
+insert into svod values (26,'Argentina','Sport','Disney Networks','SVOD and streaming service subscribers','Gol Fox Sports','2019 Q2','Football','World',130000);
+insert into svod values (27,'Argentina','Sport','Disney Networks','SVOD and streaming service subscribers','Gol Fox Sports','2019 Q1','Football','World',165000);
+insert into svod values (28,'Argentina','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',30080);
+insert into svod values (29,'Argentina','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',32400);
+insert into svod values (30,'Argentina','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',74240);
+insert into svod values (31,'Argentina','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',22730);
+insert into svod values (32,'Argentina','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',40060);
+insert into svod values (33,'Argentina','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','World',21200);
+insert into svod values (34,'Argentina','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','World',14350);
+insert into svod values (35,'Argentina','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','World',9790);
+insert into svod values (36,'Argentina','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','World',7060);
+insert into svod values (37,'Argentina','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','World',24120);
+insert into svod values (38,'Argentina','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q4','Early Childhood','World',15450);
+insert into svod values (39,'Argentina','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q3','Early Childhood','World',15050);
+insert into svod values (40,'Argentina','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q2','Early Childhood','World',14330);
+insert into svod values (41,'Argentina','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q1','Early Childhood','World',13620);
+insert into svod values (42,'Argentina','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2020 Q1','Early Childhood','World',17760);
+insert into svod values (43,'Argentina','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q4','Generalist','World',9320);
+insert into svod values (44,'Argentina','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q3','Generalist','World',12300);
+insert into svod values (45,'Argentina','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q2','Generalist','World',11275);
+insert into svod values (46,'Argentina','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q1','Generalist','World',9665);
+insert into svod values (47,'Argentina','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2020 Q1','Generalist','World',12690);
+insert into svod values (48,'Argentina','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',10510);
+insert into svod values (49,'Argentina','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',10110);
+insert into svod values (50,'Argentina','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',11410);
+insert into svod values (51,'Argentina','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',11100);
+insert into svod values (52,'Argentina','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',11900);
+insert into svod values (53,'Argentina','Movies and Fictions','Alejandro Romay realtives','SVOD and streaming service subscribers','Teatrix','2019 Q4','Live Theater','World',5850);
+insert into svod values (54,'Argentina','Movies and Fictions','Alejandro Romay realtives','SVOD and streaming service subscribers','Teatrix','2019 Q3','Live Theater','World',7860);
+insert into svod values (55,'Argentina','Movies and Fictions','Alejandro Romay realtives','SVOD and streaming service subscribers','Teatrix','2019 Q2','Live Theater','World',8460);
+insert into svod values (56,'Argentina','Movies and Fictions','Alejandro Romay realtives','SVOD and streaming service subscribers','Teatrix','2019 Q1','Live Theater','World',3560);
+insert into svod values (57,'Argentina','Movies and Fictions','Alejandro Romay realtives','SVOD and streaming service subscribers','Teatrix','2020 Q1','Live Theater','World',8520);
+insert into svod values (58,'Argentina','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q4','British','World',3775);
+insert into svod values (59,'Argentina','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q3','British','World',4250);
+insert into svod values (60,'Argentina','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q2','British','World',5700);
+insert into svod values (61,'Argentina','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2020 Q1','British','World',3775);
+insert into svod values (62,'Argentina','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q4','Motors','World',4000);
+insert into svod values (63,'Argentina','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q3','Motors','World',3240);
+insert into svod values (64,'Argentina','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q2','Motors','World',5010);
+insert into svod values (65,'Argentina','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q1','Motors','World',2700);
+insert into svod values (66,'Argentina','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2020 Q1','Motors','World',2400);
+insert into svod values (67,'Argentina','Generalist','Apple Inc.','SVOD and streaming service subscribers','Apple TV+','2020 Q1','North American','World',14810);
+insert into svod values (68,'Argentina','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q4','Infant','World',1820);
+insert into svod values (69,'Argentina','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q3','Infant','World',1750);
+insert into svod values (70,'Argentina','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q2','Infant','World',1960);
+insert into svod values (71,'Argentina','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q1','Infant','World',1680);
+insert into svod values (72,'Argentina','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2020 Q1','Infant','World',1915);
+insert into svod values (73,'Argentina','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','World',1060);
+insert into svod values (74,'Argentina','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','World',3600);
+insert into svod values (75,'Argentina','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','World',4150);
+insert into svod values (76,'Argentina','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','World',1800);
+insert into svod values (77,'Argentina','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','World',1000);
+insert into svod values (78,'Argentina','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','World',1150);
+insert into svod values (79,'Argentina','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','World',1170);
+insert into svod values (80,'Argentina','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','World',1890);
+insert into svod values (81,'Argentina','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','World',2000);
+insert into svod values (82,'Argentina','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','World',2030);
+insert into svod values (83,'Argentina','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','World',2090);
+insert into svod values (84,'Argentina','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q4','Independent','World',1400);
+insert into svod values (85,'Argentina','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q3','Independent','World',1300);
+insert into svod values (86,'Argentina','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q2','Independent','World',750);
+insert into svod values (87,'Argentina','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q1','Independent','World',750);
+insert into svod values (88,'Argentina','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2020 Q1','Independent','World',1500);
+insert into svod values (89,'Argentina','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','World',740);
+insert into svod values (90,'Argentina','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','World',840);
+insert into svod values (91,'Argentina','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','World',1290);
+insert into svod values (92,'Argentina','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','World',1370);
+insert into svod values (93,'Argentina','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','World',850);
+insert into svod values (94,'Argentina','Generalist','Atresmedia','SVOD and streaming service subscribers','Atresplayer Premium','2020 Q1','General','World',4460);
+insert into svod values (95,'Argentina','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q4','Fighting','World',840);
+insert into svod values (96,'Argentina','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q3','Fighting','World',930);
+insert into svod values (97,'Argentina','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q2','Fighting','World',860);
+insert into svod values (98,'Argentina','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q1','Fighting','World',890);
+insert into svod values (99,'Argentina','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2020 Q1','Fighting','World',675);
+insert into svod values (100,'Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q4','Football','World',550);
+insert into svod values (101,'Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q3','Football','World',440);
+insert into svod values (102,'Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q2','Football','World',1320);
+insert into svod values (103,'Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q1','Football','World',1050);
+insert into svod values (104,'Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2020 Q1','Football','World',740);
+insert into svod values (105,'Argentina','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2019 Q4','Generalist','World',975);
+insert into svod values (106,'Argentina','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2019 Q3','Generalist','World',1010);
+insert into svod values (107,'Argentina','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2020 Q1','Generalist','World',650);
+insert into svod values (108,'Argentina','Sport','Privately owned','SVOD and streaming service subscribers','Estudiantes de la Plata','2019 Q4','Football Club TV','World',700);
+insert into svod values (109,'Argentina','Sport','Privately owned','SVOD and streaming service subscribers','Estudiantes de la Plata','2020 Q1','Football Club TV','World',1200);
+insert into svod values (110,'Aruba','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',11370);
+insert into svod values (111,'Aruba','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',10970);
+insert into svod values (112,'Aruba','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',10510);
+insert into svod values (113,'Aruba','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',10430);
+insert into svod values (114,'Aruba','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',12270);
+insert into svod values (115,'Bahamas','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',45510);
+insert into svod values (116,'Bahamas','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',44270);
+insert into svod values (117,'Bahamas','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',42770);
+insert into svod values (118,'Bahamas','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',42630);
+insert into svod values (119,'Bahamas','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',49180);
+insert into svod values (120,'Bahamas','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',170);
+insert into svod values (121,'Bahamas','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',210);
+insert into svod values (122,'Bahamas','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',750);
+insert into svod values (123,'Bahamas','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',170);
+insert into svod values (124,'Bahamas','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',150);
+insert into svod values (125,'Barbados','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',35120);
+insert into svod values (126,'Barbados','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',33720);
+insert into svod values (127,'Barbados','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',32150);
+insert into svod values (128,'Barbados','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',32010);
+insert into svod values (129,'Barbados','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',37580);
+insert into svod values (130,'Barbados','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',120);
+insert into svod values (131,'Barbados','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',150);
+insert into svod values (132,'Barbados','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',770);
+insert into svod values (133,'Barbados','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',170);
+insert into svod values (134,'Barbados','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',150);
+insert into svod values (135,'Belize','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',10100);
+insert into svod values (136,'Belize','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',9570);
+insert into svod values (137,'Belize','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',9000);
+insert into svod values (138,'Belize','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',8750);
+insert into svod values (139,'Belize','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',10910);
+insert into svod values (140,'Bermuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',8800);
+insert into svod values (141,'Bermuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',8580);
+insert into svod values (142,'Bermuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',8320);
+insert into svod values (143,'Bermuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',8330);
+insert into svod values (144,'Bermuda','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',9450);
+insert into svod values (145,'Bolivia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',255890);
+insert into svod values (146,'Bolivia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',237700);
+insert into svod values (147,'Bolivia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',218780);
+insert into svod values (148,'Bolivia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',206420);
+insert into svod values (149,'Bolivia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',286660);
+insert into svod values (150,'Bolivia','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q4','Football','World',9670);
+insert into svod values (151,'Bolivia','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q3','Football','World',12000);
+insert into svod values (152,'Bolivia','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q2','Football','World',15330);
+insert into svod values (153,'Bolivia','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q1','Football','World',10000);
+insert into svod values (154,'Bolivia','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2020 Q1','Football','World',13000);
+insert into svod values (155,'Bolivia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',12320);
+insert into svod values (156,'Bolivia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',9440);
+insert into svod values (157,'Bolivia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','World',2220);
+insert into svod values (158,'Bolivia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',23150);
+insert into svod values (159,'Bolivia','Sport','Club Bolivar','SVOD and streaming service subscribers','Bolivar TV','2019 Q4','Football Club TV','World',3000);
+insert into svod values (160,'Bolivia','Sport','Club Bolivar','SVOD and streaming service subscribers','Bolivar TV','2019 Q3','Football Club TV','World',2700);
+insert into svod values (161,'Bolivia','Sport','Club Bolivar','SVOD and streaming service subscribers','Bolivar TV','2019 Q2','Football Club TV','World',2420);
+insert into svod values (162,'Bolivia','Sport','Club Bolivar','SVOD and streaming service subscribers','Bolivar TV','2019 Q1','Football Club TV','World',2600);
+insert into svod values (163,'Bolivia','Sport','Club Bolivar','SVOD and streaming service subscribers','Bolivar TV','2020 Q1','Football Club TV','World',2200);
+insert into svod values (164,'Bolivia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',500);
+insert into svod values (165,'Bolivia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',470);
+insert into svod values (166,'Bolivia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',710);
+insert into svod values (167,'Bolivia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',720);
+insert into svod values (168,'Bolivia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',570);
+insert into svod values (169,'Bolivia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',240);
+insert into svod values (170,'Bolivia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',290);
+insert into svod values (171,'Bolivia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',1040);
+insert into svod values (172,'Bolivia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',230);
+insert into svod values (173,'Bolivia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',330);
+insert into svod values (174,'Bolivia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q4','Telenovelas','World',160);
+insert into svod values (175,'Bolivia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q3','Telenovelas','World',140);
+insert into svod values (176,'Bolivia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q2','Telenovelas','World',130);
+insert into svod values (177,'Bolivia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2020 Q1','Telenovelas','World',160);
+insert into svod values (178,'Brazil','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',11562060);
+insert into svod values (179,'Brazil','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',10947780);
+insert into svod values (180,'Brazil','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',10287720);
+insert into svod values (181,'Brazil','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',10144980);
+insert into svod values (182,'Brazil','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',12988980);
+insert into svod values (183,'Brazil','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',1080780);
+insert into svod values (184,'Brazil','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',760670);
+insert into svod values (185,'Brazil','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','World',44490);
+insert into svod values (186,'Brazil','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','World',35210);
+insert into svod values (187,'Brazil','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',1444560);
+insert into svod values (188,'Brazil','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',652380);
+insert into svod values (189,'Brazil','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',660000);
+insert into svod values (190,'Brazil','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',738100);
+insert into svod values (191,'Brazil','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',461900);
+insert into svod values (192,'Brazil','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',685715);
+insert into svod values (193,'Brazil','Sport','WarnerMedia','SVOD and streaming service subscribers','Esporte Interativo Plus','2019 Q4','Football','World',395240);
+insert into svod values (194,'Brazil','Sport','WarnerMedia','SVOD and streaming service subscribers','Esporte Interativo Plus','2019 Q3','Football','World',302400);
+insert into svod values (195,'Brazil','Sport','WarnerMedia','SVOD and streaming service subscribers','Esporte Interativo Plus','2019 Q2','Football','World',637040);
+insert into svod values (196,'Brazil','Sport','WarnerMedia','SVOD and streaming service subscribers','Esporte Interativo Plus','2019 Q1','Football','World',544400);
+insert into svod values (197,'Brazil','Sport','WarnerMedia','SVOD and streaming service subscribers','Esporte Interativo Plus','2020 Q1','Football','World',268500);
+insert into svod values (198,'Brazil','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',226190);
+insert into svod values (199,'Brazil','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',243750);
+insert into svod values (200,'Brazil','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',968180);
+insert into svod values (201,'Brazil','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',200000);
+insert into svod values (202,'Brazil','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',241670);
+insert into svod values (203,'Brazil','Generalist','Globo Group','SVOD and streaming service subscribers','Globoplay','2019 Q4','General','World',284600);
+insert into svod values (204,'Brazil','Generalist','Globo Group','SVOD and streaming service subscribers','Globoplay','2019 Q3','General','World',269560);
+insert into svod values (205,'Brazil','Generalist','Globo Group','SVOD and streaming service subscribers','Globoplay','2019 Q2','General','World',239800);
+insert into svod values (206,'Brazil','Generalist','Globo Group','SVOD and streaming service subscribers','Globoplay','2019 Q1','General','World',257500);
+insert into svod values (207,'Brazil','Generalist','Globo Group','SVOD and streaming service subscribers','Globoplay','2020 Q1','General','World',350670);
+insert into svod values (208,'Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Looke','2019 Q4','General','World',262500);
+insert into svod values (209,'Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Looke','2019 Q3','General','World',204630);
+insert into svod values (210,'Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Looke','2019 Q2','General','World',220000);
+insert into svod values (211,'Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Looke','2019 Q1','General','World',221330);
+insert into svod values (212,'Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Looke','2020 Q1','General','World',263000);
+insert into svod values (213,'Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Premiere FC','2019 Q4','Football','World',250000);
+insert into svod values (214,'Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Premiere FC','2019 Q3','Football','World',237640);
+insert into svod values (215,'Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Premiere FC','2019 Q2','Football','World',200280);
+insert into svod values (216,'Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Premiere FC','2019 Q1','Football','World',184030);
+insert into svod values (217,'Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Premiere FC','2020 Q1','Football','World',207000);
+insert into svod values (218,'Brazil','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',142700);
+insert into svod values (219,'Brazil','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',137480);
+insert into svod values (220,'Brazil','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',249850);
+insert into svod values (221,'Brazil','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',251700);
+insert into svod values (222,'Brazil','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',145090);
+insert into svod values (223,'Brazil','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','World',175130);
+insert into svod values (224,'Brazil','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','World',181790);
+insert into svod values (225,'Brazil','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','World',172250);
+insert into svod values (226,'Brazil','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','World',155400);
+insert into svod values (227,'Brazil','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','World',187600);
+insert into svod values (228,'Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Telecine Play','2019 Q4','Generalist','World',143810);
+insert into svod values (229,'Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Telecine Play','2019 Q3','Generalist','World',83330);
+insert into svod values (230,'Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Telecine Play','2019 Q2','Generalist','World',118540);
+insert into svod values (231,'Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Telecine Play','2019 Q1','Generalist','World',49670);
+insert into svod values (232,'Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Telecine Play','2020 Q1','Generalist','World',226000);
+insert into svod values (233,'Brazil','Movies and Fictions','Igreja Universal do Reino de Deus','SVOD and streaming service subscribers','Univer Video','2019 Q4','Generalist','World',121100);
+insert into svod values (234,'Brazil','Movies and Fictions','Igreja Universal do Reino de Deus','SVOD and streaming service subscribers','Univer Video','2019 Q3','Generalist','World',115560);
+insert into svod values (235,'Brazil','Movies and Fictions','Igreja Universal do Reino de Deus','SVOD and streaming service subscribers','Univer Video','2019 Q2','Generalist','World',136000);
+insert into svod values (236,'Brazil','Movies and Fictions','Igreja Universal do Reino de Deus','SVOD and streaming service subscribers','Univer Video','2019 Q1','Generalist','World',70000);
+insert into svod values (237,'Brazil','Movies and Fictions','Igreja Universal do Reino de Deus','SVOD and streaming service subscribers','Univer Video','2020 Q1','Generalist','World',123300);
+insert into svod values (238,'Brazil','Kids','WarnerMedia','SVOD and streaming service subscribers','Cartoon Network Ja','2019 Q4','Middle Childhood','World',91875);
+insert into svod values (239,'Brazil','Kids','WarnerMedia','SVOD and streaming service subscribers','Cartoon Network Ja','2019 Q3','Middle Childhood','World',71620);
+insert into svod values (240,'Brazil','Kids','WarnerMedia','SVOD and streaming service subscribers','Cartoon Network Ja','2019 Q2','Middle Childhood','World',97620);
+insert into svod values (241,'Brazil','Kids','WarnerMedia','SVOD and streaming service subscribers','Cartoon Network Ja','2019 Q1','Middle Childhood','World',73040);
+insert into svod values (242,'Brazil','Kids','WarnerMedia','SVOD and streaming service subscribers','Cartoon Network Ja','2020 Q1','Middle Childhood','World',114000);
+insert into svod values (243,'Brazil','Generalist','Algar Group','SVOD and streaming service subscribers','Vidmais','2019 Q4','General','World',65000);
+insert into svod values (244,'Brazil','Generalist','Algar Group','SVOD and streaming service subscribers','Vidmais','2019 Q3','General','World',71000);
+insert into svod values (245,'Brazil','Generalist','Algar Group','SVOD and streaming service subscribers','Vidmais','2019 Q2','General','World',75000);
+insert into svod values (246,'Brazil','Generalist','Algar Group','SVOD and streaming service subscribers','Vidmais','2019 Q1','General','World',72000);
+insert into svod values (247,'Brazil','Generalist','Algar Group','SVOD and streaming service subscribers','Vidmais','2020 Q1','General','World',58000);
+insert into svod values (248,'Brazil','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q3','Generalist','World',85600);
+insert into svod values (249,'Brazil','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q2','Generalist','World',128580);
+insert into svod values (250,'Brazil','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q1','Generalist','World',112500);
+insert into svod values (251,'Brazil','Sport','ESPN Inc','SVOD and streaming service subscribers','ESPN Play Brasil','2019 Q4','Generalist','World',50000);
+insert into svod values (252,'Brazil','Sport','ESPN Inc','SVOD and streaming service subscribers','ESPN Play Brasil','2019 Q3','Generalist','World',67670);
+insert into svod values (253,'Brazil','Sport','ESPN Inc','SVOD and streaming service subscribers','ESPN Play Brasil','2019 Q2','Generalist','World',82330);
+insert into svod values (254,'Brazil','Sport','ESPN Inc','SVOD and streaming service subscribers','ESPN Play Brasil','2019 Q1','Generalist','World',31500);
+insert into svod values (255,'Brazil','Sport','ESPN Inc','SVOD and streaming service subscribers','ESPN Play Brasil','2020 Q1','Generalist','World',50800);
+insert into svod values (256,'Brazil','Sport','Perform Group','SVOD and streaming service subscribers','Dazn','2019 Q4','Generalist','World',53330);
+insert into svod values (257,'Brazil','Sport','Perform Group','SVOD and streaming service subscribers','Dazn','2019 Q3','Generalist','World',51440);
+insert into svod values (258,'Brazil','Sport','Perform Group','SVOD and streaming service subscribers','Dazn','2019 Q2','Generalist','World',68000);
+insert into svod values (259,'Brazil','Sport','Perform Group','SVOD and streaming service subscribers','Dazn','2020 Q1','Generalist','World',45750);
+insert into svod values (260,'Brazil','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q4','Early Childhood','World',18570);
+insert into svod values (261,'Brazil','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q3','Early Childhood','World',21905);
+insert into svod values (262,'Brazil','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q2','Early Childhood','World',24000);
+insert into svod values (263,'Brazil','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q1','Early Childhood','World',37800);
+insert into svod values (264,'Brazil','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2020 Q1','Early Childhood','World',39050);
+insert into svod values (265,'Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Netmovies','2019 Q4','General','World',20560);
+insert into svod values (266,'Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Netmovies','2019 Q3','General','World',22730);
+insert into svod values (267,'Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Netmovies','2019 Q2','General','World',33330);
+insert into svod values (268,'Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Netmovies','2019 Q1','General','World',26670);
+insert into svod values (269,'Brazil','Generalist','Encripta','SVOD and streaming service subscribers','Netmovies','2020 Q1','General','World',25560);
+insert into svod values (270,'Brazil','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q4','Independent','World',19130);
+insert into svod values (271,'Brazil','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q3','Independent','World',18830);
+insert into svod values (272,'Brazil','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q2','Independent','World',35340);
+insert into svod values (273,'Brazil','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q1','Independent','World',31800);
+insert into svod values (274,'Brazil','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2020 Q1','Independent','World',23690);
+insert into svod values (275,'Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Sexy Hot Play','2019 Q4','Adult','World',20000);
+insert into svod values (276,'Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Sexy Hot Play','2019 Q3','Adult','World',31000);
+insert into svod values (277,'Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Sexy Hot Play','2019 Q2','Adult','World',31000);
+insert into svod values (278,'Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Sexy Hot Play','2019 Q1','Adult','World',16220);
+insert into svod values (279,'Brazil','Movies and Fictions','Globo Group','SVOD and streaming service subscribers','Sexy Hot Play','2020 Q1','Adult','World',25110);
+insert into svod values (280,'Brazil','Kids','Discovery Networks','SVOD and streaming service subscribers','Discovery Kids On','2019 Q4','Early Childhood','World',19950);
+insert into svod values (281,'Brazil','Kids','Discovery Networks','SVOD and streaming service subscribers','Discovery Kids On','2019 Q3','Early Childhood','World',15960);
+insert into svod values (282,'Brazil','Kids','Discovery Networks','SVOD and streaming service subscribers','Discovery Kids On','2019 Q2','Early Childhood','World',17160);
+insert into svod values (283,'Brazil','Kids','Discovery Networks','SVOD and streaming service subscribers','Discovery Kids On','2019 Q1','Early Childhood','World',17260);
+insert into svod values (284,'Brazil','Kids','Discovery Networks','SVOD and streaming service subscribers','Discovery Kids On','2020 Q1','Early Childhood','World',21000);
+insert into svod values (285,'Brazil','Documentary','Globo Group','SVOD and streaming service subscribers','Philos TV','2019 Q4','Arts & Culture','World',8330);
+insert into svod values (286,'Brazil','Documentary','Globo Group','SVOD and streaming service subscribers','Philos TV','2019 Q3','Arts & Culture','World',10240);
+insert into svod values (287,'Brazil','Documentary','Globo Group','SVOD and streaming service subscribers','Philos TV','2019 Q2','Arts & Culture','World',19720);
+insert into svod values (288,'Brazil','Documentary','Globo Group','SVOD and streaming service subscribers','Philos TV','2019 Q1','Arts & Culture','World',18460);
+insert into svod values (289,'Brazil','Documentary','Globo Group','SVOD and streaming service subscribers','Philos TV','2020 Q1','Arts & Culture','World',10670);
+insert into svod values (290,'Brazil','Generalist','Apple Inc.','SVOD and streaming service subscribers','Apple TV+','2020 Q1','North American','World',64400);
+insert into svod values (291,'Brazil','Kids','Privately owned','SVOD and streaming service subscribers','Funkids','2019 Q4','Early Childhood','World',19500);
+insert into svod values (292,'Brazil','Kids','Privately owned','SVOD and streaming service subscribers','Funkids','2019 Q3','Early Childhood','World',22000);
+insert into svod values (293,'Brazil','Kids','Privately owned','SVOD and streaming service subscribers','Funkids','2020 Q1','Early Childhood','World',18000);
+insert into svod values (294,'Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Combate Play','2019 Q4','Fighting','World',13670);
+insert into svod values (295,'Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Combate Play','2019 Q3','Fighting','World',12425);
+insert into svod values (296,'Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Combate Play','2019 Q2','Fighting','World',13430);
+insert into svod values (297,'Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Combate Play','2019 Q1','Fighting','World',11480);
+insert into svod values (298,'Brazil','Sport','Globo Group','SVOD and streaming service subscribers','Combate Play','2020 Q1','Fighting','World',7400);
+insert into svod values (299,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Oldflix','2019 Q4','Classic','World',9800);
+insert into svod values (300,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Oldflix','2019 Q3','Classic','World',10500);
+insert into svod values (301,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Oldflix','2019 Q2','Classic','World',11460);
+insert into svod values (302,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Oldflix','2019 Q1','Classic','World',9330);
+insert into svod values (303,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Oldflix','2020 Q1','Classic','World',11500);
+insert into svod values (304,'Brazil','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2019 Q4','Generalist','World',16310);
+insert into svod values (305,'Brazil','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2019 Q3','Generalist','World',11790);
+insert into svod values (306,'Brazil','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2019 Q2','Generalist','World',500);
+insert into svod values (307,'Brazil','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2020 Q1','Generalist','World',21945);
+insert into svod values (308,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Kocowa','2019 Q4','Asian Productions','World',11120);
+insert into svod values (309,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Kocowa','2019 Q3','Asian Productions','World',9310);
+insert into svod values (310,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Kocowa','2020 Q1','Asian Productions','World',17880);
+insert into svod values (311,'Brazil','Generalist','Fish TV','SVOD and streaming service subscribers','Fish TV','2019 Q4','Generalist','World',6640);
+insert into svod values (312,'Brazil','Generalist','Fish TV','SVOD and streaming service subscribers','Fish TV','2019 Q3','Generalist','World',5200);
+insert into svod values (313,'Brazil','Generalist','Fish TV','SVOD and streaming service subscribers','Fish TV','2019 Q2','Generalist','World',8190);
+insert into svod values (314,'Brazil','Generalist','Fish TV','SVOD and streaming service subscribers','Fish TV','2019 Q1','Generalist','World',4900);
+insert into svod values (315,'Brazil','Generalist','Fish TV','SVOD and streaming service subscribers','Fish TV','2020 Q1','Generalist','World',5080);
+insert into svod values (316,'Brazil','Sport','Privately owned','SVOD and streaming service subscribers','NFL Game Pass','2019 Q4','American Football','World',7500);
+insert into svod values (317,'Brazil','Sport','Privately owned','SVOD and streaming service subscribers','NFL Game Pass','2019 Q3','American Football','World',2950);
+insert into svod values (318,'Brazil','Sport','Privately owned','SVOD and streaming service subscribers','NFL Game Pass','2019 Q2','American Football','World',2850);
+insert into svod values (319,'Brazil','Sport','Privately owned','SVOD and streaming service subscribers','NFL Game Pass','2019 Q1','American Football','World',15590);
+insert into svod values (320,'Brazil','Sport','Privately owned','SVOD and streaming service subscribers','NFL Game Pass','2020 Q1','American Football','World',500);
+insert into svod values (321,'Brazil','Sport','Grupo Bandeirantes','SVOD and streaming service subscribers','Band Sports Online','2019 Q4','Generalist','World',6520);
+insert into svod values (322,'Brazil','Sport','Grupo Bandeirantes','SVOD and streaming service subscribers','Band Sports Online','2019 Q3','Generalist','World',6600);
+insert into svod values (323,'Brazil','Sport','Grupo Bandeirantes','SVOD and streaming service subscribers','Band Sports Online','2019 Q2','Generalist','World',4800);
+insert into svod values (324,'Brazil','Sport','Grupo Bandeirantes','SVOD and streaming service subscribers','Band Sports Online','2019 Q1','Generalist','World',4400);
+insert into svod values (325,'Brazil','Sport','Grupo Bandeirantes','SVOD and streaming service subscribers','Band Sports Online','2020 Q1','Generalist','World',6860);
+insert into svod values (326,'Brazil','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q4','Motors','World',6640);
+insert into svod values (327,'Brazil','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q3','Motors','World',5380);
+insert into svod values (328,'Brazil','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q2','Motors','World',8200);
+insert into svod values (329,'Brazil','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q1','Motors','World',4580);
+insert into svod values (330,'Brazil','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2020 Q1','Motors','World',4370);
+insert into svod values (331,'Brazil','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2020 Q1','Early Childhood','World',28000);
+insert into svod values (332,'Brazil','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','World',3170);
+insert into svod values (333,'Brazil','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','World',2400);
+insert into svod values (334,'Brazil','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','World',12460);
+insert into svod values (335,'Brazil','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','World',2590);
+insert into svod values (336,'Brazil','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','World',2960);
+insert into svod values (337,'Brazil','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','World',4130);
+insert into svod values (338,'Brazil','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','World',4590);
+insert into svod values (339,'Brazil','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','World',3110);
+insert into svod values (340,'Brazil','Kids','Privately owned','SVOD and streaming service subscribers','HiDive','2019 Q4','Anime','World',3170);
+insert into svod values (341,'Brazil','Kids','Privately owned','SVOD and streaming service subscribers','HiDive','2019 Q3','Anime','World',3275);
+insert into svod values (342,'Brazil','Kids','Privately owned','SVOD and streaming service subscribers','HiDive','2019 Q2','Anime','World',3775);
+insert into svod values (343,'Brazil','Kids','Privately owned','SVOD and streaming service subscribers','HiDive','2019 Q1','Anime','World',4700);
+insert into svod values (344,'Brazil','Kids','Privately owned','SVOD and streaming service subscribers','HiDive','2020 Q1','Anime','World',2160);
+insert into svod values (345,'Brazil','Movies and Fictions','Government owned','SVOD and streaming service subscribers','Spcine Play','2019 Q4','Independent','World',1400);
+insert into svod values (346,'Brazil','Movies and Fictions','Government owned','SVOD and streaming service subscribers','Spcine Play','2019 Q3','Independent','World',1500);
+insert into svod values (347,'Brazil','Movies and Fictions','Government owned','SVOD and streaming service subscribers','Spcine Play','2019 Q2','Independent','World',1450);
+insert into svod values (348,'Brazil','Movies and Fictions','Government owned','SVOD and streaming service subscribers','Spcine Play','2019 Q1','Independent','World',1400);
+insert into svod values (349,'Brazil','Movies and Fictions','Government owned','SVOD and streaming service subscribers','Spcine Play','2020 Q1','Independent','World',1600);
+insert into svod values (350,'Brazil','Documentary','Privately owned','SVOD and streaming service subscribers','Arte 1 Play','2019 Q4','Arts & Culture','World',1050);
+insert into svod values (351,'Brazil','Documentary','Privately owned','SVOD and streaming service subscribers','Arte 1 Play','2019 Q3','Arts & Culture','World',980);
+insert into svod values (352,'Brazil','Documentary','Privately owned','SVOD and streaming service subscribers','Arte 1 Play','2019 Q2','Arts & Culture','World',950);
+insert into svod values (353,'Brazil','Documentary','Privately owned','SVOD and streaming service subscribers','Arte 1 Play','2019 Q1','Arts & Culture','World',900);
+insert into svod values (354,'Brazil','Documentary','Privately owned','SVOD and streaming service subscribers','Arte 1 Play','2020 Q1','Arts & Culture','World',1150);
+insert into svod values (355,'Brazil','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2020 Q1','Infant','World',4820);
+insert into svod values (356,'Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q4','Football','World',680);
+insert into svod values (357,'Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q3','Football','World',760);
+insert into svod values (358,'Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q2','Football','World',1395);
+insert into svod values (359,'Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q1','Football','World',930);
+insert into svod values (360,'Brazil','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2020 Q1','Football','World',830);
+insert into svod values (361,'Brazil','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q4','Football','World',1010);
+insert into svod values (362,'Brazil','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q3','Football','World',825);
+insert into svod values (363,'Brazil','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q2','Football','World',575);
+insert into svod values (364,'Brazil','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q1','Football','World',570);
+insert into svod values (365,'Brazil','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2020 Q1','Football','World',715);
+insert into svod values (366,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Indie Cines','2019 Q4','Independent','World',590);
+insert into svod values (367,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Indie Cines','2019 Q3','Independent','World',630);
+insert into svod values (368,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Indie Cines','2019 Q2','Independent','World',580);
+insert into svod values (369,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Indie Cines','2019 Q1','Independent','World',500);
+insert into svod values (370,'Brazil','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Indie Cines','2020 Q1','Independent','World',590);
+insert into svod values (371,'Brazil','Music','Privately owned','SVOD and streaming service subscribers','Clap Me','2019 Q2','Live','World',900);
+insert into svod values (372,'Brazil','Music','Privately owned','SVOD and streaming service subscribers','Clap Me','2019 Q1','Live','World',1200);
+insert into svod values (373,'Brazil','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','World',120);
+insert into svod values (374,'Brazil','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','World',135);
+insert into svod values (375,'Brazil','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','World',130);
+insert into svod values (376,'British Virgin Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',3350);
+insert into svod values (377,'British Virgin Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',3240);
+insert into svod values (378,'British Virgin Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',3110);
+insert into svod values (379,'British Virgin Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',3090);
+insert into svod values (380,'British Virgin Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',1710);
+insert into svod values (381,'Cayman Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',8820);
+insert into svod values (382,'Cayman Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',8510);
+insert into svod values (383,'Cayman Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',8160);
+insert into svod values (384,'Cayman Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',8120);
+insert into svod values (385,'Cayman Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',9510);
+insert into svod values (386,'Chile','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',1317250);
+insert into svod values (387,'Chile','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',1274470);
+insert into svod values (388,'Chile','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',1224710);
+insert into svod values (389,'Chile','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',1179620);
+insert into svod values (390,'Chile','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',1422340);
+insert into svod values (391,'Chile','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',115885);
+insert into svod values (392,'Chile','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',100710);
+insert into svod values (393,'Chile','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',99930);
+insert into svod values (394,'Chile','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',78130);
+insert into svod values (395,'Chile','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',80910);
+insert into svod values (396,'Chile','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',108080);
+insert into svod values (397,'Chile','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',76070);
+insert into svod values (398,'Chile','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','World',15570);
+insert into svod values (399,'Chile','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','World',12670);
+insert into svod values (400,'Chile','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',171970);
+insert into svod values (401,'Chile','Sport','Turner Broadcasting System','SVOD and streaming service subscribers','Estadio CDF','2019 Q4','Football','World',22220);
+insert into svod values (402,'Chile','Sport','Turner Broadcasting System','SVOD and streaming service subscribers','Estadio CDF','2019 Q3','Football','World',28150);
+insert into svod values (403,'Chile','Sport','Turner Broadcasting System','SVOD and streaming service subscribers','Estadio CDF','2019 Q2','Football','World',40000);
+insert into svod values (404,'Chile','Sport','Turner Broadcasting System','SVOD and streaming service subscribers','Estadio CDF','2019 Q1','Football','World',33700);
+insert into svod values (405,'Chile','Sport','Turner Broadcasting System','SVOD and streaming service subscribers','Estadio CDF','2020 Q1','Football','World',35500);
+insert into svod values (406,'Chile','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',9900);
+insert into svod values (407,'Chile','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',10200);
+insert into svod values (408,'Chile','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',48060);
+insert into svod values (409,'Chile','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',9630);
+insert into svod values (410,'Chile','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',26545);
+insert into svod values (411,'Chile','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','World',17940);
+insert into svod values (412,'Chile','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','World',16585);
+insert into svod values (413,'Chile','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','World',13770);
+insert into svod values (414,'Chile','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','World',11300);
+insert into svod values (415,'Chile','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','World',17940);
+insert into svod values (416,'Chile','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',14555);
+insert into svod values (417,'Chile','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',14150);
+insert into svod values (418,'Chile','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',15520);
+insert into svod values (419,'Chile','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',15040);
+insert into svod values (420,'Chile','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',16340);
+insert into svod values (421,'Chile','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q4','Early Childhood','World',7570);
+insert into svod values (422,'Chile','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q3','Early Childhood','World',7370);
+insert into svod values (423,'Chile','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q2','Early Childhood','World',7020);
+insert into svod values (424,'Chile','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q1','Early Childhood','World',6670);
+insert into svod values (425,'Chile','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2020 Q1','Early Childhood','World',8960);
+insert into svod values (426,'Chile','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q4','Infant','World',3900);
+insert into svod values (427,'Chile','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q3','Infant','World',3750);
+insert into svod values (428,'Chile','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q2','Infant','World',4200);
+insert into svod values (429,'Chile','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q1','Infant','World',3600);
+insert into svod values (430,'Chile','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2020 Q1','Infant','World',4100);
+insert into svod values (431,'Chile','Generalist','Apple Inc.','SVOD and streaming service subscribers','Apple TV+','2020 Q1','North American','World',16100);
+insert into svod values (432,'Chile','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q4','Early Childhood','World',2350);
+insert into svod values (433,'Chile','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q3','Early Childhood','World',2500);
+insert into svod values (434,'Chile','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2020 Q1','Early Childhood','World',2600);
+insert into svod values (435,'Chile','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q4','Fighting','World',1210);
+insert into svod values (436,'Chile','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q3','Fighting','World',1350);
+insert into svod values (437,'Chile','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q2','Fighting','World',1030);
+insert into svod values (438,'Chile','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q1','Fighting','World',1820);
+insert into svod values (439,'Chile','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2020 Q1','Fighting','World',1560);
+insert into svod values (440,'Chile','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','World',1340);
+insert into svod values (441,'Chile','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','World',1140);
+insert into svod values (442,'Chile','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','World',1090);
+insert into svod values (443,'Chile','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','World',1150);
+insert into svod values (444,'Chile','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','World',2150);
+insert into svod values (445,'Chile','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q4','Football','World',1510);
+insert into svod values (446,'Chile','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q3','Football','World',700);
+insert into svod values (447,'Chile','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q2','Football','World',1080);
+insert into svod values (448,'Chile','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q1','Football','World',1490);
+insert into svod values (449,'Chile','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2020 Q1','Football','World',1630);
+insert into svod values (450,'Chile','Generalist','Atresmedia','SVOD and streaming service subscribers','Atresplayer Premium','2020 Q1','General','World',3960);
+insert into svod values (451,'Chile','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','World',590);
+insert into svod values (452,'Chile','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','World',600);
+insert into svod values (453,'Chile','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','World',870);
+insert into svod values (454,'Chile','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','World',910);
+insert into svod values (455,'Chile','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','World',590);
+insert into svod values (456,'Chile','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','World',530);
+insert into svod values (457,'Chile','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','World',720);
+insert into svod values (458,'Chile','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','World',2080);
+insert into svod values (459,'Chile','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q4','Generalist','World',470);
+insert into svod values (460,'Chile','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q3','Generalist','World',390);
+insert into svod values (461,'Chile','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q2','Generalist','World',860);
+insert into svod values (462,'Chile','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q1','Generalist','World',975);
+insert into svod values (463,'Chile','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2020 Q1','Generalist','World',490);
+insert into svod values (464,'Chile','Generalist','Privately owned','SVOD and streaming service subscribers','Zapping TV','2019 Q1','Latin American','World',2890);
+insert into svod values (465,'Chile','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2020 Q1','Motors','World',1430);
+insert into svod values (466,'Chile','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2020 Q1','British','World',1310);
+insert into svod values (467,'Chile','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','World',240);
+insert into svod values (468,'Chile','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','World',255);
+insert into svod values (469,'Chile','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','World',250);
+insert into svod values (470,'Colombia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',2525550);
+insert into svod values (471,'Colombia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',2435220);
+insert into svod values (472,'Colombia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',2332040);
+insert into svod values (473,'Colombia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',2316770);
+insert into svod values (474,'Colombia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',2754090);
+insert into svod values (475,'Colombia','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',496400);
+insert into svod values (476,'Colombia','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',541450);
+insert into svod values (477,'Colombia','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',478100);
+insert into svod values (478,'Colombia','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',394900);
+insert into svod values (479,'Colombia','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',358150);
+insert into svod values (480,'Colombia','Sport','RCN / DirecTV Group','SVOD and streaming service subscribers','Win Sports Online','2019 Q4','Football','World',153330);
+insert into svod values (481,'Colombia','Sport','RCN / DirecTV Group','SVOD and streaming service subscribers','Win Sports Online','2019 Q3','Football','World',110000);
+insert into svod values (482,'Colombia','Sport','RCN / DirecTV Group','SVOD and streaming service subscribers','Win Sports Online','2019 Q2','Football','World',155000);
+insert into svod values (483,'Colombia','Sport','RCN / DirecTV Group','SVOD and streaming service subscribers','Win Sports Online','2019 Q1','Football','World',111670);
+insert into svod values (484,'Colombia','Sport','RCN / DirecTV Group','SVOD and streaming service subscribers','Win Sports Online','2020 Q1','Football','World',83300);
+insert into svod values (485,'Colombia','Generalist','Valorem','SVOD and streaming service subscribers','Play (Caracol)','2019 Q4','General','World',118000);
+insert into svod values (486,'Colombia','Generalist','Valorem','SVOD and streaming service subscribers','Play (Caracol)','2019 Q3','General','World',136400);
+insert into svod values (487,'Colombia','Generalist','Valorem','SVOD and streaming service subscribers','Play (Caracol)','2019 Q2','General','World',102200);
+insert into svod values (488,'Colombia','Generalist','Valorem','SVOD and streaming service subscribers','Play (Caracol)','2019 Q1','General','World',137000);
+insert into svod values (489,'Colombia','Generalist','Valorem','SVOD and streaming service subscribers','Play (Caracol)','2020 Q1','General','World',102300);
+insert into svod values (490,'Colombia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',120090);
+insert into svod values (491,'Colombia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',84520);
+insert into svod values (492,'Colombia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','World',25950);
+insert into svod values (493,'Colombia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','World',21120);
+insert into svod values (494,'Colombia','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',229300);
+insert into svod values (495,'Colombia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',23600);
+insert into svod values (496,'Colombia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',66250);
+insert into svod values (497,'Colombia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',193950);
+insert into svod values (498,'Colombia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',45150);
+insert into svod values (499,'Colombia','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',27015);
+insert into svod values (500,'Colombia','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','World',20220);
+insert into svod values (501,'Colombia','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','World',19140);
+insert into svod values (502,'Colombia','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','World',15910);
+insert into svod values (503,'Colombia','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','World',12715);
+insert into svod values (504,'Colombia','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','World',21780);
+insert into svod values (505,'Colombia','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q4','Early Childhood','World',12850);
+insert into svod values (506,'Colombia','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q3','Early Childhood','World',12520);
+insert into svod values (507,'Colombia','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q2','Early Childhood','World',11920);
+insert into svod values (508,'Colombia','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q1','Early Childhood','World',11325);
+insert into svod values (509,'Colombia','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2020 Q1','Early Childhood','World',15360);
+insert into svod values (510,'Colombia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',11120);
+insert into svod values (511,'Colombia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',10920);
+insert into svod values (512,'Colombia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',14460);
+insert into svod values (513,'Colombia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',14660);
+insert into svod values (514,'Colombia','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',12370);
+insert into svod values (515,'Colombia','Generalist','Apple Inc.','SVOD and streaming service subscribers','Apple TV+','2020 Q1','North American','World',17400);
+insert into svod values (516,'Colombia','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q4','Independent','World',3300);
+insert into svod values (517,'Colombia','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q3','Independent','World',2900);
+insert into svod values (518,'Colombia','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q2','Independent','World',2700);
+insert into svod values (519,'Colombia','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q1','Independent','World',2570);
+insert into svod values (520,'Colombia','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2020 Q1','Independent','World',4630);
+insert into svod values (521,'Colombia','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q4','Generalist','World',3770);
+insert into svod values (522,'Colombia','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q3','Generalist','World',2160);
+insert into svod values (523,'Colombia','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q2','Generalist','World',1260);
+insert into svod values (524,'Colombia','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q1','Generalist','World',1700);
+insert into svod values (525,'Colombia','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2020 Q1','Generalist','World',4920);
+insert into svod values (526,'Colombia','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','World',1480);
+insert into svod values (527,'Colombia','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','World',1300);
+insert into svod values (528,'Colombia','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','World',1070);
+insert into svod values (529,'Colombia','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','World',1300);
+insert into svod values (530,'Colombia','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','World',1530);
+insert into svod values (531,'Colombia','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q4','Fighting','World',1550);
+insert into svod values (532,'Colombia','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q3','Fighting','World',1730);
+insert into svod values (533,'Colombia','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q2','Fighting','World',1090);
+insert into svod values (534,'Colombia','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q1','Fighting','World',990);
+insert into svod values (535,'Colombia','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2020 Q1','Fighting','World',970);
+insert into svod values (536,'Colombia','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','World',2000);
+insert into svod values (537,'Colombia','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','World',2030);
+insert into svod values (538,'Colombia','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','World',2090);
+insert into svod values (539,'Colombia','Generalist','Atresmedia','SVOD and streaming service subscribers','Atresplayer Premium','2020 Q1','General','World',4170);
+insert into svod values (540,'Colombia','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','World',630);
+insert into svod values (541,'Colombia','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','World',660);
+insert into svod values (542,'Colombia','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','World',970);
+insert into svod values (543,'Colombia','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','World',1020);
+insert into svod values (544,'Colombia','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','World',760);
+insert into svod values (545,'Colombia','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','World',590);
+insert into svod values (546,'Colombia','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','World',600);
+insert into svod values (547,'Colombia','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','World',2310);
+insert into svod values (548,'Colombia','Generalist','Privately owned','SVOD and streaming service subscribers','Zapping TV','2019 Q4','Latin American','World',510);
+insert into svod values (549,'Colombia','Generalist','Privately owned','SVOD and streaming service subscribers','Zapping TV','2019 Q3','Latin American','World',510);
+insert into svod values (550,'Colombia','Generalist','Privately owned','SVOD and streaming service subscribers','Zapping TV','2019 Q2','Latin American','World',400);
+insert into svod values (551,'Colombia','Generalist','Privately owned','SVOD and streaming service subscribers','Zapping TV','2019 Q1','Latin American','World',400);
+insert into svod values (552,'Colombia','Generalist','Privately owned','SVOD and streaming service subscribers','Zapping TV','2020 Q1','Latin American','World',510);
+insert into svod values (553,'Colombia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Boonet','2019 Q4','Independent','World',400);
+insert into svod values (554,'Colombia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Boonet','2019 Q3','Independent','World',370);
+insert into svod values (555,'Colombia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Boonet','2019 Q2','Independent','World',320);
+insert into svod values (556,'Colombia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Boonet','2019 Q1','Independent','World',270);
+insert into svod values (557,'Colombia','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Boonet','2020 Q1','Independent','World',420);
+insert into svod values (558,'Colombia','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2020 Q1','Independent','World',1560);
+insert into svod values (559,'Colombia','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2020 Q1','British','World',1560);
+insert into svod values (560,'Colombia','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2020 Q1','Infant','World',1500);
+insert into svod values (561,'Colombia','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2019 Q4','Generalist','World',350);
+insert into svod values (562,'Colombia','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2019 Q3','Generalist','World',440);
+insert into svod values (563,'Colombia','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2020 Q1','Generalist','World',280);
+insert into svod values (564,'Colombia','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2020 Q1','Motors','World',500);
+insert into svod values (565,'Costa Rica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',321160);
+insert into svod values (566,'Costa Rica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',313530);
+insert into svod values (567,'Costa Rica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',304020);
+insert into svod values (568,'Costa Rica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',300720);
+insert into svod values (569,'Costa Rica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',353260);
+insert into svod values (570,'Costa Rica','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',21960);
+insert into svod values (571,'Costa Rica','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',22860);
+insert into svod values (572,'Costa Rica','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',26630);
+insert into svod values (573,'Costa Rica','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',20820);
+insert into svod values (574,'Costa Rica','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',22590);
+insert into svod values (575,'Costa Rica','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',18960);
+insert into svod values (576,'Costa Rica','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',14520);
+insert into svod values (577,'Costa Rica','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','World',6670);
+insert into svod values (578,'Costa Rica','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','World',5700);
+insert into svod values (579,'Costa Rica','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',33950);
+insert into svod values (580,'Costa Rica','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',1620);
+insert into svod values (581,'Costa Rica','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',1500);
+insert into svod values (582,'Costa Rica','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',2270);
+insert into svod values (583,'Costa Rica','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',2300);
+insert into svod values (584,'Costa Rica','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',1200);
+insert into svod values (585,'Costa Rica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',760);
+insert into svod values (586,'Costa Rica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',920);
+insert into svod values (587,'Costa Rica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',3330);
+insert into svod values (588,'Costa Rica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',730);
+insert into svod values (589,'Costa Rica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',650);
+insert into svod values (590,'Curaçao','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',20660);
+insert into svod values (591,'Curaçao','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',19930);
+insert into svod values (592,'Curaçao','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',19110);
+insert into svod values (593,'Curaçao','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',16960);
+insert into svod values (594,'Curaçao','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',22290);
+insert into svod values (595,'Dominica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',6140);
+insert into svod values (596,'Dominica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',5950);
+insert into svod values (597,'Dominica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',5720);
+insert into svod values (598,'Dominica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',5690);
+insert into svod values (599,'Dominica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',3870);
+insert into svod values (600,'Dominican Republic','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',318210);
+insert into svod values (601,'Dominican Republic','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',305590);
+insert into svod values (602,'Dominican Republic','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',291420);
+insert into svod values (603,'Dominican Republic','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',288820);
+insert into svod values (604,'Dominican Republic','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',343030);
+insert into svod values (605,'Dominican Republic','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',18960);
+insert into svod values (606,'Dominican Republic','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',14520);
+insert into svod values (607,'Dominican Republic','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',29320);
+insert into svod values (608,'Dominican Republic','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',7490);
+insert into svod values (609,'Dominican Republic','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',8050);
+insert into svod values (610,'Dominican Republic','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',9380);
+insert into svod values (611,'Dominican Republic','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',7330);
+insert into svod values (612,'Dominican Republic','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',7710);
+insert into svod values (613,'Dominican Republic','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',570);
+insert into svod values (614,'Dominican Republic','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',530);
+insert into svod values (615,'Dominican Republic','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',800);
+insert into svod values (616,'Dominican Republic','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',810);
+insert into svod values (617,'Dominican Republic','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',530);
+insert into svod values (618,'Dominican Republic','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',270);
+insert into svod values (619,'Dominican Republic','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',320);
+insert into svod values (620,'Dominican Republic','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',1170);
+insert into svod values (621,'Dominican Republic','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',260);
+insert into svod values (622,'Dominican Republic','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',290);
+insert into svod values (623,'Ecuador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',746420);
+insert into svod values (624,'Ecuador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',710890);
+insert into svod values (625,'Ecuador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',672130);
+insert into svod values (626,'Ecuador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',661470);
+insert into svod values (627,'Ecuador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',796580);
+insert into svod values (628,'Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',33810);
+insert into svod values (629,'Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',36670);
+insert into svod values (630,'Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',42710);
+insert into svod values (631,'Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',33400);
+insert into svod values (632,'Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',34780);
+insert into svod values (633,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2019 Q4','Football','World',46210);
+insert into svod values (634,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2019 Q3','Football','World',40150);
+insert into svod values (635,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2019 Q2','Football','World',49400);
+insert into svod values (636,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2019 Q1','Football','World',16670);
+insert into svod values (637,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2020 Q1','Football','World',23650);
+insert into svod values (638,'Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',2360);
+insert into svod values (639,'Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',2400);
+insert into svod values (640,'Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',3640);
+insert into svod values (641,'Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',3690);
+insert into svod values (642,'Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',2330);
+insert into svod values (643,'Ecuador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',1270);
+insert into svod values (644,'Ecuador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',1520);
+insert into svod values (645,'Ecuador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',5340);
+insert into svod values (646,'Ecuador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',1180);
+insert into svod values (647,'Ecuador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',1260);
+insert into svod values (648,'Ecuador','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','World',1560);
+insert into svod values (649,'Ecuador','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','World',1200);
+insert into svod values (650,'Ecuador','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','World',1770);
+insert into svod values (651,'Ecuador','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','World',1280);
+insert into svod values (652,'Ecuador','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','World',1650);
+insert into svod values (653,'Ecuador','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','World',310);
+insert into svod values (654,'Ecuador','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','World',330);
+insert into svod values (655,'Ecuador','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','World',490);
+insert into svod values (656,'Ecuador','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','World',500);
+insert into svod values (657,'Ecuador','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','World',380);
+insert into svod values (658,'Ecuador','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q4','Football','World',325);
+insert into svod values (659,'Ecuador','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q3','Football','World',260);
+insert into svod values (660,'Ecuador','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q2','Football','World',270);
+insert into svod values (661,'Ecuador','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q1','Football','World',180);
+insert into svod values (662,'Ecuador','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2020 Q1','Football','World',295);
+insert into svod values (663,'Ecuador','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','World',240);
+insert into svod values (664,'Ecuador','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','World',230);
+insert into svod values (665,'Ecuador','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','World',250);
+insert into svod values (666,'El Salvador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',222860);
+insert into svod values (667,'El Salvador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',213670);
+insert into svod values (668,'El Salvador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',203430);
+insert into svod values (669,'El Salvador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',197510);
+insert into svod values (670,'El Salvador','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',237330);
+insert into svod values (671,'El Salvador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',7740);
+insert into svod values (672,'El Salvador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',8010);
+insert into svod values (673,'El Salvador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',9330);
+insert into svod values (674,'El Salvador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',7300);
+insert into svod values (675,'El Salvador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',7960);
+insert into svod values (676,'El Salvador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',570);
+insert into svod values (677,'El Salvador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',530);
+insert into svod values (678,'El Salvador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',800);
+insert into svod values (679,'El Salvador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',810);
+insert into svod values (680,'El Salvador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',530);
+insert into svod values (681,'El Salvador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',270);
+insert into svod values (682,'El Salvador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',320);
+insert into svod values (683,'El Salvador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',1170);
+insert into svod values (684,'El Salvador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',260);
+insert into svod values (685,'El Salvador','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',290);
+insert into svod values (686,'Grenada','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',12170);
+insert into svod values (687,'Grenada','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',11800);
+insert into svod values (688,'Grenada','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',11350);
+insert into svod values (689,'Grenada','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',11310);
+insert into svod values (690,'Grenada','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',9070);
+insert into svod values (691,'Guatemala','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',307560);
+insert into svod values (692,'Guatemala','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',292520);
+insert into svod values (693,'Guatemala','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',276170);
+insert into svod values (694,'Guatemala','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',269590);
+insert into svod values (695,'Guatemala','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',329670);
+insert into svod values (696,'Guatemala','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',14220);
+insert into svod values (697,'Guatemala','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',10890);
+insert into svod values (698,'Guatemala','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','World',4450);
+insert into svod values (699,'Guatemala','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','World',3520);
+insert into svod values (700,'Guatemala','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',21610);
+insert into svod values (701,'Guatemala','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',6970);
+insert into svod values (702,'Guatemala','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',7760);
+insert into svod values (703,'Guatemala','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',9030);
+insert into svod values (704,'Guatemala','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',7060);
+insert into svod values (705,'Guatemala','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',7170);
+insert into svod values (706,'Guatemala','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','World',1110);
+insert into svod values (707,'Guatemala','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','World',1110);
+insert into svod values (708,'Guatemala','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','World',930);
+insert into svod values (709,'Guatemala','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','World',1230);
+insert into svod values (710,'Guatemala','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','World',1300);
+insert into svod values (711,'Guatemala','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',550);
+insert into svod values (712,'Guatemala','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',510);
+insert into svod values (713,'Guatemala','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',770);
+insert into svod values (714,'Guatemala','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',780);
+insert into svod values (715,'Guatemala','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',540);
+insert into svod values (716,'Guatemala','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',260);
+insert into svod values (717,'Guatemala','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',310);
+insert into svod values (718,'Guatemala','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',1130);
+insert into svod values (719,'Guatemala','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',250);
+insert into svod values (720,'Guatemala','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',290);
+insert into svod values (721,'Guyana','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',26070);
+insert into svod values (722,'Guyana','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',25260);
+insert into svod values (723,'Guyana','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',24310);
+insert into svod values (724,'Guyana','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',24220);
+insert into svod values (725,'Guyana','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',28120);
+insert into svod values (726,'Haiti','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',10410);
+insert into svod values (727,'Haiti','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',10140);
+insert into svod values (728,'Haiti','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',9800);
+insert into svod values (729,'Haiti','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',9580);
+insert into svod values (730,'Haiti','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',11720);
+insert into svod values (731,'Honduras','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',144420);
+insert into svod values (732,'Honduras','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',102710);
+insert into svod values (733,'Honduras','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',97230);
+insert into svod values (734,'Honduras','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',91750);
+insert into svod values (735,'Honduras','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',117610);
+insert into svod values (736,'Honduras','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',1430);
+insert into svod values (737,'Honduras','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',1290);
+insert into svod values (738,'Honduras','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',1510);
+insert into svod values (739,'Honduras','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',1180);
+insert into svod values (740,'Honduras','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',1470);
+insert into svod values (741,'Honduras','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',90);
+insert into svod values (742,'Honduras','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',80);
+insert into svod values (743,'Honduras','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',130);
+insert into svod values (744,'Honduras','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',130);
+insert into svod values (745,'Honduras','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',70);
+insert into svod values (746,'Honduras','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',40);
+insert into svod values (747,'Honduras','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',50);
+insert into svod values (748,'Honduras','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',190);
+insert into svod values (749,'Honduras','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',40);
+insert into svod values (750,'Honduras','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',40);
+insert into svod values (751,'Jamaica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',109960);
+insert into svod values (752,'Jamaica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',110190);
+insert into svod values (753,'Jamaica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',109590);
+insert into svod values (754,'Jamaica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',107710);
+insert into svod values (755,'Jamaica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',125280);
+insert into svod values (756,'Jamaica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',170);
+insert into svod values (757,'Jamaica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',210);
+insert into svod values (758,'Jamaica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',750);
+insert into svod values (759,'Jamaica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',160);
+insert into svod values (760,'Jamaica','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',240);
+insert into svod values (761,'Mexico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',7149080);
+insert into svod values (762,'Mexico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',6914880);
+insert into svod values (763,'Mexico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',6642940);
+insert into svod values (764,'Mexico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',6535060);
+insert into svod values (765,'Mexico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',7698540);
+insert into svod values (766,'Mexico','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',1842520);
+insert into svod values (767,'Mexico','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',2075710);
+insert into svod values (768,'Mexico','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',2581040);
+insert into svod values (769,'Mexico','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',2132030);
+insert into svod values (770,'Mexico','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',2112360);
+insert into svod values (771,'Mexico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',600440);
+insert into svod values (772,'Mexico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',464530);
+insert into svod values (773,'Mexico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','World',496830);
+insert into svod values (774,'Mexico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','World',464710);
+insert into svod values (775,'Mexico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',802530);
+insert into svod values (776,'Mexico','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','World',162310);
+insert into svod values (777,'Mexico','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','World',142480);
+insert into svod values (778,'Mexico','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','World',112350);
+insert into svod values (779,'Mexico','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','World',148240);
+insert into svod values (780,'Mexico','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','World',213300);
+insert into svod values (781,'Mexico','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q3','Generalist','World',156300);
+insert into svod values (782,'Mexico','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q2','Generalist','World',128000);
+insert into svod values (783,'Mexico','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox+','2019 Q1','Generalist','World',140900);
+insert into svod values (784,'Mexico','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',73980);
+insert into svod values (785,'Mexico','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',73800);
+insert into svod values (786,'Mexico','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',83060);
+insert into svod values (787,'Mexico','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',86980);
+insert into svod values (788,'Mexico','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',79500);
+insert into svod values (789,'Mexico','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox Premium App','2019 Q3','Generalist','World',95770);
+insert into svod values (790,'Mexico','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox Premium App','2019 Q2','Generalist','World',88930);
+insert into svod values (791,'Mexico','Movies and Fictions','Disney Networks','SVOD and streaming service subscribers','Fox Premium App','2019 Q1','Generalist','World',106300);
+insert into svod values (792,'Mexico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',31150);
+insert into svod values (793,'Mexico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',34360);
+insert into svod values (794,'Mexico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',117750);
+insert into svod values (795,'Mexico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',32190);
+insert into svod values (796,'Mexico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',60920);
+insert into svod values (797,'Mexico','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','World',58700);
+insert into svod values (798,'Mexico','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','World',43060);
+insert into svod values (799,'Mexico','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','World',35180);
+insert into svod values (800,'Mexico','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','World',28250);
+insert into svod values (801,'Mexico','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','World',67000);
+insert into svod values (802,'Mexico','Movies and Fictions','Comunidad Filmin','SVOD and streaming service subscribers','Filmin','2019 Q4','Independent','World',35880);
+insert into svod values (803,'Mexico','Movies and Fictions','Comunidad Filmin','SVOD and streaming service subscribers','Filmin','2019 Q3','Independent','World',36670);
+insert into svod values (804,'Mexico','Movies and Fictions','Comunidad Filmin','SVOD and streaming service subscribers','Filmin','2019 Q2','Independent','World',52500);
+insert into svod values (805,'Mexico','Movies and Fictions','Comunidad Filmin','SVOD and streaming service subscribers','Filmin','2019 Q1','Independent','World',53330);
+insert into svod values (806,'Mexico','Movies and Fictions','Comunidad Filmin','SVOD and streaming service subscribers','Filmin','2020 Q1','Independent','World',48700);
+insert into svod values (807,'Mexico','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q4','Early Childhood','World',41400);
+insert into svod values (808,'Mexico','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q3','Early Childhood','World',40320);
+insert into svod values (809,'Mexico','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q2','Early Childhood','World',38400);
+insert into svod values (810,'Mexico','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q1','Early Childhood','World',36480);
+insert into svod values (811,'Mexico','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2020 Q1','Early Childhood','World',48400);
+insert into svod values (812,'Mexico','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q4','Independent','World',11330);
+insert into svod values (813,'Mexico','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q3','Independent','World',10660);
+insert into svod values (814,'Mexico','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q2','Independent','World',28650);
+insert into svod values (815,'Mexico','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2019 Q1','Independent','World',23520);
+insert into svod values (816,'Mexico','Movies and Fictions','Claxson','SVOD and streaming service subscribers','Hot Go','2020 Q1','Independent','World',10560);
+insert into svod values (817,'Mexico','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q4','Independent','World',15500);
+insert into svod values (818,'Mexico','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q3','Independent','World',16300);
+insert into svod values (819,'Mexico','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q2','Independent','World',18100);
+insert into svod values (820,'Mexico','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2019 Q1','Independent','World',17800);
+insert into svod values (821,'Mexico','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2020 Q1','Independent','World',16800);
+insert into svod values (822,'Mexico','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2019 Q4','Generalist','World',18425);
+insert into svod values (823,'Mexico','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2019 Q3','Generalist','World',20760);
+insert into svod values (824,'Mexico','Movies and Fictions','ViacomCBS International Networks','SVOD and streaming service subscribers','Paramount+','2020 Q1','Generalist','World',33800);
+insert into svod values (825,'Mexico','Generalist','Apple Inc.','SVOD and streaming service subscribers','Apple TV+','2020 Q1','North American','World',38650);
+insert into svod values (826,'Mexico','Sport','Privately owned','SVOD and streaming service subscribers','Chivas TV','2019 Q4','Football Club TV','World',6100);
+insert into svod values (827,'Mexico','Sport','Privately owned','SVOD and streaming service subscribers','Chivas TV','2019 Q3','Football Club TV','World',6500);
+insert into svod values (828,'Mexico','Sport','Privately owned','SVOD and streaming service subscribers','Chivas TV','2019 Q2','Football Club TV','World',6900);
+insert into svod values (829,'Mexico','Sport','Privately owned','SVOD and streaming service subscribers','Chivas TV','2019 Q1','Football Club TV','World',7200);
+insert into svod values (830,'Mexico','Sport','Privately owned','SVOD and streaming service subscribers','Chivas TV','2020 Q1','Football Club TV','World',9290);
+insert into svod values (831,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Cinema UNO','2019 Q4','Independent','World',5500);
+insert into svod values (832,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Cinema UNO','2019 Q3','Independent','World',6100);
+insert into svod values (833,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Cinema UNO','2019 Q2','Independent','World',6500);
+insert into svod values (834,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Cinema UNO','2019 Q1','Independent','World',6800);
+insert into svod values (835,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Cinema UNO','2020 Q1','Independent','World',5200);
+insert into svod values (836,'Mexico','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q4','British','World',1760);
+insert into svod values (837,'Mexico','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q3','British','World',2000);
+insert into svod values (838,'Mexico','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q2','British','World',11170);
+insert into svod values (839,'Mexico','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q1','British','World',9500);
+insert into svod values (840,'Mexico','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2020 Q1','British','World',2475);
+insert into svod values (841,'Mexico','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q4','Motors','World',5600);
+insert into svod values (842,'Mexico','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q3','Motors','World',4540);
+insert into svod values (843,'Mexico','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q2','Motors','World',6830);
+insert into svod values (844,'Mexico','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2019 Q1','Motors','World',3760);
+insert into svod values (845,'Mexico','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2020 Q1','Motors','World',3500);
+insert into svod values (846,'Mexico','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q4','Generalist','World',5830);
+insert into svod values (847,'Mexico','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q3','Generalist','World',3140);
+insert into svod values (848,'Mexico','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q2','Generalist','World',2610);
+insert into svod values (849,'Mexico','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q1','Generalist','World',3160);
+insert into svod values (850,'Mexico','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2020 Q1','Generalist','World',4925);
+insert into svod values (851,'Mexico','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','World',2220);
+insert into svod values (852,'Mexico','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','World',4800);
+insert into svod values (853,'Mexico','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q2','Generalist','World',190);
+insert into svod values (854,'Mexico','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','World',12120);
+insert into svod values (855,'Mexico','Sport','Televisa Group','SVOD and streaming service subscribers','Afizzionados TV','2019 Q4','Football','World',4000);
+insert into svod values (856,'Mexico','Sport','Televisa Group','SVOD and streaming service subscribers','Afizzionados TV','2019 Q3','Football','World',3700);
+insert into svod values (857,'Mexico','Sport','Televisa Group','SVOD and streaming service subscribers','Afizzionados TV','2019 Q2','Football','World',3900);
+insert into svod values (858,'Mexico','Sport','Televisa Group','SVOD and streaming service subscribers','Afizzionados TV','2019 Q1','Football','World',3300);
+insert into svod values (859,'Mexico','Sport','Televisa Group','SVOD and streaming service subscribers','Afizzionados TV','2020 Q1','Football','World',3200);
+insert into svod values (860,'Mexico','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q4','Fighting','World',1850);
+insert into svod values (861,'Mexico','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q3','Fighting','World',2055);
+insert into svod values (862,'Mexico','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q2','Fighting','World',3330);
+insert into svod values (863,'Mexico','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q1','Fighting','World',2180);
+insert into svod values (864,'Mexico','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2020 Q1','Fighting','World',2830);
+insert into svod values (865,'Mexico','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q4','Early Childhood','World',3900);
+insert into svod values (866,'Mexico','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q3','Early Childhood','World',4200);
+insert into svod values (867,'Mexico','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2020 Q1','Early Childhood','World',3600);
+insert into svod values (868,'Mexico','Movies and Fictions','Zee Entertainment Enterprises','SVOD and streaming service subscribers','Zee Mundo Play','2019 Q4','Indian Productions','World',3640);
+insert into svod values (869,'Mexico','Movies and Fictions','Zee Entertainment Enterprises','SVOD and streaming service subscribers','Zee Mundo Play','2019 Q3','Indian Productions','World',3220);
+insert into svod values (870,'Mexico','Movies and Fictions','Zee Entertainment Enterprises','SVOD and streaming service subscribers','Zee Mundo Play','2020 Q1','Indian Productions','World',3500);
+insert into svod values (871,'Mexico','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','World',1200);
+insert into svod values (872,'Mexico','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','World',1530);
+insert into svod values (873,'Mexico','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','World',2650);
+insert into svod values (874,'Mexico','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','World',2650);
+insert into svod values (875,'Mexico','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','World',1540);
+insert into svod values (876,'Mexico','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q4','Infant','World',1950);
+insert into svod values (877,'Mexico','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q3','Infant','World',1875);
+insert into svod values (878,'Mexico','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q2','Infant','World',2100);
+insert into svod values (879,'Mexico','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2019 Q1','Infant','World',1200);
+insert into svod values (880,'Mexico','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2020 Q1','Infant','World',2050);
+insert into svod values (881,'Mexico','Generalist','Atresmedia','SVOD and streaming service subscribers','Atresplayer Premium','2020 Q1','General','World',7690);
+insert into svod values (882,'Mexico','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','World',1730);
+insert into svod values (883,'Mexico','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','World',1750);
+insert into svod values (884,'Mexico','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','World',1800);
+insert into svod values (885,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','GCFlix','2019 Q4','Independent','World',750);
+insert into svod values (886,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','GCFlix','2019 Q3','Independent','World',830);
+insert into svod values (887,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','GCFlix','2019 Q2','Independent','World',900);
+insert into svod values (888,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','GCFlix','2019 Q1','Independent','World',800);
+insert into svod values (889,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','GCFlix','2020 Q1','Independent','World',900);
+insert into svod values (890,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q4','Telenovelas','World',960);
+insert into svod values (891,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q3','Telenovelas','World',860);
+insert into svod values (892,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q2','Telenovelas','World',800);
+insert into svod values (893,'Mexico','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2020 Q1','Telenovelas','World',690);
+insert into svod values (894,'Montserrat','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',2920);
+insert into svod values (895,'Montserrat','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',2820);
+insert into svod values (896,'Montserrat','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',2690);
+insert into svod values (897,'Montserrat','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',2660);
+insert into svod values (898,'Montserrat','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',3140);
+insert into svod values (899,'Nicaragua','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',66250);
+insert into svod values (900,'Nicaragua','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',64790);
+insert into svod values (901,'Nicaragua','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',62930);
+insert into svod values (902,'Nicaragua','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',62790);
+insert into svod values (903,'Nicaragua','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',79980);
+insert into svod values (904,'Nicaragua','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',1220);
+insert into svod values (905,'Nicaragua','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',1000);
+insert into svod values (906,'Nicaragua','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',1160);
+insert into svod values (907,'Nicaragua','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',910);
+insert into svod values (908,'Nicaragua','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',1260);
+insert into svod values (909,'Nicaragua','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','World',320);
+insert into svod values (910,'Nicaragua','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','World',320);
+insert into svod values (911,'Nicaragua','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','World',270);
+insert into svod values (912,'Nicaragua','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','World',340);
+insert into svod values (913,'Nicaragua','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','World',320);
+insert into svod values (914,'Nicaragua','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',100);
+insert into svod values (915,'Nicaragua','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',70);
+insert into svod values (916,'Nicaragua','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',100);
+insert into svod values (917,'Nicaragua','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',100);
+insert into svod values (918,'Nicaragua','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',80);
+insert into svod values (919,'Nicaragua','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',30);
+insert into svod values (920,'Nicaragua','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',40);
+insert into svod values (921,'Nicaragua','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',150);
+insert into svod values (922,'Nicaragua','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',30);
+insert into svod values (923,'Nicaragua','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',40);
+insert into svod values (924,'Panama','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',212160);
+insert into svod values (925,'Panama','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',196580);
+insert into svod values (926,'Panama','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',180440);
+insert into svod values (927,'Panama','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',176820);
+insert into svod values (928,'Panama','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',213060);
+insert into svod values (929,'Panama','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',12200);
+insert into svod values (930,'Panama','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',12710);
+insert into svod values (931,'Panama','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',14800);
+insert into svod values (932,'Panama','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',11570);
+insert into svod values (933,'Panama','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',12550);
+insert into svod values (934,'Panama','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','World',960);
+insert into svod values (935,'Panama','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','World',960);
+insert into svod values (936,'Panama','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','World',870);
+insert into svod values (937,'Panama','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','World',1350);
+insert into svod values (938,'Panama','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','World',1180);
+insert into svod values (939,'Panama','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',870);
+insert into svod values (940,'Panama','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',830);
+insert into svod values (941,'Panama','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',1260);
+insert into svod values (942,'Panama','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',1280);
+insert into svod values (943,'Panama','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',650);
+insert into svod values (944,'Panama','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',420);
+insert into svod values (945,'Panama','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',510);
+insert into svod values (946,'Panama','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',1850);
+insert into svod values (947,'Panama','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',410);
+insert into svod values (948,'Panama','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',350);
+insert into svod values (949,'Paraguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',140720);
+insert into svod values (950,'Paraguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',134600);
+insert into svod values (951,'Paraguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',123720);
+insert into svod values (952,'Paraguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',118550);
+insert into svod values (953,'Paraguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',153930);
+insert into svod values (954,'Paraguay','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q4','Football','World',38975);
+insert into svod values (955,'Paraguay','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q3','Football','World',36150);
+insert into svod values (956,'Paraguay','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q2','Football','World',38720);
+insert into svod values (957,'Paraguay','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2019 Q1','Football','World',35560);
+insert into svod values (958,'Paraguay','Sport','Millicom  Group','SVOD and streaming service subscribers','Tigo Sports App','2020 Q1','Football','World',46155);
+insert into svod values (959,'Paraguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',14220);
+insert into svod values (960,'Paraguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',10890);
+insert into svod values (961,'Paraguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','World',3710);
+insert into svod values (962,'Paraguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',26240);
+insert into svod values (963,'Paraguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',5930);
+insert into svod values (964,'Paraguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',5950);
+insert into svod values (965,'Paraguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',6930);
+insert into svod values (966,'Paraguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',5420);
+insert into svod values (967,'Paraguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',6100);
+insert into svod values (968,'Paraguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',420);
+insert into svod values (969,'Paraguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',390);
+insert into svod values (970,'Paraguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',590);
+insert into svod values (971,'Paraguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',600);
+insert into svod values (972,'Paraguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',220);
+insert into svod values (973,'Paraguay','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q4','Generalist','World',380);
+insert into svod values (974,'Paraguay','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q3','Generalist','World',390);
+insert into svod values (975,'Paraguay','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q2','Generalist','World',410);
+insert into svod values (976,'Paraguay','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2019 Q1','Generalist','World',430);
+insert into svod values (977,'Paraguay','Movies and Fictions','Qubit Corporate','SVOD and streaming service subscribers','Qubit TV','2020 Q1','Generalist','World',390);
+insert into svod values (978,'Paraguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',200);
+insert into svod values (979,'Paraguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',240);
+insert into svod values (980,'Paraguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',870);
+insert into svod values (981,'Paraguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',190);
+insert into svod values (982,'Paraguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',200);
+insert into svod values (983,'Peru','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',828700);
+insert into svod values (984,'Peru','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',812660);
+insert into svod values (985,'Peru','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',791540);
+insert into svod values (986,'Peru','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',854690);
+insert into svod values (987,'Peru','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',926600);
+insert into svod values (988,'Peru','Generalist','Grupo Plural TV','SVOD and streaming service subscribers','America tvGO','2019 Q4','General','World',145000);
+insert into svod values (989,'Peru','Generalist','Grupo Plural TV','SVOD and streaming service subscribers','America tvGO','2019 Q3','General','World',151330);
+insert into svod values (990,'Peru','Generalist','Grupo Plural TV','SVOD and streaming service subscribers','America tvGO','2019 Q2','General','World',152000);
+insert into svod values (991,'Peru','Generalist','Grupo Plural TV','SVOD and streaming service subscribers','America tvGO','2019 Q1','General','World',121670);
+insert into svod values (992,'Peru','Generalist','Grupo Plural TV','SVOD and streaming service subscribers','America tvGO','2020 Q1','General','World',159170);
+insert into svod values (993,'Peru','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',56670);
+insert into svod values (994,'Peru','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',59760);
+insert into svod values (995,'Peru','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',47700);
+insert into svod values (996,'Peru','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',37300);
+insert into svod values (997,'Peru','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',91060);
+insert into svod values (998,'Peru','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',54040);
+insert into svod values (999,'Peru','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',38030);
+insert into svod values (1000,'Peru','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','World',7420);
+insert into svod values (1001,'Peru','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','World',6340);
+insert into svod values (1002,'Peru','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',85990);
+insert into svod values (1003,'Peru','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','World',16960);
+insert into svod values (1004,'Peru','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','World',15950);
+insert into svod values (1005,'Peru','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','World',12850);
+insert into svod values (1006,'Peru','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','World',9890);
+insert into svod values (1007,'Peru','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','World',18430);
+insert into svod values (1008,'Peru','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',8800);
+insert into svod values (1009,'Peru','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',5000);
+insert into svod values (1010,'Peru','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',9000);
+insert into svod values (1011,'Peru','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',4400);
+insert into svod values (1012,'Peru','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',17520);
+insert into svod values (1013,'Peru','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',6870);
+insert into svod values (1014,'Peru','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',6470);
+insert into svod values (1015,'Peru','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',6850);
+insert into svod values (1016,'Peru','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',6940);
+insert into svod values (1017,'Peru','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',8170);
+insert into svod values (1018,'Peru','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q4','Early Childhood','World',3615);
+insert into svod values (1019,'Peru','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q3','Early Childhood','World',3520);
+insert into svod values (1020,'Peru','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q2','Early Childhood','World',3350);
+insert into svod values (1021,'Peru','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2019 Q1','Early Childhood','World',3180);
+insert into svod values (1022,'Peru','Kids','ViacomCBS International Networks','SVOD and streaming service subscribers','Noggin','2020 Q1','Early Childhood','World',4400);
+insert into svod values (1023,'Peru','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q4','Generalist','World',4950);
+insert into svod values (1024,'Peru','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q3','Generalist','World',1170);
+insert into svod values (1025,'Peru','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q2','Generalist','World',1450);
+insert into svod values (1026,'Peru','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2019 Q1','Generalist','World',3320);
+insert into svod values (1027,'Peru','Movies and Fictions','Televisa Group','SVOD and streaming service subscribers','Blim','2020 Q1','Generalist','World',2120);
+insert into svod values (1028,'Peru','Movies and Fictions','Zee Entertainment Enterprises','SVOD and streaming service subscribers','Zee Mundo Play','2019 Q4','Indian Productions','World',4160);
+insert into svod values (1029,'Peru','Movies and Fictions','Zee Entertainment Enterprises','SVOD and streaming service subscribers','Zee Mundo Play','2019 Q3','Indian Productions','World',3680);
+insert into svod values (1030,'Peru','Movies and Fictions','Zee Entertainment Enterprises','SVOD and streaming service subscribers','Zee Mundo Play','2020 Q1','Indian Productions','World',4000);
+insert into svod values (1031,'Peru','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q4','Fighting','World',2250);
+insert into svod values (1032,'Peru','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q3','Fighting','World',2500);
+insert into svod values (1033,'Peru','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q2','Fighting','World',2250);
+insert into svod values (1034,'Peru','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2019 Q1','Fighting','World',1580);
+insert into svod values (1035,'Peru','Sport','World Wrestling Entertainment','SVOD and streaming service subscribers','WWE Network','2020 Q1','Fighting','World',1730);
+insert into svod values (1036,'Peru','Generalist','Apple Inc.','SVOD and streaming service subscribers','Apple TV+','2020 Q1','North American','World',7730);
+insert into svod values (1037,'Peru','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q4','Korean','World',1000);
+insert into svod values (1038,'Peru','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q3','Korean','World',970);
+insert into svod values (1039,'Peru','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q2','Korean','World',1330);
+insert into svod values (1040,'Peru','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2019 Q1','Korean','World',1410);
+insert into svod values (1041,'Peru','Movies and Fictions','Rakuten Group','SVOD and streaming service subscribers','Viki','2020 Q1','Korean','World',1100);
+insert into svod values (1042,'Peru','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q4','Early Childhood','World',1350);
+insert into svod values (1043,'Peru','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2019 Q3','Early Childhood','World',1500);
+insert into svod values (1044,'Peru','Kids','Movile','SVOD and streaming service subscribers','PlayKids','2020 Q1','Early Childhood','World',1500);
+insert into svod values (1045,'Peru','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q4','Telenovelas','World',950);
+insert into svod values (1046,'Peru','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q3','Telenovelas','World',850);
+insert into svod values (1047,'Peru','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q2','Telenovelas','World',790);
+insert into svod values (1048,'Peru','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2020 Q1','Telenovelas','World',680);
+insert into svod values (1049,'Peru','Generalist','Atresmedia','SVOD and streaming service subscribers','Atresplayer Premium','2020 Q1','General','World',3230);
+insert into svod values (1050,'Peru','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q4','British','World',850);
+insert into svod values (1051,'Peru','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2019 Q3','British','World',1000);
+insert into svod values (1052,'Peru','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2020 Q1','British','World',830);
+insert into svod values (1053,'Peru','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','World',350);
+insert into svod values (1054,'Peru','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','World',240);
+insert into svod values (1055,'Peru','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','World',1385);
+insert into svod values (1056,'Peru','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q3','Classic','World',240);
+insert into svod values (1057,'Peru','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q2','Classic','World',230);
+insert into svod values (1058,'Peru','Music','Selecta Media LTD','SVOD and streaming service subscribers','Selecta TV','2019 Q1','Classic','World',250);
+insert into svod values (1059,'Puerto Rico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',250460);
+insert into svod values (1060,'Puerto Rico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',242170);
+insert into svod values (1061,'Puerto Rico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',232560);
+insert into svod values (1062,'Puerto Rico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',230050);
+insert into svod values (1063,'Puerto Rico','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',267420);
+insert into svod values (1064,'Puerto Rico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',33180);
+insert into svod values (1065,'Puerto Rico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',25400);
+insert into svod values (1066,'Puerto Rico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q2','Generalist','World',18540);
+insert into svod values (1067,'Puerto Rico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q1','Generalist','World',14080);
+insert into svod values (1068,'Puerto Rico','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',57100);
+insert into svod values (1069,'Puerto Rico','Movies and Fictions','Walt Disney Company Limited','SVOD and streaming service subscribers','Disney+','2020 Q1','Generalist','World',100040);
+insert into svod values (1070,'Puerto Rico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',1180);
+insert into svod values (1071,'Puerto Rico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',1420);
+insert into svod values (1072,'Puerto Rico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',5160);
+insert into svod values (1073,'Puerto Rico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',1140);
+insert into svod values (1074,'Puerto Rico','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',530);
+insert into svod values (1075,'Saint Kitts and Nevis','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',5380);
+insert into svod values (1076,'Saint Kitts and Nevis','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',5250);
+insert into svod values (1077,'Saint Kitts and Nevis','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',5100);
+insert into svod values (1078,'Saint Kitts and Nevis','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',5130);
+insert into svod values (1079,'Saint Kitts and Nevis','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',5800);
+insert into svod values (1080,'Saint Lucia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',12040);
+insert into svod values (1081,'Saint Lucia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',11740);
+insert into svod values (1082,'Saint Lucia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',11360);
+insert into svod values (1083,'Saint Lucia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',11380);
+insert into svod values (1084,'Saint Lucia','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',12990);
+insert into svod values (1085,'Sint-Maarten','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',1330);
+insert into svod values (1086,'Sint-Maarten','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',1290);
+insert into svod values (1087,'Sint-Maarten','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',1240);
+insert into svod values (1088,'Sint-Maarten','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',1240);
+insert into svod values (1089,'Sint-Maarten','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',1440);
+insert into svod values (1090,'St Vincent and the Grenad.','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',7860);
+insert into svod values (1091,'St Vincent and the Grenad.','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',7430);
+insert into svod values (1092,'St Vincent and the Grenad.','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',7130);
+insert into svod values (1093,'St Vincent and the Grenad.','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',7090);
+insert into svod values (1094,'St Vincent and the Grenad.','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',8280);
+insert into svod values (1095,'Surinam','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',22380);
+insert into svod values (1096,'Surinam','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',21690);
+insert into svod values (1097,'Surinam','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',20880);
+insert into svod values (1098,'Surinam','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',20810);
+insert into svod values (1099,'Surinam','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',24120);
+insert into svod values (1100,'Trinidad and Tobago','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',130420);
+insert into svod values (1101,'Trinidad and Tobago','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',126210);
+insert into svod values (1102,'Trinidad and Tobago','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',121300);
+insert into svod values (1103,'Trinidad and Tobago','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',120920);
+insert into svod values (1104,'Trinidad and Tobago','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',141090);
+insert into svod values (1105,'Trinidad and Tobago','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',460);
+insert into svod values (1106,'Trinidad and Tobago','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',560);
+insert into svod values (1107,'Trinidad and Tobago','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',2020);
+insert into svod values (1108,'Trinidad and Tobago','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',450);
+insert into svod values (1109,'Trinidad and Tobago','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',540);
+insert into svod values (1110,'Turks and Caicos Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',2220);
+insert into svod values (1111,'Turks and Caicos Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',2140);
+insert into svod values (1112,'Turks and Caicos Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',2060);
+insert into svod values (1113,'Turks and Caicos Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',2050);
+insert into svod values (1114,'Turks and Caicos Islands','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',2390);
+insert into svod values (1115,'Uruguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',372880);
+insert into svod values (1116,'Uruguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',359370);
+insert into svod values (1117,'Uruguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',343970);
+insert into svod values (1118,'Uruguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',334740);
+insert into svod values (1119,'Uruguay','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',398580);
+insert into svod values (1120,'Uruguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q4','Generalist','World',31020);
+insert into svod values (1121,'Uruguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q3','Generalist','World',32390);
+insert into svod values (1122,'Uruguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',37720);
+insert into svod values (1123,'Uruguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',29500);
+insert into svod values (1124,'Uruguay','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',31910);
+insert into svod values (1125,'Uruguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q4','Generalist','World',13270);
+insert into svod values (1126,'Uruguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2019 Q3','Generalist','World',10160);
+insert into svod values (1127,'Uruguay','Movies and Fictions','Amazon Group','SVOD and streaming service subscribers','Amazon Prime Video','2020 Q1','Generalist','World',23150);
+insert into svod values (1128,'Uruguay','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q4','General','World',5545);
+insert into svod values (1129,'Uruguay','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q3','General','World',5100);
+insert into svod values (1130,'Uruguay','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q2','General','World',3980);
+insert into svod values (1131,'Uruguay','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2019 Q1','General','World',2830);
+insert into svod values (1132,'Uruguay','Generalist','Google Group','SVOD and streaming service subscribers','Youtube Premium','2020 Q1','General','World',7050);
+insert into svod values (1133,'Uruguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',2240);
+insert into svod values (1134,'Uruguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',2120);
+insert into svod values (1135,'Uruguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',3220);
+insert into svod values (1136,'Uruguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q1','Anime','World',3260);
+insert into svod values (1137,'Uruguay','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2020 Q1','Anime','World',2060);
+insert into svod values (1138,'Uruguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q4','Generalist','World',1080);
+insert into svod values (1139,'Uruguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q3','Generalist','World',1300);
+insert into svod values (1140,'Uruguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q2','Generalist','World',4710);
+insert into svod values (1141,'Uruguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2019 Q1','Generalist','World',1040);
+insert into svod values (1142,'Uruguay','Movies and Fictions','WarnerMedia','SVOD and streaming service subscribers','HBO Go','2020 Q1','Generalist','World',1120);
+insert into svod values (1143,'Uruguay','Sport','Privately owned','SVOD and streaming service subscribers','Nacional TV','2019 Q4','Football Club TV','World',1200);
+insert into svod values (1144,'Uruguay','Sport','Privately owned','SVOD and streaming service subscribers','Nacional TV','2019 Q3','Football Club TV','World',1500);
+insert into svod values (1145,'Uruguay','Sport','Privately owned','SVOD and streaming service subscribers','Nacional TV','2020 Q1','Football Club TV','World',1000);
+insert into svod values (1146,'Uruguay','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q4','Generalist','World',425);
+insert into svod values (1147,'Uruguay','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q3','Generalist','World',600);
+insert into svod values (1148,'Uruguay','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2019 Q2','Generalist','World',100);
+insert into svod values (1149,'Uruguay','Movies and Fictions','Lionsgate','SVOD and streaming service subscribers','Starz','2020 Q1','Generalist','World',1660);
+insert into svod values (1150,'Uruguay','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q2','Football','World',1570);
+insert into svod values (1151,'Uruguay','Sport','Tenfield','SVOD and streaming service subscribers','Poipes','2019 Q1','Football','World',1080);
+insert into svod values (1152,'Venezuela','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',276470);
+insert into svod values (1153,'Venezuela','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',274340);
+insert into svod values (1154,'Venezuela','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q2','Generalist','World',270310);
+insert into svod values (1155,'Venezuela','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q1','Generalist','World',275640);
+insert into svod values (1156,'Venezuela','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2020 Q1','Generalist','World',297700);
+insert into svod values (1157,'Venezuela','Sport','Major League Baseball','SVOD and streaming service subscribers','MLB.TV','2019 Q4','Baseball','World',48700);
+insert into svod values (1158,'Venezuela','Sport','Major League Baseball','SVOD and streaming service subscribers','MLB.TV','2019 Q3','Baseball','World',193850);
+insert into svod values (1159,'Venezuela','Sport','Major League Baseball','SVOD and streaming service subscribers','MLB.TV','2019 Q2','Baseball','World',156800);
+insert into svod values (1160,'Venezuela','Sport','Major League Baseball','SVOD and streaming service subscribers','MLB.TV','2019 Q1','Baseball','World',76400);
+insert into svod values (1161,'Venezuela','Sport','Major League Baseball','SVOD and streaming service subscribers','MLB.TV','2020 Q1','Baseball','World',22090);
+insert into svod values (1162,'Venezuela','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q4','Telenovelas','World',470);
+insert into svod values (1163,'Venezuela','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q3','Telenovelas','World',390);
+insert into svod values (1164,'Venezuela','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2019 Q2','Telenovelas','World',390);
+insert into svod values (1165,'Venezuela','Movies and Fictions','Privately owned','SVOD and streaming service subscribers','Pongalo','2020 Q1','Telenovelas','World',340);
 insert into platforms 
-
 values(1,'2015 Q4','Brazil',	19121783,	4084780,	3359940,	23217687);
 insert into platforms 
-
 values(2,'2016 Q4','Brazil',	18821275,	6076800,	5083230,	24101335);
 insert into platforms 
-
 values(3,'2017 Q4','Brazil',	18124655,	8820617,	7185510,	25970887);
 insert into platforms 
-
 values(4,'2018 Q4','Brazil',	17514476,	11935625,	9604830,	28275360);
 insert into platforms 
+values(5,'2019 Q4','Brazil',	15786280,	15774595,	11562060,	31726318);
+insert into platforms 
+values(6,'2020 Q1','Brazil',	15349234,	17759085,	12988980,	31370116);
 
-values(5,'2019 Q4','Brazil',	15786280,	15911615,	11562060,	32214398);

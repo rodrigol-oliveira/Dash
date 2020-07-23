@@ -2,12 +2,44 @@
 			
             <h4>SUBS PER NETWORK 
             <img onclick="exportTableToExcel('tbResultado2')"  class="img-rounded" alt="Responsive image" src="/images/excel.png"  width="65"  ></h4>
+    
+            <div id="table-scroll" class="table-scroll">
+                <div class="table-wrap">
+                  <table class="main-table table table-striped" id="tbResultado2">
+                    
+                    <thead>
+                        <tr>
+                            <th class="fixed-side" scope="col">Network</th>
+                            <% for(i = 1; i < Object.getOwnPropertyNames(listnetwork[0]).length; i ++) { %>
+                                <th> <%- Object.getOwnPropertyNames(listnetwork[0])[i] %> </th>
+                            <%}%>									
+                        </tr>
+                    </thead>	
+                    <tbody>
+                        <% if(listnetwork){%>
+                            <% for(i = 0; i < listnetwork.length; i ++) { %>
+                            <tr>
+                                <td class="fixed-side"><%- listnetwork[i].network %></td>
+                                <% for(j = 1; j < Object.getOwnPropertyNames(listnetwork[i]).length; j ++) { %>
+        
+                                <td><%- listnetwork[i][Object.getOwnPropertyNames(listnetwork[i])[j]].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                                <%}%>
+        
+                            </tr>
+                            <%}%>
+                        <%}%>			
+                </table>
+                </div>
+              </div>
+              
+    
+    <!--        <div class="table-responsive tabela-resultado ">						
         
             <table  class="table table-striped" id="tbResultado2">
             <thead>
                 <tr>
                     <th>Network</th>
-                    <% for(i = 2; i < Object.getOwnPropertyNames(listnetwork[0]).length; i ++) { %>
+                    <% for(i = 1; i < Object.getOwnPropertyNames(listnetwork[0]).length; i ++) { %>
                         <th> <%- Object.getOwnPropertyNames(listnetwork[0])[i] %> </th>
                     <%}%>									
                 </tr>
@@ -17,7 +49,7 @@
                     <% for(i = 0; i < listnetwork.length; i ++) { %>
                     <tr>
                         <td><%- listnetwork[i].network %></td>
-                        <% for(j = 2; j < Object.getOwnPropertyNames(listnetwork[i]).length; j ++) { %>
+                        <% for(j = 1; j < Object.getOwnPropertyNames(listnetwork[i]).length; j ++) { %>
 
                         <td><%- listnetwork[i][Object.getOwnPropertyNames(listnetwork[i])[j]].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
                         <%}%>
@@ -26,4 +58,5 @@
                     <%}%>
                 <%}%>			
         </table>
+</div>-->
 </div>
