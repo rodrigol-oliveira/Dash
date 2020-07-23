@@ -660,11 +660,11 @@ insert into svod values (629,'Ecuador','Movies and Fictions','America Movil Grou
 insert into svod values (630,'Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q2','Generalist','World',42710);
 insert into svod values (631,'Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2019 Q1','Generalist','World',33400);
 insert into svod values (632,'Ecuador','Movies and Fictions','America Movil Group','SVOD and streaming service subscribers','Clarovideo','2020 Q1','Generalist','World',34780);
-insert into svod values (633,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2019 Q4','Football','World',46210);
-insert into svod values (634,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2019 Q3','Football','World',40150);
-insert into svod values (635,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2019 Q2','Football','World',49400);
-insert into svod values (636,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2019 Q1','Football','World',16670);
-insert into svod values (637,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Fútbol Ecuador','2020 Q1','Football','World',23650);
+insert into svod values (633,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Futbol Ecuador','2019 Q4','Football','World',46210);
+insert into svod values (634,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Futbol Ecuador','2019 Q3','Football','World',40150);
+insert into svod values (635,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Futbol Ecuador','2019 Q2','Football','World',49400);
+insert into svod values (636,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Futbol Ecuador','2019 Q1','Football','World',16670);
+insert into svod values (637,'Ecuador','Sport','Servisky S.A.','SVOD and streaming service subscribers','El Canal del Futbol Ecuador','2020 Q1','Football','World',23650);
 insert into svod values (638,'Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q4','Anime','World',2360);
 insert into svod values (639,'Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q3','Anime','World',2400);
 insert into svod values (640,'Ecuador','Kids','AT&T Group','SVOD and streaming service subscribers','Crunchyroll','2019 Q2','Anime','World',3640);
