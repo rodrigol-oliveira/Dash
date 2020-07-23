@@ -132,9 +132,9 @@ insert into svod values (101,'Argentina','Sport','Fanatiz Group','SVOD and strea
 insert into svod values (102,'Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q2','Football','World',1320);
 insert into svod values (103,'Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2019 Q1','Football','World',1050);
 insert into svod values (104,'Argentina','Sport','Fanatiz Group','SVOD and streaming service subscribers','Fanatiz','2020 Q1','Football','World',740);
-insert into svod values (105,'Argentina','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2019 Q4','Generalist','World',975);
-insert into svod values (106,'Argentina','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2019 Q3','Generalist','World',1010);
-insert into svod values (107,'Argentina','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2020 Q1','Generalist','World',650);
+insert into svod values (105,'Argentina','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOle','2019 Q4','Generalist','World',975);
+insert into svod values (106,'Argentina','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOle','2019 Q3','Generalist','World',1010);
+insert into svod values (107,'Argentina','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOle','2020 Q1','Generalist','World',650);
 insert into svod values (108,'Argentina','Sport','Privately owned','SVOD and streaming service subscribers','Estudiantes de la Plata','2019 Q4','Football Club TV','World',700);
 insert into svod values (109,'Argentina','Sport','Privately owned','SVOD and streaming service subscribers','Estudiantes de la Plata','2020 Q1','Football Club TV','World',1200);
 insert into svod values (110,'Aruba','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',11370);
@@ -588,9 +588,9 @@ insert into svod values (557,'Colombia','Movies and Fictions','Privately owned',
 insert into svod values (558,'Colombia','Movies and Fictions','Mubi Group','SVOD and streaming service subscribers','Mubi','2020 Q1','Independent','World',1560);
 insert into svod values (559,'Colombia','Movies and Fictions','AMC Networks','SVOD and streaming service subscribers','Acorn TV','2020 Q1','British','World',1560);
 insert into svod values (560,'Colombia','Kids','Disney Networks','SVOD and streaming service subscribers','Baby TV','2020 Q1','Infant','World',1500);
-insert into svod values (561,'Colombia','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2019 Q4','Generalist','World',350);
-insert into svod values (562,'Colombia','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2019 Q3','Generalist','World',440);
-insert into svod values (563,'Colombia','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOlé','2020 Q1','Generalist','World',280);
+insert into svod values (561,'Colombia','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOle','2019 Q4','Generalist','World',350);
+insert into svod values (562,'Colombia','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOle','2019 Q3','Generalist','World',440);
+insert into svod values (563,'Colombia','Movies and Fictions','Dinamedia','SVOD and streaming service subscribers','FlixOle','2020 Q1','Generalist','World',280);
 insert into svod values (564,'Colombia','Sport','Mediapro','SVOD and streaming service subscribers','F1 TV','2020 Q1','Motors','World',500);
 insert into svod values (565,'Costa Rica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q4','Generalist','World',321160);
 insert into svod values (566,'Costa Rica','Movies and Fictions','Netflix Group','SVOD and streaming service subscribers','Netflix','2019 Q3','Generalist','World',313530);
