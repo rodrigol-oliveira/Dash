@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
 	password: 'Br4s1l',
-	database: 'test'
+	database: 'teste'
 });
 
 connection.connect(function (err) {
@@ -223,5 +223,5 @@ app.post('/import', function (req, res) {
 	  });
 });
 
-app.listen(4000);
-console.log('4000 is the magic port');
+app.listen(3000);
+console.log('3000 is the magic port');

@@ -1,7 +1,7 @@
 drop table svod;
 drop table platforms;
 
-CREATE TABLE `test`.`svod` (
+CREATE TABLE `teste`.`svod` (
   `id` BIGINT NOT NULL,
   `Country` VARCHAR(50) NOT NULL,
   `Genre` VARCHAR(50) NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE `test`.`svod` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE `test`.`platforms` (
+CREATE TABLE `teste`.`platforms` (
   `id` BIGINT NOT NULL,
   `Period` VARCHAR(50) NOT NULL,
   `Local` VARCHAR(50) NOT NULL,
