@@ -1477,4 +1477,6 @@ insert into platforms
 values(5,'2019 Q4','Brazil',	15786280,	15774595,	11562060,	31726318);
 insert into platforms 
 values(6,'2020 Q1','Brazil',	15349234,	17759085,	12988980,	31370116);
+insert into platforms 
+values(7,'2020 Q2','Brazil',	15129433,	19893895,	13633920,	33844246);
 
