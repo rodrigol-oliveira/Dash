@@ -185,9 +185,13 @@ app.get('/', function (req, res) {
 });
 
 app.get('/plataforms', function (req, res) {
-	let queryPaises = 'select distinct country  from svod where country = "brazil"';
-	let queryPlatforms = 'select * from platforms';
-
+	let local;
+	let queryPaises = 'select distinct local from platforms';
+	let queryPlatforms = 'select Period, sum(Sum_of_SUBS_PAY_TV) as Sum_of_SUBS_PAY_TV, sum(Sum_of_SUBS_SVOD) as Sum_of_SUBS_SVOD, sum(Sum_of_SUBS_NETFLIX) as Sum_of_SUBS_NETFLIX, sum(Sum_of_SUBS_BANDA_LARGA) as Sum_of_SUBS_BANDA_LARGA from platforms group by period' ;
+	if (req.query.local !== undefined) {
+		local = req.query.local;
+		queryPlatforms = 'select Period, sum(Sum_of_SUBS_PAY_TV) as Sum_of_SUBS_PAY_TV, sum(Sum_of_SUBS_SVOD) as Sum_of_SUBS_SVOD, sum(Sum_of_SUBS_NETFLIX) as Sum_of_SUBS_NETFLIX, sum(Sum_of_SUBS_BANDA_LARGA) as Sum_of_SUBS_BANDA_LARGA from platforms where local = "'+req.query.local+'" group by period ';	
+	}
 	let paises;
 	connection.query(queryPaises, (err, rows) => {
 		if (err) throw err;
@@ -198,7 +202,8 @@ app.get('/plataforms', function (req, res) {
 	connection.query(queryPlatforms, (err, rows) => {
 		if (err) throw err;
 		platforms = rows;
-		res.render('pages/platforms', { paises: paises, platforms: platforms });
+
+		res.render('pages/platforms', { paises: paises, platforms: platforms, local:local });
 	});
 });
 
@@ -210,15 +215,12 @@ app.post('/import', function (req, res) {
 	if (!req.files || Object.keys(req.files).length === 0) {
 		return res.status(400).send('No files were uploaded.');
 	  }
-	
 	  // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
 	  let sampleFile = req.files.sampleFile;
-	
 	  // Use the mv() method to place the file somewhere on your server
 	  sampleFile.mv('/images/test.png', function(err) {
 		if (err)
 		  return res.status(500).send(err);
-	
 		res.send('File uploaded!');
 	  });
 });

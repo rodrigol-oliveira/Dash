@@ -1,101 +1,28 @@
-<div class="grafico content img-responsive" id="grafico3">
-    <script type="text/javascript">
-        $(function () {
-            $('#grafico3').highcharts({
-                title: {
-                    text: ''
-                },
+<div class="table-responsive tabela-resultado ">						
+    <table  class="table table-striped" id="tbResultado">
+        <thead>
+            <tr>
+                <th>PERIOD</th>
+                <th>SUM OF PAY TV</th>	
+                <th>SUM OF SVOD</th>	
+                <th>SUM OF NETFLIX</th>	
+                <th>SUM OF BANDA LARGA</th>	
+            </tr>
+        </thead>		
+        <tbody>
+                <% for(i = 0; i < platforms.length; i ++) { %>
+                <tr>
+                    <td><%- platforms[i].Period %></td>
+                    <td><%- platforms[i].Sum_of_SUBS_PAY_TV.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                    <td><%- platforms[i].Sum_of_SUBS_SVOD.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                    <td><%- platforms[i].Sum_of_SUBS_NETFLIX.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                    <td><%- platforms[i].Sum_of_SUBS_BANDA_LARGA.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
+                </tr>
+                <%}%>	
+            
+            
+    </table>
+</div>	
 
-                subtitle: {
-                    text: ''
-                },
-
-                yAxis: {
-                    title: {
-                        text: ''
-                    }
-                },
-
-                xAxis: {
-                    accessibility: {
-                        rangeDescription: 'Range: 2010 to 2017'
-                    }
-                },
-
-                legend: {
-                    layout: 'vertical',
-                    align: 'right',
-                    verticalAlign: 'middle'
-                },
-
-                plotOptions: {
-                    series: {
-                        label: {
-                            connectorAllowed: false
-                        },
-                        pointStart: 2015
-                    }
-                },
-
-
-
-                
-                series: [
-                    {
-                        name: 'PAY TV', 
-                        data: [  
-                        <% for(i = 0; i < platforms.length; i ++) { %>
-                            <%- platforms[i].Sum_of_SUBS_PAY_TV %>, 
-                  <%}%>	
-                        ],
-                    },
-                    {
-                        name: 'NETFLIX',
-                        data: [
-                        <% for(i = 0; i < platforms.length; i ++) { %>
-                            <%- platforms[i].Sum_of_SUBS_NETFLIX %>, 
-                  <%}%>	
-                        ]
-                    },
-                    {
-                        name: 'SVOD',
-                        data: [
-                        <% for(i = 0; i < platforms.length; i ++) { %>
-                            <%- platforms[i].Sum_of_SUBS_SVOD %>, 
-                        <%}%>	
-                        ]
-                    },
-                    {
-                        name: 'BANDA LARGA',   
-                        data: [
-                        <% for(i = 0; i < platforms.length; i ++) { %>
-                            <%- platforms[i].Sum_of_SUBS_BANDA_LARGA %>, 
-                  <%}%>	
-                        ]
-                    },
-
-                ],
-
-                responsive: {
-                    rules: [{
-                        condition: {
-                            maxWidth: 500
-                        },
-                        chartOptions: {
-                            legend: {
-                                layout: 'horizontal',
-                                align: 'center',
-                                verticalAlign: 'bottom'
-                            }
-                        }
-                    }]
-                }
-
-
-            });
-       
-        });
-    </script>
-</div>
 
 </div>

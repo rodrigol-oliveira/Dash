@@ -1,39 +1,130 @@
-<select class="form-control navbar-default " id="country"  name="country" onchange="">
-  <!--<option value="" >Choose your Country</option>-->
-<% if(paises){%>
-<% for(i = 0; i < paises.length; i ++) { %>					
-<option value=' <%- paises[i].country %> ' selected><%- paises[i].country %></option>
-<%}%>
-<%}%>
+    <select class="form-control navbar-default espaco" id="local"  name="local" onchange="filtro3()">
+
+    <option value="" >Choose your Country</option>
+    <% if(paises){%>
+        <% for(i = 0; i < paises.length; i ++) { %>					
+
+            <% if(paises[i].local == local ){%>
+                <%if(paises[i].local == 'CuraÃ§ao'){%>  
+                   <option value=' <%- paises[i].local %> ' selected> Cura&ccedil;ao </option>
+                    
+                <%}else{%>                        				
+                    <option value=' <%- paises[i].local %> ' selected ><%- paises[i].local %></option>  
+                                                 
+            <%}}else if(paises[i].local == 'CuraÃ§ao'){%>                        				
+                    <option value=' <%- paises[i].local %> '> Cura&ccedil;ao </option>
+                <%}else{%>                        				
+                    <option value=' <%- paises[i].local %> '><%- paises[i].local %></option>
+            <%}%>
+        <%}%>
+    <%}%>
+
 </select>
+
+
 
 <div class="col-xs-12 col-md-3 espaco">
 
 </div>
 <div class="col-xs-14 col-md-7 espaco">
   <h4>SUBS PER PLATFORM</h4>
-  <div class="table-responsive tabela-resultado ">						
-      <table  class="table table-striped" id="tbResultado">
-          <thead>
-              <tr>
-                  <th>PERIOD</th>
-                  <th>SUM OF PAY TV</th>	
-                  <th>SUM OF SVOD</th>	
-                  <th>SUM OF NETFLIX</th>	
-                  <th>SUM OF BANDA LARGA</th>	
-              </tr>
-          </thead>		
-          <tbody>
-                  <% for(i = 0; i < platforms.length; i ++) { %>
-                  <tr>
-                      <td><%- platforms[i].Period %></td>
-                      <td><%- platforms[i].Sum_of_SUBS_PAY_TV.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
-                      <td><%- platforms[i].Sum_of_SUBS_SVOD.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
-                      <td><%- platforms[i].Sum_of_SUBS_NETFLIX.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
-                      <td><%- platforms[i].Sum_of_SUBS_BANDA_LARGA.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></td>
-                  </tr>
+ 
+<div class="grafico content img-responsive" id="grafico3">
+    <script type="text/javascript">
+        $(function () {
+            $('#grafico3').highcharts({
+                title: {
+                    text: ''
+                },
+
+                subtitle: {
+                    text: ''
+                },
+
+                yAxis: {
+                    title: {
+                        text: ''
+                    }
+                },
+
+                xAxis: {
+                    accessibility: {
+                        rangeDescription: 'Range: 2010 to 2017'
+                    }
+                },
+
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle'
+                },
+
+                plotOptions: {
+                    series: {
+                        label: {
+                            connectorAllowed: false
+                        },
+                        pointStart: 2015
+                    }
+                },
+
+
+
+                
+                series: [
+                    {
+                        name: 'PAY TV', 
+                        data: [  
+                        <% for(i = 0; i < platforms.length; i ++) { %>
+                            <%- platforms[i].Sum_of_SUBS_PAY_TV %>, 
                   <%}%>	
-              
-              
-      </table>
-  </div>																
+                        ],
+                    },
+                    {
+                        name: 'NETFLIX',
+                        data: [
+                        <% for(i = 0; i < platforms.length; i ++) { %>
+                            <%- platforms[i].Sum_of_SUBS_NETFLIX %>, 
+                  <%}%>	
+                        ]
+                    },
+                    {
+                        name: 'SVOD',
+                        data: [
+                        <% for(i = 0; i < platforms.length; i ++) { %>
+                            <%- platforms[i].Sum_of_SUBS_SVOD %>, 
+                        <%}%>	
+                        ]
+                    },
+                    {
+                        name: 'BANDA LARGA',   
+                        data: [
+                        <% for(i = 0; i < platforms.length; i ++) { %>
+                            <%- platforms[i].Sum_of_SUBS_BANDA_LARGA %>, 
+                  <%}%>	
+                        ]
+                    },
+
+                ],
+
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 500
+                        },
+                        chartOptions: {
+                            legend: {
+                                layout: 'horizontal',
+                                align: 'center',
+                                verticalAlign: 'bottom'
+                            }
+                        }
+                    }]
+                }
+
+
+            });
+       
+        });
+    </script>
+</div>															
