@@ -187,10 +187,10 @@ app.get('/', function (req, res) {
 app.get('/plataforms', function (req, res) {
 	let local;
 	let queryPaises = 'select distinct local from platforms';
-	let queryPlatforms = 'select Period, sum(Sum_of_SUBS_PAY_TV) as Sum_of_SUBS_PAY_TV, sum(Sum_of_SUBS_SVOD) as Sum_of_SUBS_SVOD, sum(Sum_of_SUBS_NETFLIX) as Sum_of_SUBS_NETFLIX, sum(Sum_of_SUBS_BANDA_LARGA) as Sum_of_SUBS_BANDA_LARGA from platforms group by period' ;
+	let queryPlatforms = 'select Period, sum(Sum_of_SUBS_PAY_TV) as Sum_of_SUBS_PAY_TV, sum(Sum_of_SUBS_SVOD) as Sum_of_SUBS_SVOD, sum(Sum_of_SUBS_NETFLIX) as Sum_of_SUBS_NETFLIX, sum(Sum_of_SUBS_BANDA_LARGA) as Sum_of_SUBS_BANDA_LARGA from platforms where Period != "2020 Q1" group by period' ;
 	if (req.query.local !== undefined) {
 		local = req.query.local;
-		queryPlatforms = 'select Period, sum(Sum_of_SUBS_PAY_TV) as Sum_of_SUBS_PAY_TV, sum(Sum_of_SUBS_SVOD) as Sum_of_SUBS_SVOD, sum(Sum_of_SUBS_NETFLIX) as Sum_of_SUBS_NETFLIX, sum(Sum_of_SUBS_BANDA_LARGA) as Sum_of_SUBS_BANDA_LARGA from platforms where local = "'+req.query.local+'" group by period ';	
+		queryPlatforms = 'select Period, sum(Sum_of_SUBS_PAY_TV) as Sum_of_SUBS_PAY_TV, sum(Sum_of_SUBS_SVOD) as Sum_of_SUBS_SVOD, sum(Sum_of_SUBS_NETFLIX) as Sum_of_SUBS_NETFLIX, sum(Sum_of_SUBS_BANDA_LARGA) as Sum_of_SUBS_BANDA_LARGA from platforms where local = "'+req.query.local+'" and Period != "2020 Q1"  group by period ';	
 	}
 	let paises;
 	connection.query(queryPaises, (err, rows) => {
